@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 58,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "okcsibn5h1",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Posto",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 33,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 61,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 54,
+  "needsErrorInfo": false,
+  "optionLabel": "FORNECEDOR",
+  "optionValue": "CODFORNEC",
+  "originalBottomRow": 58,
+  "originalTopRow": 51,
+  "parentColumnSpace": 12.34375,
+  "parentId": "54lseidnu1",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Posto",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "serverSideFiltering": false,
+  "sourceData": "{{pc_PCFORNEC.data}}",
+  "topRow": 51,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "y2n54j5wya",
+  "widgetName": "Select_posto_abas"
+}

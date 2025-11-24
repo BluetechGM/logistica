@@ -1,0 +1,31 @@
+INSERT INTO compras_so.abastecimentos_mf (
+    id_abastecimento,
+    foto_pix_abastecimento,
+    placa,
+    cidade,
+    filial_id,
+    odometro_atual,
+    valor_abastecimento,
+    litros_abastecidos,
+    posto_abastecimento,
+    cod_fornec,
+    condutor,
+    matricula_condutor,
+    lancado_por,
+    status_pagamento
+) VALUES (
+    uuid_generate_v4(),  -- ou algum código que você gere no Appsmith
+    '{{foto_url_pix_abastecimento.data.secure_url}}',
+    '{{Select_placa_abas.selectedOptionLabel}}',
+    '{{Select_Cidade_abas.selectedOptionLabel}}',
+    {{Select_Cidade_abas.selectedOptionValue}},
+    {{Input_OdometroAtual_abast.text}},
+    {{Input_valor_abastecimento.text.replace(',', '.')}},
+    {{litros_abastecidos.text.replace(',', '.')}},
+    '{{Select_posto_abas.selectedOptionLabel}}',
+    {{Select_posto_abas.selectedOptionValue}},
+    '{{Select_condutor_abas.selectedOptionLabel}}',
+    {{Select_condutor_abas.selectedOptionValue}},
+    '{{appsmith.store.usuario_nome}}',
+    'Em aberto'
+);

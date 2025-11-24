@@ -1,0 +1,4 @@
+SELECT *
+FROM compras_so."manutencao_frotas"
+WHERE pecas IS NOT NULL
+  AND TRIM(pecas) <> '';

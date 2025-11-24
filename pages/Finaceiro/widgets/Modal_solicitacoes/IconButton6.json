@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 51,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "eraser",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "hebzc88o82",
+  "leftColumn": 59,
+  "minWidth": 50,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "onClick": "{{lista_produtos.limpar_lista();}}",
+  "originalBottomRow": 51,
+  "originalTopRow": 47,
+  "parentColumnSpace": 18.56015625,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "tooltip": "Limpar tudo !",
+  "topRow": 47,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "kob828775h",
+  "widgetName": "IconButton6"
+}

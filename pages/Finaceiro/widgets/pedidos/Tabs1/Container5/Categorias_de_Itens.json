@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "886c985rlk",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Categorias de Itens",
+  "labelTextColor": "#71717a",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 18.8125,
+  "parentId": "yo9v26z1wo",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione a  Categoria ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"ACESSÓRIOS\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"ALTA PERFORMANCE\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"ARQUITETURA\",\n    \"code\": 3\n  },\n  {\n    \"name\": \"BALÃO\",\n    \"code\": 4\n  },\n  {\n    \"name\": \"BANNER\",\n    \"code\": 5\n  },\n  {\n    \"name\": \"BRINDES\",\n    \"code\": 6\n  },\n  {\n    \"name\": \"CAIXA TESTE\",\n    \"code\": 7\n  },\n  {\n    \"name\": \"CATEGORIA\",\n    \"code\": 8\n  },\n  {\n    \"name\": \"COMUM\",\n    \"code\": 9\n  },\n  {\n    \"name\": \"COPA E LIMPEZA\",\n    \"code\": 10\n  },\n  {\n    \"name\": \"DISPOSITIVOS DE ESCRITÓRIO\",\n    \"code\": 11\n  },\n  {\n    \"name\": \"DISPOSITIVOS MÓVEIS\",\n    \"code\": 12\n  },\n  {\n    \"name\": \"DOAÇÕES\",\n    \"code\": 13\n  },\n  {\n    \"name\": \"ELETRODOMÉSTICOS\",\n    \"code\": 14\n  },\n  {\n    \"name\": \"EMBALAGENS\",\n    \"code\": 15\n  },\n  {\n    \"name\": \"ENDOMARKETING\",\n    \"code\": 16\n  },\n  {\n    \"name\": \"EPI\",\n    \"code\": 17\n  },\n  {\n    \"name\": \"EQUIPAMENTOS ESTOQUE\",\n    \"code\": 18\n  },\n  {\n    \"name\": \"EQUIPAMENTOS ESTRUTURAIS\",\n    \"code\": 19\n  },\n  {\n    \"name\": \"EQUIPAMENTOS LABORATÓRIO\",\n    \"code\": 20\n  },\n  {\n    \"name\": \"EQUIPAMENTOS MANUTENÇÃO DE VEÍCULOS\",\n    \"code\": 21\n  },\n  {\n    \"name\": \"FERRAMENTAS PELICULAS\",\n    \"code\": 22\n  },\n  {\n    \"name\": \"FERRAMENTAS PPF\",\n    \"code\": 23\n  },\n  {\n    \"name\": \"FITAS\",\n    \"code\": 24\n  },\n  {\n    \"name\": \"IMPRESSOS\",\n    \"code\": 25\n  },\n  {\n    \"name\": \"INFORMÁTICA\",\n    \"code\": 26\n  },\n  {\n    \"name\": \"LS160 METER\",\n    \"code\": 27\n  },\n  {\n    \"name\": \"MATERIAIS DE ESCRITÓRIO\",\n    \"code\": 28\n  },\n  {\n    \"name\": \"MATERIAIS PARA MANUTENÇÃO DE EQUIPAMENTOS\",\n    \"code\": 29\n  },\n  {\n    \"name\": \"MATERIAIS PARA MANUTENÇÃO PREDIAL\",\n    \"code\": 30\n  },\n  {\n    \"name\": \"MÓVEIS DE MADEIRA\",\n    \"code\": 31\n  },\n  {\n    \"name\": \"MÓVEIS DE METAL\",\n    \"code\": 32\n  },\n  {\n    \"name\": \"PERIFÉRICOS DE INFORMÁTICA\",\n    \"code\": 33\n  },\n  {\n    \"name\": \"PEÇAS AUTOMÓVEIS\",\n    \"code\": 34\n  },\n  {\n    \"name\": \"PPF\",\n    \"code\": 35\n  },\n  {\n    \"name\": \"SEGURANÇA\",\n    \"code\": 36\n  },\n  {\n    \"name\": \"SELOS\",\n    \"code\": 37\n  },\n  {\n    \"name\": \"TUBETES\",\n    \"code\": 38\n  },\n  {\n    \"name\": \"UNIFORMES\",\n    \"code\": 39\n  },\n  {\n    \"name\": \"VINIL\",\n    \"code\": 40\n  }\n]\n",
+  "topRow": 9,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ovgiulf7j1",
+  "widgetName": "Categorias_de_Itens"
+}

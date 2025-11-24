@@ -1,0 +1,5 @@
+UPDATE compras_so.solicitacoes_frota
+SET 
+    lancado_winthor = TRUE,
+    recnum = {{ECONTRAR_RECNUM.data[0].RECNUM}}
+WHERE id_solicitacao = {{mfs_list_lancarwthor.selectedItem.id_solicitacao}};

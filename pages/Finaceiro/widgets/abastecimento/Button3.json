@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 67,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y4by0teezn",
+  "leftColumn": 36,
+  "minWidth": 120,
+  "mobileBottomRow": 67,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 63,
+  "needsErrorInfo": false,
+  "onClick": "{{validar_campos_abastecimento.validateAndRun();}}",
+  "originalBottomRow": 67,
+  "originalTopRow": 63,
+  "parentColumnSpace": 12.34375,
+  "parentId": "54lseidnu1",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 52,
+  "text": "Lançar Abastecimento ",
+  "topRow": 63,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "tpcyt59bbc",
+  "widgetName": "Button3"
+}

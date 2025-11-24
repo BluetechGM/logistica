@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6q1x58923x",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Cidade/Filial",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "optionLabel": "CIDADE_CODIGO",
+  "optionValue": "CODIGO",
+  "originalBottomRow": 19,
+  "originalTopRow": 11,
+  "parentColumnSpace": 17.3330078125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione a Cidade/Filial",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 15,
+  "serverSideFiltering": false,
+  "sourceData": "{{cod_filial.data}}",
+  "topRow": 11,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "80tmug7k8y",
+  "widgetName": "Select_Cidade"
+}

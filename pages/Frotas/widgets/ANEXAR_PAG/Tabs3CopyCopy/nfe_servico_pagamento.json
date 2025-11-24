@@ -1,0 +1,56 @@
+{
+  "allowedFileTypes": [
+    "*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "w50a5mo3te",
+  "label": "ANEXAR PAGAMENTO",
+  "leftColumn": 3,
+  "maxFileSize": "10",
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{foto_nfe_servico.run().then(() => {\n  showAlert('Anexado com sucesso!', 'success');\n});}}",
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "vdmseukrtr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 14,
+  "selectedFiles": [],
+  "topRow": 9,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "upt5jj6bc7",
+  "widgetName": "nfe_servico_pagamento"
+}

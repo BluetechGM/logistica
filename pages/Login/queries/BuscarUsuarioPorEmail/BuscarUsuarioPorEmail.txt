@@ -1,0 +1,4 @@
+SELECT*
+FROM public.usuarios
+WHERE email = '{{ Input_email.text }}'
+  AND senha_hash = '{{ JS_Auth.gerarSenhaComHash() }}';

@@ -1,0 +1,5 @@
+SELECT *
+FROM compras_so.abastecimentos_mf
+WHERE '{{Select_status_pag.selectedOptionLabel}}' IS NULL
+   OR '{{Select_status_pag.selectedOptionLabel}}' = ''
+   OR status_pagamento = '{{Select_status_pag.selectedOptionLabel}}';

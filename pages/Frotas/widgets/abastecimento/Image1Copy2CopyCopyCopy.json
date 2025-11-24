@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 68,
+  "boxShadow": "none",
+  "defaultImage": "https://static.vecteezy.com/ti/vetor-gratis/p1/21185700-azul-cheio-face-capacete-lado-visualizar-conceito-do-capacete-cabeca-protecao-esporte-motocicleta-corredor-plano-icone-gratis-vetor.jpg",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/21185700-azul-cheio-face-capacete-lado-visualizar-conceito-do-capacete-cabeca-protecao-esporte-motocicleta-corredor-plano-icone-gratis-vetor.jpg",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lb401a7kxa",
+  "leftColumn": 2,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 14.999999999999998,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "originalBottomRow": 68,
+  "originalTopRow": 63,
+  "parentColumnSpace": 22.3453125,
+  "parentId": "54lseidnu1",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 6,
+  "topRow": 63,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "dr9w9oh8xg",
+  "widgetName": "Image1Copy2CopyCopyCopy"
+}

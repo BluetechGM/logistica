@@ -1,0 +1,90 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "linear-gradient(to bottom right, #155A87, #348EB6)",
+  "borderRadius": "1.5rem",
+  "bottomRow": 755,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 680,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "07eleix34r",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 666,
+      "minWidth": 450,
+      "mobileBottomRow": 240,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 475.5,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "il3jnocvvi",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 475.5,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "kb7nnvrlz7",
+      "widgetName": "Canvas6Copy"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "height": 680,
+  "isCanvas": true,
+  "isLoading": false,
+  "key": "i38wokl2g0",
+  "leftColumn": 38,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minHeight": 760,
+  "mobileBottomRow": 79,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "originalBottomRow": 195,
+  "originalTopRow": 75,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "shouldScrollContents": true,
+  "topRow": 75,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "il3jnocvvi",
+  "widgetName": "abrir_solicitacao",
+  "width": 1216
+}

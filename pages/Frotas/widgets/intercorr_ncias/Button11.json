@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 75,
+  "boxShadow": "none",
+  "buttonColor": "white",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "t8iv4wdaie",
+  "leftColumn": 31,
+  "minWidth": 120,
+  "mobileBottomRow": 90,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 86,
+  "needsErrorInfo": false,
+  "onClick": "{{lancar_intecoreencias_registra.run().then(() => {\n  showAlert('INTERCORRENCIA 🛑 ENVIADO COM SUCESSO', 'success');\n  closeModal(intercorr_ncias.name);\n  resetWidget(\"intercorr_ncias\", true);\n});}}",
+  "parentColumnSpace": 23.46875,
+  "parentId": "p4hk9wqtcb",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 47,
+  "text": "Enviar",
+  "topRow": 68,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "62v1eybciw",
+  "widgetName": "Button11"
+}

@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 16,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "info-sign",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2eix3kuoaq",
+  "leftColumn": 28,
+  "minWidth": 50,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
+  "parentColumnSpace": 19.228125,
+  "parentId": "p4hk9wqtcb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 30,
+  "tooltip": "Modelo de Justificativa de Intercorrência – Logística\n\nMotoboy: Preenchido automaticamente pelo sistema\nFilial / Responsável pelo Contato: Preenchido automaticamente pelo sistema\nCliente / Destinatário: Preenchido automaticamente pelo sistema\nEndereço da Entrega: Preenchido automaticamente pelo sistema\n\nHorário de Chegada do Motoboy ao Local: ____ : ____\nHorário da Entrega ao Cliente: ____ : ____\n(Este horário será acrescentado ao tempo total para fins de justificativa.)\n\nTempo Total de Atraso:\nPreencher no campo específico de minutos e segundos.\n\nDetalhamento:\nDescrever todas as informações completas no campo de Justificativa, incluindo:\n\nHorário de chegada do motoboy ao local;\n\nHorário da entrega ao cliente;\n\nNome e relação de quem recebeu o pedido (cliente, esposa, responsável, colaborador, etc.);\n\nSituação encontrada no local (ex.: fila, cliente ausente, espera para liberação, dificuldade de acesso, erro de endereço, trânsito, clima, entre outros);\n\nInformações coletadas via WhatsApp com o motoboy e com a filial;\n\nMotivo final da intercorrência.",
+  "topRow": 12,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "1ubmk6fymn",
+  "widgetName": "IconButton10Copy"
+}

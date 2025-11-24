@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_7d770ea0-c1e7-4c55-8545-87bd2653fef2",
+  "id": "Frotas_JSObject2",
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Frotas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

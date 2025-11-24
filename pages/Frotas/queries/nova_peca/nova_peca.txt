@@ -1,0 +1,2 @@
+INSERT INTO compras_so.manutencao_frotas (pecas)
+VALUES ('ARRUELA');

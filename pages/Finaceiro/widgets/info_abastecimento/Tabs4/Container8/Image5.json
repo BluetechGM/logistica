@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 30,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultImage": "https://cdn-icons-png.flaticon.com/256/5371/5371682.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{comprovante_pagaemnto.files[0].data}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0sgwvcfix0",
+  "leftColumn": 2,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "parentColumnSpace": 18.915625,
+  "parentId": "lx60dzn9qu",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "houv6etb9t",
+  "widgetName": "Image5"
+}

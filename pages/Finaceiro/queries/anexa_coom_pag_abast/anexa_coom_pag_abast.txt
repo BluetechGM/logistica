@@ -1,0 +1,12 @@
+UPDATE compras_so.abastecimentos_mf
+SET 
+    comprovante_abastecimento = '{{foto_url_pix_comprovante_pag.data.secure_url}}',
+    tipo_pagamento = 'pix_qrcode',
+    filial_pagamento = '{{Select_Cidade_abas_com.selectedOptionLabel}}',
+    id_pagador = '{{appsmith.store.matricula}}',
+    pago_por = '{{appsmith.store.usuario_nome}}',
+    status_pagamento = 'Pago',
+    status = 'Aprovado',
+    data_pagamento = CURRENT_TIMESTAMP,
+    tipo_combustivel = 'gasolina'
+WHERE id_abastecimento = '{{List_abascetimentos.selectedItem.id_abastecimento}}';

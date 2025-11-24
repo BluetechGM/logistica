@@ -1,0 +1,3 @@
+UPDATE compras_so.solicitacoes_frota
+SET foto_comprovante = '{{foto_pagamento.data.secure_url}}'
+WHERE id_solicitacao = {{mfs_list_comprovante.selectedItem.id_solicitacao}};

@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultImage": "https://cdn-icons-png.flaticon.com/512/9187/9187604.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{appsmith.store.foto}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "91aa315i9k",
+  "leftColumn": 58,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "onClick": "{{showModal(Usuario.name);}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 32,
+  "parentColumnSpace": 20.25,
+  "parentId": "cm738umjos",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "hgjak31msi",
+  "widgetName": "foto_user"
+}

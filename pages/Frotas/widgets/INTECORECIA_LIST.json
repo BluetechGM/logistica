@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "boxShadow": "none",
+  "buttonColor": "#0d5478",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{appsmith.store.atualizar_intercorrencia}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "t8iv4wdaie",
+  "leftColumn": 27,
+  "minWidth": 120,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 39,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(LSITA_DE_INTECORRENCIAS__.name);}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 34,
+  "parentColumnSpace": 30.140625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 34,
+  "text": "Intercorrências",
+  "topRow": 34,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "21ku15qhe8",
+  "widgetName": "INTECORECIA_LIST"
+}

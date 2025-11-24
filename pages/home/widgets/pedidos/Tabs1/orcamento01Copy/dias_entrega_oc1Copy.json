@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#ffffff",
+  "borderColor": "#d4d4d8",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 40,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "qsrkior16q",
+  "leftColumn": 37,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 95,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 91,
+  "needsErrorInfo": false,
+  "originalBottomRow": 38,
+  "originalTopRow": 34,
+  "overflow": "NONE",
+  "parentColumnSpace": 18.8125,
+  "parentId": "rod7x83uwu",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 46,
+  "shouldTruncate": false,
+  "text": "{{ \n  (() => {\n    const hoje = new Date();\n    const entrega = new Date(Date_entrega_oc1.selectedDate);\n    \n    // Zera as horas para comparar apenas datas\n    hoje.setHours(0, 0, 0, 0);\n    entrega.setHours(0, 0, 0, 0);\n\n    const diffDias = Math.ceil((entrega - hoje) / (1000 * 60 * 60 * 24));\n\n    if (diffDias === 0) {\n      return \"Entrega hoje\";\n    } else if (diffDias > 0) {\n      return `Entrega em ${diffDias} dia(s)`;\n    } else {\n      return `Atrasado há ${Math.abs(diffDias)} dia(s)`;\n    }\n  })()\n}}\n",
+  "textAlign": "LEFT",
+  "textColor": "#858282",
+  "topRow": 36,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "eu1ehft2q3",
+  "widgetName": "dias_entrega_oc1Copy"
+}

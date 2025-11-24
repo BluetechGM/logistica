@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 56,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": "{{appsmith.store.add_veiculo}}",
+  "key": "rotgivml5a",
+  "leftColumn": 0,
+  "mobileBottomRow": 72,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 27.671875,
+  "parentId": "ye1s0tdojl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body {\n      margin: 0;\n      background: transparent;\n      color: #FFFFFF;\n      font-family: system-ui, sans-serif;\n      text-align: center;\n      padding: 0;\n    }\n\n    .titulo-modal {\n      display: inline; /* ocupa só o tamanho do texto */\n      font-size: 20px;\n      font-weight: bold;\n      margin: 0; /* remove espaço externo */\n      padding: 0; /* remove espaço interno */\n      color: #FFFFFF;\n    }\n  </style>\n</head>\n<body>\n  <p class=\"titulo-modal\" id=\"titulo-modal\">Título do Modal</p>\n\n  <script>\n    const titulo = \"Configurações\"; // Exemplo de texto vindo do Appsmith\n    document.getElementById(\"titulo-modal\").textContent = titulo;\n  </script>\n</body>\n</html>\n",
+  "topRow": 52,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "267cz1oih8",
+  "widgetName": "Iframe1Copy"
+}

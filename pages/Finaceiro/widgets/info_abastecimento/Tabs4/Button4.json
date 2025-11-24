@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 66,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y4by0teezn",
+  "leftColumn": 22,
+  "minWidth": 120,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 58,
+  "needsErrorInfo": false,
+  "onClick": "{{lacar_pagamento_abas.processarPagamento();}}",
+  "parentColumnSpace": 18.915625,
+  "parentId": "j4312c0d2l",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 38,
+  "text": "Lançar Pagamento",
+  "topRow": 62,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "psq1yxptne",
+  "widgetName": "Button4"
+}

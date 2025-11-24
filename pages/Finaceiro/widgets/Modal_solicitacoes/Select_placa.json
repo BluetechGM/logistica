@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6q1x58923x",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Placa",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "optionLabel": "placa",
+  "optionValue": "id",
+  "originalBottomRow": 30,
+  "originalTopRow": 22,
+  "parentColumnSpace": 17.3330078125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione a Placa",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 15,
+  "serverSideFiltering": false,
+  "sourceData": "{{informacoes_veiculos.data}}",
+  "topRow": 21,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "m0hd3ed3zv",
+  "widgetName": "Select_placa"
+}

@@ -1,0 +1,7 @@
+UPDATE compras_so.solicitacoes_frota
+SET 
+    status = '{{Select_status.selectedOptionValue}}',
+    motivo_reprovacao = {{Input_motivoreprovacao.text ? `'${Input_motivoreprovacao.text}'` : 'NULL'}},
+    data_atualizacao = CURRENT_TIMESTAMP
+WHERE id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}';
+

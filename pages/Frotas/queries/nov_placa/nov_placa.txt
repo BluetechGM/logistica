@@ -1,0 +1,13 @@
+INSERT INTO compras_so.veiculos (
+    tipo_veiculo,
+    placa,
+    data_cadastro,
+    ativo
+)
+VALUES (
+    UPPER('Moto'),                         -- tipo em maiúscula
+    UPPER('{{Input_palca_add.text}}'),     -- placa em maiúscula
+    NOW(),
+    TRUE
+)
+ON CONFLICT (placa) DO NOTHING;

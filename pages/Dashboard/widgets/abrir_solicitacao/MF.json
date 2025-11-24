@@ -1,0 +1,43 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 55,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonColor": "#fde047",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "76nws06tgg",
+  "leftColumn": 20,
+  "minWidth": 120,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 18.8125,
+  "parentId": "kb7nnvrlz7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 36,
+  "text": "Manutenção de Frota",
+  "tooltip": "A Manutenção de Frota (MF) centraliza todas as solicitações relacionadas à frota, como compras de peças, abastecimento e outros serviços necessários para os veículos. É uma categoria específica do sistema para gerenciar a logística e manutenção da frota",
+  "topRow": 42,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "drp8oal94j",
+  "widgetName": "MF"
+}

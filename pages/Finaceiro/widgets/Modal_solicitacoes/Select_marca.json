@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 45,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6q1x58923x",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Marca",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "optionLabel": "marca",
+  "optionValue": "id",
+  "originalBottomRow": 45,
+  "originalTopRow": 38,
+  "parentColumnSpace": 17.3330078125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Marca",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "serverSideFiltering": false,
+  "sourceData": "{{marca_opcoes.data}}",
+  "topRow": 38,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fm4ys5cbdv",
+  "widgetName": "Select_marca"
+}

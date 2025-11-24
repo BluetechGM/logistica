@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultImage": "https://res.cloudinary.com/dm77rdv3r/image/upload/fl_preserve_transparency/v1746804076/Logo_bluetech_sem_fundo_branco_Prancheta_1_1_sjovtt.jpg?_s=public-apps",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jmsqwdrooy",
+  "leftColumn": 4,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "parentColumnSpace": 19.90966796875,
+  "parentId": "bzjaf7l8fm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 26,
+  "topRow": 4,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "gep8z4ow6l",
+  "widgetName": "Image2"
+}

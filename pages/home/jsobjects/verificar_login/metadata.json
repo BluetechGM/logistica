@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_3fc4544d-6171-42c7-9f43-704306cff2cb",
+  "id": "home_verificar_login",
+  "unpublishedCollection": {
+    "name": "verificar_login",
+    "pageId": "home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

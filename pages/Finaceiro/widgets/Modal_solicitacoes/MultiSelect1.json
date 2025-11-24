@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "uh57v54har",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Serviços",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 19,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 70,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 63,
+  "needsErrorInfo": false,
+  "optionLabel": "servicos",
+  "optionValue": "id",
+  "originalBottomRow": 19,
+  "originalTopRow": 11,
+  "parentColumnSpace": 23.53125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Serviço",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 39,
+  "serverSideFiltering": false,
+  "sourceData": "{{servicos_opcoes.data}}",
+  "topRow": 11,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "7iyn02kyas",
+  "widgetName": "MultiSelect1"
+}

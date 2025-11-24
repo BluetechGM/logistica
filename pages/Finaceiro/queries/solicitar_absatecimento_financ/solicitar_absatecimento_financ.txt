@@ -1,0 +1,16 @@
+{
+  "placa": "{{Select_placa_abas.selectedOptionLabel}}",
+  "cidade": "{{Select_Cidade_abas.selectedOptionLabel}}",
+  "filial_id": "{{Select_Cidade_abas.selectedOptionValue}}",
+  "posto": "{{Select_posto_abas.selectedOptionLabel}}",
+  "cod_fornec": "{{Select_posto_abas.selectedOptionValue}}",
+  "condutor": "{{Select_condutor_abas.selectedOptionLabel}}",
+  "matricula_condutor": "{{Select_condutor_abas.selectedOptionValue}}",
+  "lancado_por": "{{appsmith.store.usuario_nome}}",
+  "odometro_atual": "{{Input_OdometroAtual_abast.text}}",
+  "litros_abastecidos": "{{litros_abastecidos.text.replace(',', '.')}}",
+  "valor_abastecimento": "{{Input_valor_abastecimento.text.replace(',', '.')}}",
+  "status_pagamento": "Em aberto",
+  "comprovante_pix": "{{foto_url_pix_abastecimento.data.secure_url}}",
+  "data_registro": "{{moment().format('YYYY-MM-DD HH:mm:ss')}}"
+}

@@ -1,0 +1,36 @@
+INSERT INTO compras_so.solicitacoes_frota (
+    placa,
+    odometro_atual,
+    odometro_prox_troca,
+    data_prox_manutencao,
+    cidade,
+    criado_por,
+    servico,
+    status,
+    motivo_reprovacao,
+    data_abertura,
+    id_solicitacao,
+    filial_id,
+    id_solicitante,
+    nome_solicitante,
+	  tipo_incidente,
+	  link_orcamento_pdf
+    
+) VALUES (
+    '{{ Select_placa.selectedOptionLabel }}',
+    {{ Number(Input_OdometroAtual.text) }},
+    {{ Number(Input_OdometroProxTroca.text) }},
+    '{{ DatePicker_DataProxManutencao.selectedDate }}',
+    '{{ Select_Cidade.selectedOptionLabel }}',
+    '{{ appsmith.store.usuario_nome }}',
+    '{{ MultiSelect1.selectedOptionLabels.join(", ") }}',
+    'Em aberto',
+    NULL,
+    '{{ moment.tz("America/Sao_Paulo").format("YYYY-MM-DD HH:mm:ss") }}',
+    '{{ gerar_id.gerarIdUnico.data }}',
+    '{{Select_Cidade.selectedOptionValue}}',
+	  '{{appsmith.store.matricula}}',
+	  '{{appsmith.store.usuario_nome}}',
+	  '{{TreeSelect_tipoocoreencia.selectedOptionLabel}}',
+	 '{{foto_orcamento_pdf_ou_imagem.data.secure_url}}'
+);

@@ -1,0 +1,33 @@
+{
+  "animateLoading": true,
+  "bottomRow": 50,
+  "docUrl": "{{nfe_produtos.files[0].data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5p35k0j51s",
+  "leftColumn": 36,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 16,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "h0x75s2g7i",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 54,
+  "topRow": 10,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "j18hkbn0q9",
+  "widgetName": "view_pdf_nfe_produtosCopy"
+}

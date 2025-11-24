@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "linear-gradient(to bottom right, #155A87, #348EB6)\n",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xscmez8g3p",
+  "leftColumn": 53,
+  "minWidth": 120,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "onClick": "{{intercorrencias_bi20.run()}}",
+  "parentColumnSpace": 16.0738525390625,
+  "parentId": "stpfabrmzz",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "Pesquisar",
+  "topRow": 3,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "4r0b6fm85m",
+  "widgetName": "Button13Copy"
+}

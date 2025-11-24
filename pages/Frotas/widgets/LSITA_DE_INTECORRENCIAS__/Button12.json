@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "none",
+  "buttonColor": "#0d5478",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "efobwh70ue",
+  "leftColumn": 42,
+  "minWidth": 120,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "onClick": "{{LANCAR_JUSTIFICATIVA.run().then(() => {\n  LISTA_DE_INTECORRENCIAS.run();\n  showAlert('Atualizado com sucesso !', 'success');\n  resetWidget(\"\", true);\n  resetWidget(\"LSITA_DE_INTECORRENCIAS__\", true);\n});}}",
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
+  "parentColumnSpace": 19.228125,
+  "parentId": "1ipfnfud1g",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 56,
+  "text": "ENVIAR",
+  "topRow": 29,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9gmem6wlf2",
+  "widgetName": "Button12"
+}

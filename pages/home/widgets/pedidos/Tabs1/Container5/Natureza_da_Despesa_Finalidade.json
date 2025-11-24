@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "886c985rlk",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Natureza da Despesa / Finalidade",
+  "labelTextColor": "#71717a",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 18.8125,
+  "parentId": "yo9v26z1wo",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione a  Categoria ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"COMODATOS\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"DPTO PESSOAL\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"ELETRÔNICOS\",\n    \"code\": 3\n  },\n  {\n    \"name\": \"FERRAMENTAS REVENDA\",\n    \"code\": 4\n  },\n  {\n    \"name\": \"FROTA\",\n    \"code\": 5\n  },\n  {\n    \"name\": \"INSUMOS\",\n    \"code\": 6\n  },\n  {\n    \"name\": \"LOGÍSTICA\",\n    \"code\": 7\n  },\n  {\n    \"name\": \"MANUTENÇÃO\",\n    \"code\": 8\n  },\n  {\n    \"name\": \"MARKETING E PROMOÇÕES\",\n    \"code\": 9\n  },\n  {\n    \"name\": \"MÁQUINAS E EQUIPAMENTOS\",\n    \"code\": 10\n  },\n  {\n    \"name\": \"MÓVEIS\",\n    \"code\": 11\n  },\n  {\n    \"name\": \"PELÍCULAS\",\n    \"code\": 12\n  },\n  {\n    \"name\": \"USO E CONSUMO\",\n    \"code\": 13\n  }\n]\n",
+  "topRow": 17,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "twmp266yc0",
+  "widgetName": "Natureza_da_Despesa_Finalidade"
+}

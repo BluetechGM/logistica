@@ -1,0 +1,5 @@
+SELECT 
+ status
+FROM compras_so."manutencao_frotas"
+WHERE status IS NOT NULL
+  AND TRIM(status) <> '';

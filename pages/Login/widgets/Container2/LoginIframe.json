@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderColor": "transparent",
+  "borderOpacity": "100",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 55,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onMessageReceived"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onMessageReceived"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "r6dph0bxrz",
+  "leftColumn": 11,
+  "mobileBottomRow": 119,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 87,
+  "needsErrorInfo": false,
+  "onMessageReceived": "{{ \n  login_usuario.run();\n\nLoginIframe.message?.type === \"LOGIN_CLICKED\" \n    ? (\n        JS_Auth.gerarSenhaComHash(), \n        BuscarUsuarioPorEmail.run().then(() => {\n          logar.loginUsuario();\n        })\n      )\n    : \"\"\n}}\n\n",
+  "originalBottomRow": 55,
+  "originalTopRow": 48,
+  "parentColumnSpace": 19.8125,
+  "parentId": "bzjaf7l8fm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body {\n      margin: 0;\n      background: transparent;\n      font-family: 'Poppins', sans-serif;\n    }\n\n    .login-button {\n      background: linear-gradient(to right, #0B4F66, #21A9E1);\n      color: white;\n      border: none;\n      border-radius: 9999px;\n      padding: 10px 32px;\n      font-size: 16px;\n      font-weight: 500;\n      cursor: pointer;\n    }\n\n    .login-button:hover {\n      opacity: 0.9;\n    }\n  </style>\n</head>\n<body>\n  <button\n    class=\"login-button\"\n    onclick=\"window.parent.postMessage({ type: 'LOGIN_CLICKED' }, '*')\">\n    Login\n  </button>\n</body>\n</html>\n",
+  "topRow": 48,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "6sxygt41c4",
+  "widgetName": "LoginIframe"
+}

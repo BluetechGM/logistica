@@ -1,0 +1,11 @@
+SELECT 
+    id,
+    tipo_veiculo,
+    placa,
+    unidade_fichado,
+    unidade_cadastrado,
+    cnpj_cadastro,
+    data_cadastro
+FROM compras_so.veiculos 
+WHERE ativo = TRUE
+ORDER BY tipo_veiculo, placa;

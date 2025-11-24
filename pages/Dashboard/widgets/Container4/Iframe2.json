@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rotgivml5a",
+  "leftColumn": 8,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 49,
+  "originalTopRow": 36,
+  "parentColumnSpace": 19.8125,
+  "parentId": "hxs2y99s5t",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <style>\n    body {\n      margin: 0;\n      background: transparent;\n      font-family: system-ui, sans-serif;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .circle {\n      position: relative;\n      width: 80px;\n      height: 80px;\n    }\n\n    svg {\n      transform: rotate(-90deg);\n    }\n\n    .circle-value {\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      font-size: 20px;\n      font-weight: bold;\n    }\n\n    .label {\n      margin-top: 8px;\n      font-size: 14px;\n      color: #5D7B91;\n      text-align: center;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"circle\">\n    <svg width=\"80\" height=\"80\">\n      <circle cx=\"40\" cy=\"40\" r=\"35\" stroke=\"#E5E5E5\" stroke-width=\"5\" fill=\"none\"/>\n      <circle cx=\"40\" cy=\"40\" r=\"35\" stroke=\"#0056FF\" stroke-width=\"5\" fill=\"none\"\n              stroke-dasharray=\"220\" stroke-dashoffset=\"20\" stroke-linecap=\"round\"/>\n    </svg>\n    <div class=\"circle-value\">{{appsmith.store.pedidos_pendentes || 10}}</div>\n  </div>\n  <div class=\"label\">Pedidos pendentes</div>\n</body>\n</html>\n",
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "twy85453hd",
+  "widgetName": "Iframe2"
+}

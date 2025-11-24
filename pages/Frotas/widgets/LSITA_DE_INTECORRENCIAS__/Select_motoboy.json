@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "485d0qxml8",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Motoboy",
+  "labelTextColor": "white",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19.000000000000004,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "optionLabel": "NOME_MOTOBOY",
+  "optionValue": "COD_MOTOBOY",
+  "originalBottomRow": 23,
+  "originalTopRow": 16,
+  "parentColumnSpace": 19.228125,
+  "parentId": "1ipfnfud1g",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione Motoboy ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 22,
+  "serverSideFiltering": false,
+  "sourceData": "{{LISTA_motoboy.data}}",
+  "topRow": 16,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "2575pkvl8n",
+  "widgetName": "Select_motoboy"
+}

@@ -1,0 +1,45 @@
+INSERT INTO compras_so.produtos_solicitacao (
+    peca,
+    preco,                -- total (qtd × unitário)
+    id_solicitacao,
+    marca,
+    quantidade,
+    preco_unitario,
+    id_solicitante,
+    nome_solicitante,
+    data_solicitacao,
+    observacoes,
+    valor_servico,
+    servico_peca
+)
+VALUES
+{{ 
+  (appsmith.store.produtos || []).map(p => {
+    const precoUnitario = Number(String(p.preco_unitario || p.preco)
+                                  .replace(/\./g,'')
+                                  .replace(',','.')
+                                  .replace(/[^0-9.-]+/g,""));
+    const qtd = Number(p.quant || 1);
+    const total = precoUnitario * qtd;
+
+    const valorServico = Number(String(p.precoso || '0')
+                                  .replace(/\./g,'')
+                                  .replace(',','.')
+                                  .replace(/[^0-9.-]+/g,""));
+
+    return `(
+      '${p.peca}', 
+      ${total}, 
+      '${gerar_id.gerarIdUnico.data}', 
+      '${p.marca}', 
+      ${qtd}, 
+      ${precoUnitario}, 
+      '${appsmith.store.usuario_id || "00"}', 
+      '${appsmith.store.usuario_nome || "usuario_nao_logado"}', 
+      CURRENT_TIMESTAMP, 
+      '${(p.obs || "").replace(/'/g,"''")}',
+      ${valorServico},
+      '${(p.servicopeca || "").replace(/'/g,"''")}'
+    )`;
+  }).join(",")
+}};

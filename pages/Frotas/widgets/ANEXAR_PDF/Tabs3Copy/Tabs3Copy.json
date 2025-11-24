@@ -1,0 +1,108 @@
+{
+  "accentColor": "linear-gradient(to bottom right, #155A87, #348EB6)",
+  "animateLoading": true,
+  "backgroundColor": "#d4d4d8",
+  "borderColor": "#1d4ed8",
+  "borderRadius": "1.5rem",
+  "borderWidth": "1",
+  "bottomRow": 88,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 840,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "kta4rpvfk4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 2110,
+      "minWidth": 450,
+      "mobileBottomRow": 2111,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1150.7296875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "vuolerj2nb",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1150.7296875,
+      "tabId": "tabb9arsx0b6r",
+      "tabName": "Anexar Notas Fiscais",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "aff4ng6fdl",
+      "widgetName": "Canvas31Copy"
+    }
+  ],
+  "defaultTab": "Anexar Notas Fiscais",
+  "dynamicBindingPathList": [
+    {
+      "key": "tabsObj.tabb9arsx0b6r.isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "tabsObj.tabb9arsx0b6r.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wm0avp70sc",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 97,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 82,
+  "needsErrorInfo": false,
+  "originalBottomRow": 88,
+  "originalTopRow": 0,
+  "parentColumnSpace": 18.56015625,
+  "parentId": "sr5zw8za76",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "shouldShowTabs": true,
+  "tabsObj": {
+    "tabb9arsx0b6r": {
+      "id": "tabb9arsx0b6r",
+      "index": 0,
+      "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
+      "label": "Anexar Notas Fiscais",
+      "widgetId": "aff4ng6fdl"
+    }
+  },
+  "topRow": 0,
+  "type": "TABS_WIDGET",
+  "version": 3,
+  "widgetId": "vuolerj2nb",
+  "widgetName": "Tabs3Copy"
+}

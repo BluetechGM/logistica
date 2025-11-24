@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 45,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "hz2b4pzr33",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Serviço da Peça",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Selecione a Serviços que ira usar a peça( os serviços que irão aparecer aqui serao somente o selecionados previamente no seletor de (serviços acima !))",
+  "labelWidth": 5,
+  "leftColumn": 40,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 45,
+  "originalTopRow": 38,
+  "parentColumnSpace": 19.228125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o serviço da Peça",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "serverSideFiltering": false,
+  "sourceData": "{{ MultiSelect1.selectedOptionValues.map((v, i) => ({ label: MultiSelect1.selectedOptionLabels[i], value: v })) }}",
+  "topRow": 38,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ug48e7laoy",
+  "widgetName": "selecione_servidapeca"
+}

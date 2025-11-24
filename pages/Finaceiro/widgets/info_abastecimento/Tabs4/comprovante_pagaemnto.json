@@ -1,0 +1,52 @@
+{
+  "allowedFileTypes": [
+    "image/*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "g4en8jok53",
+  "label": "Selecione o Comprovante",
+  "leftColumn": 2,
+  "maxFileSize": "10",
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 28,
+  "needsErrorInfo": false,
+  "originalBottomRow": 46,
+  "originalTopRow": 42,
+  "parentColumnSpace": 18.915625,
+  "parentId": "j4312c0d2l",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 14,
+  "selectedFiles": [],
+  "topRow": 42,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "qjdmfuhjv4",
+  "widgetName": "comprovante_pagaemnto"
+}

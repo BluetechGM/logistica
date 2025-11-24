@@ -1,0 +1,53 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowClear": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "expandAll": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "cszkssunxe",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Tipos de Ocorrência",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Selecione o Tipo de ocorrência , para essa MF (manuteçao de Frota)",
+  "labelWidth": 5,
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "options": "[\n  {\n    \"label\": \"Manutenção Programada\",\n    \"value\": \"MANUTENCAO_PROGRAMADA\",\n    \"children\": [\n      {\n        \"label\": \"Revisão Preventiva\",\n        \"value\": \"REVISAO_PREVENTIVA\"\n      },\n      {\n        \"label\": \"Inspeção Obrigatória\",\n        \"value\": \"INSPECAO_OBRIGATORIA\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Manutenção Corretiva\",\n    \"value\": \"MANUTENCAO_CORRETIVA\",\n    \"children\": [\n      {\n        \"label\": \"Acidente\",\n        \"value\": \"ACIDENTE\"\n      },\n      {\n        \"label\": \"Pane Mecânica\",\n        \"value\": \"PANE_MECANICA\"\n      },\n      {\n        \"label\": \"Falha Elétrica/Eletrônica\",\n        \"value\": \"FALHA_ELETRICA\"\n      },\n      {\n        \"label\": \"Desgaste Natural\",\n        \"value\": \"DESGASTE_NATURAL\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Ocorrências Externas\",\n    \"value\": \"OCORRENCIAS_EXTERNAS\",\n    \"children\": [\n      {\n        \"label\": \"Recall\",\n        \"value\": \"RECALL\"\n      },\n      {\n        \"label\": \"Vandalismo\",\n        \"value\": \"VANDALISMO\"\n      },\n      {\n        \"label\": \"Danos Climáticos\",\n        \"value\": \"DANOS_CLIMATICOS\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Adaptações/Instalações\",\n    \"value\": \"ADAPTACOES_INSTALACOES\"\n  },\n  {\n    \"label\": \"Troca de Pneus\",\n    \"value\": \"TROCA_PNEUS\"\n  }\n]\n",
+  "parentColumnSpace": 19.228125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Tipo",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "topRow": 12,
+  "type": "SINGLE_SELECT_TREE_WIDGET",
+  "version": 1,
+  "widgetId": "muf80wqyuz",
+  "widgetName": "TreeSelect_tipoocoreencia"
+}

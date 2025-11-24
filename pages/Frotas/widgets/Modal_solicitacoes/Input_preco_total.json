@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 45,
+  "boxShadow": "none",
+  "defaultText": "{{\n(() => {\n  const parseBR = v => {\n    if (v === null || v === undefined) return NaN;\n    if (typeof v === \"number\") return v;\n    let s = String(v).trim();\n    if (s === \"\") return NaN;\n\n    // remove espaços e caracteres não-numéricos exceto . , e -\n    s = s.replace(/\\s/g, \"\").replace(/[^0-9.,-]/g, \"\");\n\n    if (s.includes(\".\") && s.includes(\",\")) {\n      // ponto = milhar, vírgula = decimal\n      s = s.replace(/\\./g, \"\").replace(/,/g, \".\");\n    } else if (s.includes(\",\")) {\n      s = s.replace(/,/g, \".\");\n    } else if ((s.match(/\\./g) || []).length > 1) {\n      s = s.replace(/\\./g, \"\");\n    }\n\n    const n = Number(s);\n    return isNaN(n) ? NaN : n;\n  };\n\n  const rawA = Input_precounitario.text;\n  const rawB = Input_quantidade.text;\n  const rawC = Input_precopecaservico.text; // <-- novo campo serviço\n\n  const hasA = rawA && String(rawA).trim() !== \"\";\n  const hasB = rawB && String(rawB).trim() !== \"\";\n  const hasC = rawC && String(rawC).trim() !== \"\";\n\n  if (!hasA || !hasB) return null; // precisa de unitário e quantidade\n\n  const a = parseBR(rawA);\n  const b = parseBR(rawB);\n  const c = hasC ? parseBR(rawC) : 0; // serviço opcional, assume 0 se vazio\n\n  if (isNaN(a) || isNaN(b) || isNaN(c)) return null;\n\n  const total = (a * b) + c;\n\n  return total.toLocaleString(\"pt-BR\", { style: \"currency\", currency: \"BRL\" });\n})()\n}}\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "vt7w0sm0ul",
+  "label": "Preço total",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 55,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "originalBottomRow": 45,
+  "originalTopRow": 38,
+  "parentColumnSpace": 11.16015625,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 38,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "tikn19y6bt",
+  "widgetName": "Input_preco_total"
+}

@@ -1,0 +1,43 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 55,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3wpcfmcky7",
+  "leftColumn": 0,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.957653808593747,
+  "parentId": "nbalxawe4g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Decisão de Solicitação</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;\n            background: linear-gradient(135deg, #e8f4f8 0%, #f5f9fb 100%);\n            padding: 20px;\n            color: #333;\n        }\n\n        .container {\n            max-width: 900px;\n            margin: 0 auto;\n            background: white;\n            border-radius: 16px;\n            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);\n            overflow: hidden;\n        }\n\n        .header {\n            background: linear-gradient(135deg, #2b7fb5 0%, #3a9dd4 100%);\n            color: white;\n            padding: 20px 30px;\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n        }\n\n        .header-title {\n            font-size: 14px;\n            font-weight: 500;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n            opacity: 0.95;\n        }\n\n        .status-badge {\n            display: inline-block;\n            padding: 8px 20px;\n            border-radius: 20px;\n            font-size: 13px;\n            font-weight: 600;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n        }\n\n        .status-aprovado {\n            background-color: #d4edda;\n            color: #155724;\n            border: 1px solid #c3e6cb;\n        }\n\n        .status-reprovado {\n            background-color: #f8d7da;\n            color: #721c24;\n            border: 1px solid #f5c6cb;\n        }\n\n        .content {\n            padding: 30px;\n        }\n\n        .decision-result {\n            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);\n            border-radius: 12px;\n            padding: 25px;\n            margin-bottom: 25px;\n            border: 2px solid #f5c6cb;\n        }\n\n        .decision-result.aprovado {\n            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);\n            border-color: #c3e6cb;\n        }\n\n        .decision-label {\n            font-size: 13px;\n            text-transform: uppercase;\n            color: #721c24;\n            font-weight: 600;\n            letter-spacing: 0.5px;\n            margin-bottom: 8px;\n        }\n\n        .decision-result.aprovado .decision-label {\n            color: #155724;\n        }\n\n        .decision-text {\n            font-size: 32px;\n            font-weight: 700;\n            color: #721c24;\n            text-transform: uppercase;\n            letter-spacing: 1px;\n        }\n\n        .decision-result.aprovado .decision-text {\n            color: #155724;\n        }\n\n        .justification-box {\n            background: #fff9e6;\n            border: 1px solid #ffeaa7;\n            border-radius: 12px;\n            padding: 25px;\n            position: relative;\n        }\n\n        .justification-box::before {\n            content: '▶';\n            position: absolute;\n            left: 25px;\n            top: 25px;\n            color: #f39c12;\n            font-size: 12px;\n        }\n\n        .justification-title {\n            font-size: 13px;\n            text-transform: uppercase;\n            color: #e67e22;\n            font-weight: 600;\n            letter-spacing: 0.5px;\n            margin-bottom: 15px;\n            padding-left: 20px;\n        }\n\n        .justification-content {\n            font-size: 15px;\n            color: #2c3e50;\n            line-height: 1.8;\n        }\n\n        @media (max-width: 768px) {\n            .header {\n                flex-direction: column;\n                align-items: flex-start;\n                gap: 10px;\n            }\n\n            .content {\n                padding: 20px;\n            }\n\n            .decision-text {\n                font-size: 24px;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <div class=\"header-title\">Decisão de Solicitação de Peça</div>\n            <div class=\"status-badge {{JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão === 'Aprovado' ? 'status-aprovado' : 'status-reprovado'}}\">\n                {{JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão}}\n            </div>\n        </div>\n\n        <div class=\"content\">\n            <div class=\"decision-result {{JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão === 'Aprovado' ? 'aprovado' : ''}}\">\n                <div class=\"decision-label\">Decisão</div>\n                <div class=\"decision-text\">{{JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão}}</div>\n            </div>\n\n            <div class=\"justification-box\">\n                <div class=\"justification-title\">Justificativa</div>\n                <div class=\"justification-content\">\n                    {{JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Justificativa}}\n                </div>\n            </div>\n        </div>\n    </div>\n</body>\n</html>",
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "abvxgc9eym",
+  "widgetName": "Iframe22Copy"
+}

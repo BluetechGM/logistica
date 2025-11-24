@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 43,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultImage": "https://cdn-icons-png.flaticon.com/256/5371/5371682.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{foto_pix_abastecimento.files[0].data}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3yhqeh6o3s",
+  "leftColumn": 36,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "originalBottomRow": 43,
+  "originalTopRow": 17,
+  "parentColumnSpace": 16.6453125,
+  "parentId": "54lseidnu1",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 53,
+  "topRow": 17,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "eynx8w8obf",
+  "widgetName": "Image4"
+}

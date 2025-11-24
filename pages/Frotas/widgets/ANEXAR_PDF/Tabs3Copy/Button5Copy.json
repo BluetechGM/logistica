@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 82,
+  "boxShadow": "none",
+  "buttonColor": "#15803d",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lik24dcjer",
+  "leftColumn": 33,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{nfe_validacao.anexarNFE();}}",
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "aff4ng6fdl",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 47,
+  "text": "Lançar NFs",
+  "topRow": 74,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "skqk3uoe8s",
+  "widgetName": "Button5Copy"
+}

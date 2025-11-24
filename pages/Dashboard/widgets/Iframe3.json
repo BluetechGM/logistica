@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 47,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rotgivml5a",
+  "leftColumn": 17,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "originalBottomRow": 47,
+  "originalTopRow": 42,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 58,
+  "source": "",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body {\n      margin: 0;\n      background: transparent;\n      font-family: system-ui, sans-serif;\n      font-size: 14px;\n      color: #5D7B91;\n    }\n\n    .header {\n      display: flex;\n      justify-content: space-around;\n      align-items: center;\n      padding: 10px 16px;\n      gap: 8px;\n      white-space: nowrap;\n    }\n\n    .col {\n      display: flex;\n      align-items: center;\n      gap: 4px;\n    }\n\n    .arrow {\n      font-size: 10px;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"header\">\n    <div class=\"col\">Nome <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Produto <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Categoria <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Data <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Departamento <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Filial <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Urgência <span class=\"arrow\">↓</span></div>\n    <div class=\"col\">Status <span class=\"arrow\">↓</span></div>\n  </div>\n</body>\n</html>\n",
+  "topRow": 42,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "fl3jazs8fh",
+  "widgetName": "Iframe3"
+}

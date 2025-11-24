@@ -1,0 +1,43 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "buttonColor": "green",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "sspdpg2m04",
+  "leftColumn": 1,
+  "minWidth": 50,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 4,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{lista_de_abastecimento.run()}}",
+  "parentColumnSpace": 16.7734375,
+  "parentId": "9yp4geouqf",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 3,
+  "topRow": 12,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "5rq8kka6oq",
+  "widgetName": "IconButton4Copy"
+}

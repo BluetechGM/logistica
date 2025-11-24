@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultImage": "https://cdn.vectorstock.com/i/1000v/96/98/icon-of-spare-parts-gears-vector-14569698.jpg",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5fthngrks1",
+  "leftColumn": 3,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 9.75,
+  "parentId": "v2f3s3wigo",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 15,
+  "topRow": 1,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "2ee5l8w4tg",
+  "widgetName": "Image7"
+}

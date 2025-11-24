@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://res.cloudinary.com/dm77rdv3r/image/upload/v1759151462/Sac_qgvdpa.png",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kxt6ow67ue",
+  "leftColumn": 45,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 55,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "onClick": "{{navigateTo('https://studio.bluetechfilms.com.br/app/sac/login-68b754110a5ed737e32cb08a?branch=master', {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 19.9375,
+  "parentId": "c97glha2p5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 54,
+  "topRow": 14,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "8z7k9o8m08",
+  "widgetName": "Image3"
+}

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_81f5c5cf-37c2-4acf-896c-caf77f5205fc",
+  "id": "Frotas_decisao_rapida",
+  "unpublishedCollection": {
+    "name": "decisao_rapida",
+    "pageId": "Frotas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

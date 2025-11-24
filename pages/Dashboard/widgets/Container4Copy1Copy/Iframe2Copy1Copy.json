@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rotgivml5a",
+  "leftColumn": 8,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 49,
+  "originalTopRow": 36,
+  "parentColumnSpace": 19.8125,
+  "parentId": "wabjpa11xh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "source": "https://www.example.com",
+  "srcDoc": "<!-- Pedidos Processados -->\n<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <style>\n    body { margin: 0; background: transparent; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; }\n    .circle { position: relative; width: 80px; height: 80px; }\n    svg { transform: rotate(-90deg); }\n    .circle-value { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20px; font-weight: bold; }\n    .label { margin-top: 8px; font-size: 14px; color: #5D7B91; text-align: center; }\n  </style>\n</head>\n<body>\n  <div class=\"circle\">\n    <svg width=\"80\" height=\"80\">\n      <circle cx=\"40\" cy=\"40\" r=\"35\" stroke=\"#E5E5E5\" stroke-width=\"5\" fill=\"none\"/>\n      <circle cx=\"40\" cy=\"40\" r=\"35\" stroke=\"#1BC05F\" stroke-width=\"5\" fill=\"none\"\n              stroke-dasharray=\"220\" stroke-dashoffset=\"20\" stroke-linecap=\"round\"/>\n    </svg>\n    <div class=\"circle-value\">{{appsmith.store.pedidos_processados || 5}}</div>\n  </div>\n  <div class=\"label\">Pedidos Processados</div>\n</body>\n</html>\n",
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "iirixe01my",
+  "widgetName": "Iframe2Copy1Copy"
+}

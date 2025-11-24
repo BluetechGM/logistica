@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ejm33vsim1",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "status Pag:",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 47,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{lista_de_abastecimento.run()}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 16.7734375,
+  "parentId": "9yp4geouqf",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Status",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Pago\",\n    \"code\": \"01\"\n  },\n  {\n    \"name\": \"Em aberto\",\n    \"code\": \"02\"\n  },\n  {\n    \"name\": \"Cancelado\",\n    \"code\": \"03\"\n  }\n]",
+  "topRow": 3,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "3ptks692q5",
+  "widgetName": "Select_status_pag"
+}

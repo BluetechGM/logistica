@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{FilePicker_oc3.files[0].data}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "91aa315i9k",
+  "leftColumn": 1,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "parentColumnSpace": 11.4453125,
+  "parentId": "qqhll4gcib",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 17,
+  "topRow": 12,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "mcrlaycbdm",
+  "widgetName": "foto_orcamento_1Copy1"
+}

@@ -1,0 +1,38 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "buttonColor": "#ffffff",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "fr0spviori",
+  "leftColumn": 39,
+  "minWidth": 50,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 7.125,
+  "parentId": "ml7b6spvqa",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 43,
+  "tooltip": "Atualizar Foto do Perfil",
+  "topRow": 15,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9twyljpx3i",
+  "widgetName": "IconButton2"
+}

@@ -1,0 +1,47 @@
+SELECT 
+    -- Informações do produto
+    p.id as produto_id,
+    p.peca as nome_produto,
+    p.marca,
+    p.quantidade,
+    p.preco_unitario,
+    p.preco as preco_total,
+    p.observacoes as observacoes_produto,
+    
+    -- Informações da solicitação
+    p.id_solicitacao,
+    s.placa,
+    s.cidade,
+    s.criado_por as solicitante,
+    s.servico as servico_solicitado,
+    s.status as status_solicitacao,
+    s.motivo_reprovacao,
+    s.data_abertura,
+    s.odometro_atual,
+    s.odometro_prox_troca,
+    s.data_prox_manutencao,
+    
+    -- Informações do solicitante (se disponível)
+    p.id_solicitante,
+    p.nome_solicitante,
+    p.data_solicitacao,
+    
+    -- Datas de controle
+    p.data_cadastro,
+    p.data_atualizacao,
+    p.ativo as produto_ativo,
+    s.ativo as solicitacao_ativa,
+    
+    -- Cálculos adicionais
+    (p.quantidade * p.preco_unitario) as valor_calculado,
+    CASE 
+        WHEN p.preco = (p.quantidade * p.preco_unitario) THEN 'OK'
+        ELSE 'DIVERGÊNCIA'
+    END as status_calculo
+
+FROM compras_so.produtos_solicitacao p
+LEFT JOIN compras_so.solicitacoes_frota s ON p.id_solicitacao = s.id_solicitacao
+WHERE p.id_solicitacao = '{{mfs_listCopy1.selectedItem.id_solicitacao}}'  -- Substitua pelo ID desejado
+  AND p.ativo = true
+  AND s.ativo = true
+ORDER BY p.data_cadastro ASC, p.peca ASC;

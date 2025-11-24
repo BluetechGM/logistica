@@ -1,0 +1,64 @@
+SELECT 
+    s.id as solicitacao_id,
+    s.placa,
+    s.odometro_atual,
+    s.odometro_prox_troca,
+    s.data_prox_manutencao,
+    s.cidade,
+    s.criado_por,
+    s.servico,
+    s.status,
+    s.motivo_reprovacao,
+    s.data_abertura,
+    s.id_solicitacao,
+    s.filial_id,
+    s.id_solicitante,
+    s.nome_solicitante,
+    s.link_orcamento_pdf,
+    s.link_fotos_orcamento,
+    s.nfe_servico_pdf,
+    s.nfe_produtos_pdf,
+    s.observacoes,
+    s.tipo_incidente,
+    s.foto_comprovante,
+    s.lancado_winthor,
+    s.recnum,
+
+    COUNT(p.id) as quantidade_produtos,
+    COALESCE(SUM(p.preco), 0) as valor_total_produtos,
+    COALESCE(AVG(p.preco), 0) as valor_medio_produtos,
+    COALESCE(MIN(p.preco), 0) as menor_preco_produto,
+    COALESCE(MAX(p.preco), 0) as maior_preco_produto,
+    STRING_AGG(DISTINCT p.peca, ', ') as lista_produtos,
+    STRING_AGG(DISTINCT p.marca, ', ') as lista_marcas,
+
+    -- 🔥 Campo vindo do schema logistica_ai
+    MAX(rps.decisao) AS decisao
+
+FROM compras_so.solicitacoes_frota s
+
+LEFT JOIN compras_so.produtos_solicitacao p 
+       ON s.id_solicitacao = p.id_solicitacao 
+      AND p.ativo = TRUE
+
+LEFT JOIN logistica_ai.resultados_produtos_solicitacao rps
+       ON s.id_solicitacao = rps.id_solicitacao
+
+WHERE 
+    s.ativo = TRUE
+    AND (
+        {{appsmith.store.permissao_query}} = TRUE
+        OR s.id_solicitante = '{{appsmith.store.matricula}}'
+    )
+
+GROUP BY 
+    s.id, s.placa, s.odometro_atual, s.odometro_prox_troca, 
+    s.data_prox_manutencao, s.cidade, s.criado_por, s.servico, 
+    s.status, s.motivo_reprovacao, s.data_abertura, s.id_solicitacao,
+    s.filial_id, s.id_solicitante, s.nome_solicitante, 
+    s.link_orcamento_pdf, s.link_fotos_orcamento, 
+    s.nfe_servico_pdf, s.nfe_produtos_pdf,
+    s.observacoes, s.tipo_incidente, s.foto_comprovante,
+    s.lancado_winthor, s.recnum
+
+ORDER BY s.data_abertura DESC;

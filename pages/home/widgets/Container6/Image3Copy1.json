@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://i.postimg.cc/43hYHNb5/powertools-branca.png",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kxt6ow67ue",
+  "leftColumn": 57,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 55,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "onClick": "{{navigateTo('https://studio.bluetechfilms.com.br/app/comercial-ferramentas/login-68da7e014e3239523890d7e6?branch=master', {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 19.9375,
+  "parentId": "c97glha2p5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 13,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "z96rxwk6qa",
+  "widgetName": "Image3Copy1"
+}

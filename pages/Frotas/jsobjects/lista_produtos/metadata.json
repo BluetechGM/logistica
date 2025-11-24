@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_d73f529f-50a0-4354-87b7-df42e3a90ae3",
+  "id": "Frotas_lista_produtos",
+  "unpublishedCollection": {
+    "name": "lista_produtos",
+    "pageId": "Frotas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

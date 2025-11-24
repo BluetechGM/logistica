@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_15a4dbf6-1226-400a-82b5-4ffaf5d6ba5b",
+  "id": "Finaceiro_validar_campos",
+  "unpublishedCollection": {
+    "name": "validar_campos",
+    "pageId": "Finaceiro",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
