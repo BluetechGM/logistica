@@ -1,0 +1,11 @@
+SELECT
+    adicionar_veiculo,
+    controle_query,
+    permissao_abastecimento_mf,
+    permissao_intercorrencias,
+    permissao_modulo_mf,
+    permissao_ver_abastecimentos,
+    permissao_lanca_pagamento
+FROM compras_so.permissoes_matricula
+WHERE matricula = {{ appsmith.store.matricula }}
+LIMIT 1;

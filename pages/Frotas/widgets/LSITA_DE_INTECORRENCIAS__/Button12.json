@@ -11,6 +11,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -28,7 +33,7 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 29,
   "needsErrorInfo": false,
-  "onClick": "{{LANCAR_JUSTIFICATIVA.run().then(() => {\n  LISTA_DE_INTECORRENCIAS.run();\n  showAlert('Atualizado com sucesso !', 'success');\n  resetWidget(\"\", true);\n  resetWidget(\"LSITA_DE_INTECORRENCIAS__\", true);\n});}}",
+  "onClick": "{{validacao_intercorrencia.enviarIntercorrencia()}}",
   "originalBottomRow": 33,
   "originalTopRow": 29,
   "parentColumnSpace": 19.228125,

@@ -1,0 +1,2 @@
+SELECT {{ "'" + String(appsmith.store.matricula).trim() + "'" }} AS teste;
+

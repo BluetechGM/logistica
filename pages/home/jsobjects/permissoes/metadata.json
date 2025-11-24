@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_c33e060a-63d5-44f2-8f7e-0932ba7195ea",
+  "id": "home_permissoes",
+  "unpublishedCollection": {
+    "name": "permissoes",
+    "pageId": "home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
