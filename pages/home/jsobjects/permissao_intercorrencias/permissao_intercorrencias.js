@@ -1,7 +1,7 @@
 export default {
   checkMatricula() {
     const allowedMatriculas = [
-	915,1423
+	915,1423,1065,1439
 ];
 
     // pega direto do store
