@@ -1,0 +1,69 @@
+UPDATE compras_so.solicitacoes
+SET
+  -- usuários envolvidos
+  iduser_demandante      = {{ appsmith.store.usuario_id}},
+
+
+  -- dados principais
+  tipo_solicitacao       = '{{ tipo_solicitacao.selectedOptionLabel }}',
+  nome                   = '{{ appsmith.store.usuario_nome }}',
+  produto                = '{{ Nome_produto.text }}',
+  categoria_itens        = '{{ Categorias_de_Itens.selectedOptionLabel }}',
+  data_solicitacao       = '{{ moment().tz("America/Sao_Paulo").format("YYYY-MM-DD") }}',
+  departamento_id        = {{ Setores_Departamentos.selectedOptionValue }},
+  filial                 = '{{ Select_fiflial.selectedOptionLabel }}',
+  urgencia               = '{{ select_urgencia.selectedOptionLabel }}',
+  status                 = '{{ SelectStatus.selectedOptionValue }}',
+  motivo_compra          = '{{ InputMotivo.text }}',
+  nome_produto_descricao = '{{ InputDescricao.text }}',
+  id_pedido              = '{{ InputPedido.text }}',
+
+  -- recebimento
+  codigo_rastreio        = '{{ InputRastreio.text }}',
+  data_entrega           = '{{ moment(DatePickerEntrega.selectedDate).format("YYYY-MM-DD") }}',
+  foto_entrega           = '{{ InputFotoEntrega.text }}',
+  confirmar_recebimento  = {{ ToggleConfirm.isOn }},
+  conformidade_item      = {{ ToggleConformidade.isOn }},
+  obs_parte_tecnico      = '{{ InputObsTecnico.text }}',
+
+  -- compras
+  data_previsao_entrega  = '{{ moment(DatePickerPrevisao.selectedDate).format("YYYY-MM-DD") }}',
+  status_compras         = '{{ SelectStatusCompras.selectedOptionValue }}',
+  cod_winthor            = '{{ InputCodWinthor.text }}',
+  cod_universal          = '{{ InputCodUniversal.text }}',
+  cod_produto_patrimonio = '{{ InputCodPatrimonio.text }}',
+
+  -- financeiro
+  foto_comprovante       = '{{ InputFotoComprovante.text }}',
+  forma_pagamento        = '{{ SelectFormaPagamento.selectedOptionValue }}',
+
+  -- fornecedor 1
+  foto_url_1             = '{{ InputFotoUrl1.text }}',
+  nome_fornecedor_1      = '{{ InputFornecedor1.text }}',
+  link_produto_1         = '{{ InputLink1.text }}',
+  quantidade_1           = {{ InputQtd1.text }},
+  valor_unitario_1       = {{ InputValorUnit1.text }},
+  valor_frete_1          = {{ InputFrete1.text }},
+  data_entrega_1         = '{{ moment(DatePickerEnt1.selectedDate).format("YYYY-MM-DD") }}',
+  total_1                = {{ InputTotal1.text }},
+
+  -- fornecedor 2
+  foto_url_2             = '{{ InputFotoUrl2.text }}',
+  nome_fornecedor_2      = '{{ InputFornecedor2.text }}',
+  link_produto_2         = '{{ InputLink2.text }}',
+  quantidade_2           = {{ InputQtd2.text }},
+  valor_unitario_2       = {{ InputValorUnit2.text }},
+  valor_frete_2          = {{ InputFrete2.text }},
+  data_entrega_2         = '{{ moment(DatePickerEnt2.selectedDate).format("YYYY-MM-DD") }}',
+  total_2                = {{ InputTotal2.text }},
+
+  -- fornecedor 3
+  foto_url_3             = '{{ InputFotoUrl3.text }}',
+  nome_fornecedor_3      = '{{ InputFornecedor3.text }}',
+  link_produto_3         = '{{ InputLink3.text }}',
+  quantidade_3           = {{ InputQtd3.text }},
+  valor_unitario_3       = {{ InputValorUnit3.text }},
+  valor_frete_3          = {{ InputFrete3.text }},
+  data_entrega_3         = '{{ moment(DatePickerEnt3.selectedDate).format("YYYY-MM-DD") }}',
+  total_3                = {{ InputTotal3.text }}
+WHERE id = {{ ListSolicitacoes.selectedItem.id }};

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    adicionar_veiculo,\n    controle_query,\n    permissao_abastecimento_mf,\n    permissao_intercorrencias,\n    permissao_modulo_mf,\n    permissao_ver_abastecimentos,\n    permissao_lanca_pagamento\nFROM compras_so.permissoes_matricula\nWHERE matricula = {{ appsmith.store.matricula }}\nLIMIT 1;",
+      "body": "SELECT\n    adicionar_veiculo,\n    controle_query,\n    permissao_abastecimento_mf,\n    permissao_intercorrencias,\n    permissao_modulo_mf,\n    permissao_ver_abastecimentos,\n    permissao_lanca_pagamento,\n    permissao_editar_mf\nFROM compras_so.permissoes_matricula\nWHERE matricula = {{ appsmith.store.matricula }}\nLIMIT 1;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

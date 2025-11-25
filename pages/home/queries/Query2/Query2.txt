@@ -1,0 +1,6 @@
+SELECT 
+    matricula,
+    LENGTH(matricula),
+    '"' || matricula || '"' AS debug
+FROM compras_so.permissoes_matricula
+WHERE matricula !~ '^[0-9]+$';

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_fc72b960-9cab-4ea7-8b1a-59ee92fbd3f8",
+  "id": "permissao_deslogar_on",
+  "unpublishedCollection": {
+    "name": "deslogar_on",
+    "pageId": "permissao",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

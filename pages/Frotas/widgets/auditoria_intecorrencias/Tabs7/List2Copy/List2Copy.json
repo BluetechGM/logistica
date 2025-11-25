@@ -94,7 +94,7 @@
   "itemSpacing": 8,
   "key": "padrt1wfv9",
   "leftColumn": 1,
-  "listData": "{{LISTA_DE_INTECORRENCIAS.data}}",
+  "listData": "{{LISTA_DE_INTERCORRENCIAS.data}}",
   "mainCanvasId": "ghtu1l9fui",
   "mainContainerId": "2ezb1o2rez",
   "minWidth": 450,

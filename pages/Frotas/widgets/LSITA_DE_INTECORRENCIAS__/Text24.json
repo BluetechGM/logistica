@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 28,
   "shouldTruncate": false,
-  "text": "TOTAL: {{LISTA_DE_INTECORRENCIAS.data.length}}",
+  "text": "TOTAL: {{LISTA_DE_INTERCORRENCIAS.data.length}}",
   "textAlign": "LEFT",
   "textColor": "white",
   "topRow": 11,

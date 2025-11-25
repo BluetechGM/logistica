@@ -28,7 +28,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onClick": "{{LISTA_DE_INTECORRENCIAS.run()}}",
+  "onClick": "{{LISTA_DE_INTERCORRENCIAS.run()}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentColumnSpace": 19.228125,

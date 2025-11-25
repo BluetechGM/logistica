@@ -1,0 +1,34 @@
+-- 1. Insere a matrícula com todas permissões TRUE se ela não existir
+INSERT INTO compras_so.permissoes_matricula (
+    matricula,
+    adicionar_veiculo,
+    controle_query,
+    permissao_abastecimento_mf,
+    permissao_intercorrencias,
+    permissao_modulo_mf,
+    permissao_ver_abastecimentos,
+    permissao_lanca_pagamento,
+    permissao_editar_mf
+)
+SELECT 
+    {{ appsmith.store.matricula }},
+    TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE
+WHERE NOT EXISTS (
+    SELECT 1 
+    FROM compras_so.permissoes_matricula 
+    WHERE matricula = {{ appsmith.store.matricula }}
+);
+
+-- 2. Retorna a permissão atualizada (existente ou recém criada)
+SELECT
+    adicionar_veiculo,
+    controle_query,
+    permissao_abastecimento_mf,
+    permissao_intercorrencias,
+    permissao_modulo_mf,
+    permissao_ver_abastecimentos,
+    permissao_lanca_pagamento,
+    permissao_editar_mf
+FROM compras_so.permissoes_matricula
+WHERE matricula = {{ appsmith.store.matricula }}
+LIMIT 1;

@@ -1,0 +1,4 @@
+SELECT matricula
+FROM compras_so.permissoes_matricula
+WHERE matricula ~ '^[0-9]+$'
+ORDER BY matricula;
