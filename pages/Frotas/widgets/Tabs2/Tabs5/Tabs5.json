@@ -309,7 +309,7 @@
     },
     "taba2xhv5p0qf": {
       "id": "taba2xhv5p0qf",
-      "index": 3,
+      "index": 4,
       "isDuplicateLabel": false,
       "isVisible": "{{appsmith.store.permissao_query}}",
       "label": "Anexar Pagamento",
@@ -317,7 +317,7 @@
     },
     "tabci6fwrg24w": {
       "id": "tabci6fwrg24w",
-      "index": 4,
+      "index": 3,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Reprovados",

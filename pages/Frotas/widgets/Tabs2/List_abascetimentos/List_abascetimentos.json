@@ -110,7 +110,7 @@
   "onItemClick": "{{showModal(info_abastecimento.name);}}",
   "originalBottomRow": 116,
   "originalTopRow": 16,
-  "pageSize": 11,
+  "pageSize": 5,
   "parentColumnSpace": 18.43896484375,
   "parentId": "9yp4geouqf",
   "parentRowSpace": 10,
