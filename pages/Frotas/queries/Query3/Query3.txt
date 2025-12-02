@@ -1,0 +1,29 @@
+INSERT INTO compras_so.permissoes_matricula (
+    matricula,
+    adicionar_veiculo,
+    controle_query,
+    permissao_abastecimento_mf,
+    permissao_intercorrencias,
+    permissao_modulo_mf,
+    permissao_ver_abastecimentos,
+    created_at,
+    updated_at,
+    permissao_lanca_pagamento,
+    permissao_editar_mf,
+    intercorrencia_auto_valor
+)
+SELECT 
+    '1065' AS matricula,
+    adicionar_veiculo,
+    controle_query,
+    permissao_abastecimento_mf,
+    permissao_intercorrencias,
+    permissao_modulo_mf,
+    permissao_ver_abastecimentos,
+    created_at,
+    updated_at,
+    permissao_lanca_pagamento,
+    permissao_editar_mf,
+    intercorrencia_auto_valor
+FROM compras_so.permissoes_matricula
+WHERE matricula = '1463';

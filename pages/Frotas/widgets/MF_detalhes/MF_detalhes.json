@@ -30,7 +30,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 1770,
+      "minHeight": 1822,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -63,7 +63,7 @@
       "key": "onClose"
     }
   ],
-  "height": 1770,
+  "height": 1822,
   "isCanvas": true,
   "isLoading": false,
   "key": "ide6n2hhet",
@@ -75,7 +75,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClose": "{{resetWidget(\"mfs_list\", true);}}",
+  "onClose": "{{resetWidget(\"mfs_list_aprovacao_gestor\", true);}}",
   "parentColumnSpace": 19.546875,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -87,5 +87,5 @@
   "version": 2,
   "widgetId": "h286hf9a7d",
   "widgetName": "MF_detalhes",
-  "width": 1199.85
+  "width": 1242.6
 }

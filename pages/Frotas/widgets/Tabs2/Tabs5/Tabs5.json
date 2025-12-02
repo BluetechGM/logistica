@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 111,
+  "bottomRow": 116,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -234,6 +234,51 @@
       "version": 1,
       "widgetId": "ttzf8tbq47",
       "widgetName": "Canvas39"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 890,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "8d98nfw8dd",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 930,
+      "minWidth": 450,
+      "mobileBottomRow": 931,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1006.40625,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hb9i9gbrug",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1006.40625,
+      "tabId": "tabs74lhubuci",
+      "tabName": "Aprovação Gestor",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "ezazng6447",
+      "widgetName": "Canvas58"
     }
   ],
   "defaultTab": "Em aberto",
@@ -278,14 +323,14 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 111,
-  "originalTopRow": 18,
+  "originalBottomRow": 100,
+  "originalTopRow": 23,
   "parentColumnSpace": 16.7734375,
   "parentId": "5w67zcvffh",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 61,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -330,9 +375,16 @@
       "isVisible": "{{appsmith.store.permissao_query}}",
       "label": "Lançar  no Winthor",
       "widgetId": "ttzf8tbq47"
+    },
+    "tabs74lhubuci": {
+      "id": "tabs74lhubuci",
+      "index": 5,
+      "isVisible": true,
+      "label": "Aprovação Gestor",
+      "widgetId": "ezazng6447"
     }
   },
-  "topRow": 18,
+  "topRow": 23,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "hb9i9gbrug",

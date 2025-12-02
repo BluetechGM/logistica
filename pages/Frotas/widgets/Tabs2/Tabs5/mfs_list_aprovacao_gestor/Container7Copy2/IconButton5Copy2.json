@@ -20,7 +20,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ybkb9aeppa",
-  "leftColumn": 58,
+  "leftColumn": 57,
   "minWidth": 50,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 47,
@@ -28,14 +28,14 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "parentColumnSpace": 28.4013671875,
-  "parentId": "uoyzj35b24",
+  "parentId": "9tou9nnbyj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 60,
+  "rightColumn": 59,
   "topRow": 5,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "w7unxfy10w",
-  "widgetName": "IconButton5"
+  "widgetId": "l4szqeo0j5",
+  "widgetName": "IconButton5Copy2"
 }

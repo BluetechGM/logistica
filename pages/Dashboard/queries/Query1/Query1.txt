@@ -1,0 +1,1 @@
+SELECT * FROM compras_so."permissoes_matricula" LIMIT 10;

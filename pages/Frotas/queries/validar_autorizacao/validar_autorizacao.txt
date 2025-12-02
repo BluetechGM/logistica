@@ -1,0 +1,6 @@
+SELECT 
+  permissao_editar_mf,
+  aprovacao_orcamento_auto_valor
+FROM compras_so."permissoes_matricula"
+WHERE matricula = '{{ appsmith.store.matricula }}';
+

@@ -95,7 +95,7 @@
     "tabb9arsx0b6r": {
       "id": "tabb9arsx0b6r",
       "index": 0,
-      "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
+      "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}",
       "label": "Anexar Notas Fiscais",
       "widgetId": "aff4ng6fdl"
     }

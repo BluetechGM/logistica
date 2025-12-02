@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT \n    c.MATRICULA,\n    c.NOME,\n    c.NOME_GUERRA,\n    b.CODUSUR,\n    f.CODIGO       AS CODFILIAL,\n    f.RAZAOSOCIAL  AS NOMEFILIAL,\n    g.SIGLA        AS ESTADO,\n    CASE\n        WHEN c.NOME IS NULL OR c.SENHABD IS NULL THEN 'SENHA NULA'\n        ELSE DECRYPT(c.SENHABD, UPPER(TRIM(c.NOME_GUERRA)))\n    END AS SENHA\nFROM PCEMPR c\nLEFT JOIN PCUSUARI b ON c.CODUSUR = b.CODUSUR\nLEFT JOIN PCFILIAL f ON b.CODFILIAL = f.CODIGO\nLEFT JOIN TAB_GRUPOFILIAL g ON f.CODIGO = g.CODFILIAL\nWHERE c.NOME_GUERRA = '{{ Input_email.text.toUpperCase() }}'\n\n\n"
+          "data": "SELECT \n    c.MATRICULA,\n    c.NOME,\n    c.NOME_GUERRA,\n    b.CODUSUR,\n    f.CODIGO       AS CODFILIAL,\n    f.RAZAOSOCIAL  AS NOMEFILIAL,\n    g.SIGLA        AS ESTADO,\n    CASE\n        WHEN c.NOME IS NULL OR c.SENHABD IS NULL THEN 'SENHA NULA'\n        ELSE DECRYPT(c.SENHABD, UPPER(TRIM(c.NOME_GUERRA)))\n    END AS SENHA\nFROM PCEMPR c\nLEFT JOIN PCUSUARI b ON c.CODUSUR = b.CODUSUR\nLEFT JOIN PCFILIAL f ON b.CODFILIAL = f.CODIGO\nLEFT JOIN TAB_GRUPOFILIAL g ON f.CODIGO = g.CODFILIAL\nWHERE c.NOME_GUERRA = '{{ Input_email.text.toUpperCase() }}'"
         },
         "preparedStatement": {
           "data": true
