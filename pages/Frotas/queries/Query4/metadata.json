@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM compras_so.permissoes_matricula;\n",
+      "body": "UPDATE compras_so.\"permissoes_matricula\"\nSET aprovacao_orcamento_auto_valor = false\nWHERE matricula = '527';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

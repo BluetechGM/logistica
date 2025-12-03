@@ -1,1 +1,3 @@
-SELECT * FROM compras_so.permissoes_matricula;
+UPDATE compras_so."permissoes_matricula"
+SET aprovacao_orcamento_auto_valor = false
+WHERE matricula = '527';

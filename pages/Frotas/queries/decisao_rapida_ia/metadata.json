@@ -33,7 +33,7 @@
               "role": "user"
             },
             {
-              "content": "Sua resposta deve ser, só e somente só, um json com as seguintes chaves.\nDecisão: Onde você aprovará ou irá reprovar a solicitação de uma ou mais peças.\nJustificativa: O motivo da decisão, conciso e objetivo. No máximo 3 palavras. Por exemplo: Nomes genéricos, marca não especificada... ",
+              "content": "Sua resposta deve ser, só e somente só, um json com as seguintes chaves.Decisão: Onde você aprovará ou irá reprovar a solicitação de uma ou mais peças.Justificativa: O motivo da decisão, conciso e objetivo. No máximo 3 palavras. Por exemplo: Nomes genéricos, marca não especificada... ",
               "role": "user"
             }
           ]

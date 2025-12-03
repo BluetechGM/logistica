@@ -1,30 +1,29 @@
-export default {
-	myVar1: [],
-	myVar2: {},
+async processarDecisao() {
+	// Executa a IA
+	await decisao_rapida_ia.run();
 
-	async processarDecisao() {
-		// Executa a IA
-		await decisao_rapida_ia.run();
+	let decisao = "";
 
-		let decisao = "";
-
-		// Tenta ler o JSON da IA com segurança
-		try {
-			decisao = JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão;
-		} catch (e) {
-			showAlert("Erro ao interpretar resposta da IA.", "error");
-			return;
-		}
-
-		// Se for reprovado
-		if (decisao === "Reprovado") {
-			showAlert("Reprovado pela IA", "error");
-			showModal("Modal2_ia");
-			return;
-		}
-
-		 // Se aprovado → valida antes de cadastrar
-		await validar_campos.validarCampos();
-		solicitacoes_frota_list.run();
+	try {
+		decisao = JSON.parse(decisao_rapida_ia.data.choices[0].message.content).Decisão;
+	} catch (e) {
+		showAlert("Erro ao interpretar resposta da IA.", "error");
+		return;
 	}
+
+	// IA apenas alerta
+	if (decisao === "Reprovado") {
+		showAlert("⚠️ A IA sugeriu reprovação", "warning");
+		showModal("Modal2_ia");
+	}
+
+	// Validação real dos campos
+	const valido = validar_campos.validarCampos();
+	if (!valido) return;
+
+	// Salva no banco
+	await validar_campos.salvarSolicitacao();
+
+	// Atualiza a lista após salvar
+	await solicitacoes_frota_list.run();
 }

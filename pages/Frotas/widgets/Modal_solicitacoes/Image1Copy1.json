@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 22,
   "boxShadow": "none",
   "defaultImage": "https://cdn-icons-png.flaticon.com/512/1686/1686816.png",
   "dynamicBindingPathList": [
@@ -33,7 +33,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 19,
-  "topRow": 11,
+  "topRow": 14,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "41vnxc922t",

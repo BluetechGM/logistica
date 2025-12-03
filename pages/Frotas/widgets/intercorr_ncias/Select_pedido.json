@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 17,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -63,7 +63,7 @@
   "rightColumn": 13,
   "serverSideFiltering": false,
   "sourceData": "{{lancar_intecoreencias.data}}",
-  "topRow": 12,
+  "topRow": 9,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "pi3u7j01o8",
