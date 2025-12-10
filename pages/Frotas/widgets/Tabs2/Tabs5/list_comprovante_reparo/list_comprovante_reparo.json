@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 93,
+  "bottomRow": 75,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 920,
+      "bottomRow": 690,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -46,7 +46,7 @@
       "noPad": true,
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "ucv850ybq2",
+      "parentId": "4p47x08h8t",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -54,8 +54,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "47q0ttwsoq",
-      "widgetName": "Canvas19"
+      "widgetId": "xa6vlujv0n",
+      "widgetName": "Canvas19Copy1Copy1Copy"
     }
   ],
   "currentItemsView": "{{[]}}",
@@ -82,11 +82,6 @@
       "key": "listData"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onItemClick"
-    }
-  ],
   "dynamicTriggerPathList": [
     {
       "key": "onItemClick"
@@ -103,32 +98,32 @@
   "itemSpacing": "0",
   "key": "phah4lld3n",
   "leftColumn": 0,
-  "listData": "{{solicitacoes_frota_list.data.filter(item => {\n    const status = String(item.status || '').toLowerCase();\n    return !status.includes('aprov') && !status.includes('reprov');\n})}}",
-  "mainCanvasId": "47q0ttwsoq",
-  "mainContainerId": "86t95l7qbm",
+  "listData": "{{\n  solicitacoes_frota_list.data.filter(item =>\n    !item.lancado_winthor && // só mostra se for false ou null\n    item.nfe_servico_pdf && \n    item.nfe_produtos_pdf &&\n    (!item.foto_comprovante || item.foto_comprovante.trim() === \"\")\n  )\n}}\n\n\n",
+  "mainCanvasId": "xa6vlujv0n",
+  "mainContainerId": "0rhyu4jhco",
   "minWidth": 450,
   "mobileBottomRow": 53,
   "mobileLeftColumn": 2,
   "mobileRightColumn": 26,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onItemClick": "{{\n  (async () => {\n    await storeValue(\"itemSelecionado\", currentItem);\n    await showModal(MF_detalhes.name);\n    await analise_ia.run();\n\n    // Salva no storage o retorno da função de aprovação\n    const podeLiberar = await aprovar_orcamento.podeLiberarTela();\n    await storeValue(\"liberarTela\", podeLiberar);\n  })();\n}}",
+  "onItemClick": "{{showModal(modal_lancarwinthor.name);}}",
   "originalBottomRow": 100,
   "originalTopRow": 31,
-  "pageSize": 6,
+  "pageSize": 4,
   "parentColumnSpace": 18.43896484375,
-  "parentId": "7xz4q8kc1g",
+  "parentId": "pkep4t5r2d",
   "parentRowSpace": 10,
-  "primaryKeys": "{{mfs_list.listData.map((currentItem, currentIndex) => currentItem[\"solicitacao_id\"] )}}",
+  "primaryKeys": "{{list_comprovante_reparo.listData.map((currentItem, currentIndex) => currentItem[\"solicitacao_id\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 1,
+  "topRow": 6,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "ucv850ybq2",
-  "widgetName": "mfs_list"
+  "widgetId": "4p47x08h8t",
+  "widgetName": "list_comprovante_reparo"
 }

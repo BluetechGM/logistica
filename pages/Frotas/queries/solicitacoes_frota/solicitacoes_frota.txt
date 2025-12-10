@@ -37,7 +37,7 @@ VALUES (
     '{{appsmith.store.usuario_id || "00"}}',
     '{{appsmith.store.usuario_nome || "usuario_nao_logado"}}',
     '{{foto_orcamento_pdf_ou_imagem.data ? foto_orcamento_pdf_ou_imagem.data.secure_url : ""}}',
-    '{{foto_orcamento_imagem.data ? foto_orcamento_imagem.data.secure_url : ""}}',
+    '{{upload_fotos.urls.length > 0 ? JSON.stringify(upload_fotos.urls) : "[]"}}',
     '{{foto_orcamento_video.data ? foto_orcamento_video.data.secure_url : ""}}',
     '{{Select_TipoIncidente.selectedOptionLabel || ""}}',
     '{{nfe_servico_pdf.data ? nfe_servico_pdf.data.secure_url : ""}}',

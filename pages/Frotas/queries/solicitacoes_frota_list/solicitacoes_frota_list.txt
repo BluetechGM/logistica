@@ -16,6 +16,7 @@ SELECT
     s.nome_solicitante,
     s.link_orcamento_pdf,
     s.link_fotos_orcamento,
+    s.link_video_orcamento,
     s.nfe_servico_pdf,
     s.nfe_produtos_pdf,
     s.observacoes,
@@ -32,7 +33,6 @@ SELECT
     STRING_AGG(DISTINCT p.peca, ', ') as lista_produtos,
     STRING_AGG(DISTINCT p.marca, ', ') as lista_marcas,
 
-    -- 🔥 Campo vindo do schema logistica_ai
     MAX(rps.decisao) AS decisao
 
 FROM compras_so.solicitacoes_frota s
@@ -56,7 +56,8 @@ GROUP BY
     s.data_prox_manutencao, s.cidade, s.criado_por, s.servico, 
     s.status, s.motivo_reprovacao, s.data_abertura, s.id_solicitacao,
     s.filial_id, s.id_solicitante, s.nome_solicitante, 
-    s.link_orcamento_pdf, s.link_fotos_orcamento, 
+    s.link_orcamento_pdf, s.link_fotos_orcamento,
+    s.link_video_orcamento,
     s.nfe_servico_pdf, s.nfe_produtos_pdf,
     s.observacoes, s.tipo_incidente, s.foto_comprovante,
     s.lancado_winthor, s.recnum

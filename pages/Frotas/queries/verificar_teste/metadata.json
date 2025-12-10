@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    sf.id_solicitacao,\n    sf.placa,\n    sf.cidade,\n    sf.status,\n    ps.peca,\n    ps.preco,\n    ps.quantidade\nFROM compras_so.solicitacoes_frota sf\nINNER JOIN compras_so.produtos_solicitacao ps \n    ON sf.id_solicitacao = ps.id_solicitacao\nORDER BY sf.data_cadastro DESC\nLIMIT 20;",
+      "body": "SELECT column_name \nFROM information_schema.columns \nWHERE table_schema = 'compras_so' \nAND table_name = 'solicitacoes_frota'\nAND column_name IN ('link_fotos_orcamento', 'link_video_orcamento');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

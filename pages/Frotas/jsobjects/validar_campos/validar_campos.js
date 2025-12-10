@@ -2,11 +2,10 @@ export default {
   validarCampos() {
     const mensagens = [];
 
-    // ---- Campos do formulário ----
     if (!Select_placa.selectedOptionLabel) {
       mensagens.push("⚠️ Placa não informada");
     }
-		if (!foto_orcamento_pdf_ou_imagem.data.secure_url) {
+    if (!foto_orcamento_pdf_ou_imagem.data.secure_url) {
       mensagens.push("⚠️ Voce precisa anexar o pdf ou foto do Orçamento");
     }
     if (!Input_OdometroAtual.text || isNaN(Number(Input_OdometroAtual.text))) {
@@ -22,12 +21,10 @@ export default {
       mensagens.push("⚠️ Serviço não selecionado");
     }
 
-    // ---- Produtos obrigatórios ----
     const produtos = appsmith.store?.produtos;
     if (!Array.isArray(produtos) || produtos.length === 0) {
       mensagens.push("⚠️ Adicione pelo menos um produto à solicitação");
     } else {
-      // validação mínima de cada produto
       const invalidos = produtos
         .map((p, idx) => ({ p, idx: idx + 1 }))
         .filter(({ p }) =>
@@ -52,7 +49,6 @@ export default {
     return true;
   },
 
-  // (Opcional) Monta o payload que você pode enviar para sua query
   getPayload() {
     return {
       Placa: Select_placa.selectedOptionLabel,
@@ -64,30 +60,34 @@ export default {
     };
   },
 
-async salvarSolicitacao() {
+  async salvarSolicitacao() {
     const valido = this.validarCampos();
     if (!valido) return;
 
     try {
-        // 1️⃣ GERA O ID ÚNICO
-        await gerar_id.gerarIdUnico();
+      // 1️⃣ GERA O ID ÚNICO
+      await gerar_id.gerarIdUnico();
 
-        // 2️⃣ Insere os produtos (PRODUÇÃO)
-        await solicitacoes_produtos.run();
+      // 2️⃣ FAZ UPLOAD DAS FOTOS (se houver)
+      if (orcamento_foto.files && orcamento_foto.files.length > 0) {
+        showAlert(`📤 Enviando ${orcamento_foto.files.length} foto(s)...`, 'info');
+        await upload_fotos.uploadMultiplas();
+      }
 
-        // 3️⃣ Insere a solicitação (PRODUÇÃO)
-        await solicitacoes_frota.run();
+      // 3️⃣ Insere os produtos
+      await solicitacoes_produtos.run();
 
-        showAlert('✅ Registrado com sucesso!', 'success'); 
-        lista_produtos.limpar_lista();
-        resetWidget('Modal_solicitacoes');
-        closeModal('Modal_solicitacoes');
+      // 4️⃣ Insere a solicitação
+      await solicitacoes_frota.run();
+
+      showAlert('✅ Registrado com sucesso!', 'success'); 
+      lista_produtos.limpar_lista();
+      resetWidget('orcamento_foto');
+      resetWidget('Modal_solicitacoes');
+      closeModal('Modal_solicitacoes');
 
     } catch (err) {
-        showAlert("❌ Erro ao salvar: " + (err?.message ?? err), "error");
+      showAlert("❌ Erro ao salvar: " + (err?.message ?? err), "error");
     }
-}
+  }
 };
-
-
-

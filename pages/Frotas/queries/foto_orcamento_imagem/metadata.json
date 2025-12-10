@@ -16,7 +16,7 @@
         {
           "key": "file",
           "type": "Text",
-          "value": "{{orcamento_foto.files[0].data}}"
+          "value": "{{this.params.file || orcamento_foto.files[0].data}}"
         },
         {
           "key": "api_key",
