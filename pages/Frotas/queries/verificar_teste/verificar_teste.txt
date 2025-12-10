@@ -1,0 +1,13 @@
+SELECT 
+    sf.id_solicitacao,
+    sf.placa,
+    sf.cidade,
+    sf.status,
+    ps.peca,
+    ps.preco,
+    ps.quantidade
+FROM compras_so.solicitacoes_frota sf
+INNER JOIN compras_so.produtos_solicitacao ps 
+    ON sf.id_solicitacao = ps.id_solicitacao
+ORDER BY sf.data_cadastro DESC
+LIMIT 20;

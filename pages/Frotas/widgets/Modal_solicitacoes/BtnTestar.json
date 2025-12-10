@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 99,
+  "boxShadow": "none",
+  "buttonColor": "#b91c1c",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "l6nryuuc5g",
+  "leftColumn": 43,
+  "minWidth": 120,
+  "mobileBottomRow": 99,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 95,
+  "needsErrorInfo": false,
+  "onClick": "{{validar_campos_teste.salvarSolicitacao()}}",
+  "originalBottomRow": 99,
+  "originalTopRow": 95,
+  "parentColumnSpace": 19.228125,
+  "parentId": "xkib8f5ov2",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 59,
+  "text": "🧪 TESTAR",
+  "topRow": 95,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "54qpptzn2w",
+  "widgetName": "BtnTestar"
+}

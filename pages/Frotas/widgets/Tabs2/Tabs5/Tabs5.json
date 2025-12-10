@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 116,
+  "bottomRow": 117,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -279,6 +279,51 @@
       "version": 1,
       "widgetId": "ezazng6447",
       "widgetName": "Canvas58"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 890,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "zl2sduwjqg",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 890,
+      "minWidth": 450,
+      "mobileBottomRow": 891,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1023.1796875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hb9i9gbrug",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1023.1796875,
+      "tabId": "tabjlvfo590ww",
+      "tabName": "Comprovante de Reparo",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "pkep4t5r2d",
+      "widgetName": "Canvas59"
     }
   ],
   "defaultTab": "Em aberto",
@@ -323,8 +368,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 116,
-  "originalTopRow": 23,
+  "originalBottomRow": 117,
+  "originalTopRow": 24,
   "parentColumnSpace": 16.7734375,
   "parentId": "5w67zcvffh",
   "parentRowSpace": 10,
@@ -368,6 +413,13 @@
       "label": "Reprovados",
       "widgetId": "x43aboitgx"
     },
+    "tabjlvfo590ww": {
+      "id": "tabjlvfo590ww",
+      "index": 6,
+      "isVisible": true,
+      "label": "Comprovante de Reparo",
+      "widgetId": "pkep4t5r2d"
+    },
     "tabog9273haeh": {
       "id": "tabog9273haeh",
       "index": 2,
@@ -384,7 +436,7 @@
       "widgetId": "ezazng6447"
     }
   },
-  "topRow": 23,
+  "topRow": 24,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "hb9i9gbrug",

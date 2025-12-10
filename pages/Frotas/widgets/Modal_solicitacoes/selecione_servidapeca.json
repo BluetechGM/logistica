@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 55,
   "serverSideFiltering": false,
-  "sourceData": "{{ MultiSelect1.selectedOptionValues.map((v, i) => ({ label: MultiSelect1.selectedOptionLabels[i], value: v })) }}",
+  "sourceData": "{{MultiSelect1.selectedOptionValues?.map((v, i) => ({ label: MultiSelect1.selectedOptionLabels[i], value: v })) || []}}",
   "topRow": 38,
   "type": "SELECT_WIDGET",
   "version": 1,

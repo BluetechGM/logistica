@@ -64,29 +64,29 @@ export default {
     };
   },
 
-  async salvarSolicitacao() {
+async salvarSolicitacao() {
     const valido = this.validarCampos();
     if (!valido) return;
 
     try {
-      // Se suas actions aceitarem parâmetros, descomente e adeque:
-      // await inserir_produtos.run(this.getPayload());
-      await solicitacoes_produtos.run();
-			
+        // 1️⃣ GERA O ID ÚNICO
+        await gerar_id.gerarIdUnico();
 
-      // Se precisar enviar os produtos especificamente:
-      // await inserir_produtos.run({ produtos: appsmith.store.produtos });
+        // 2️⃣ Insere os produtos (PRODUÇÃO)
+        await solicitacoes_produtos.run();
 
-      await solicitacoes_frota.run();
-			showAlert('Registrado com sucesso', 'success'); 
-			lista_produtos.limpar_lista();
-			resetWidget('Modal_solicitacoes');
-			closeModal('Modal_solicitacoes');
+        // 3️⃣ Insere a solicitação (PRODUÇÃO)
+        await inserir_solicitacao_frota.run();
+
+        showAlert('✅ Registrado com sucesso!', 'success'); 
+        lista_produtos.limpar_lista();
+        resetWidget('Modal_solicitacoes');
+        closeModal('Modal_solicitacoes');
 
     } catch (err) {
-      showAlert("❌ Erro ao salvar: " + (err?.message ?? err), "error");
+        showAlert("❌ Erro ao salvar: " + (err?.message ?? err), "error");
     }
-  }
+}
 };
 
 

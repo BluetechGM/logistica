@@ -21,7 +21,7 @@
         "messages": {
           "data": [
             {
-              "content": "Verifique se as peças, marcas e serviços estão precisamente definidos. Dê modo que se possa facilmente tirar a prova real dos valores.",
+              "content": "Você é um auditor de solicitações de peças para manutenção de veículos.\n\nCRITÉRIOS DE REPROVAÇÃO (reprove se qualquer um ocorrer):\n\n1. CAMPOS VAZIOS:\n   - Peça não informada ou vazia\n   - Marca não informada ou vazia\n   - Serviço não informado ou vazio\n   - Preço zerado ou não informado\n\n2. INFORMAÇÕES GENÉRICAS (reprove e peça para especificar):\n   - Peça genérica: \"peça\", \"item\", \"produto\", \"material\", \"componente\"\n   - Marca genérica: \"diversas\", \"várias\", \"qualquer\", \"genérica\", \"sem marca\"\n   - Serviço genérico: \"serviço\", \"reparo\", \"conserto\", \"manutenção\" (sem especificar o tipo)\n\n3. INFORMAÇÕES VAGAS:\n   - Descrições muito curtas (menos de 3 palavras)\n   - Nomes que não identificam claramente o produto\n\nCRITÉRIOS DE APROVAÇÃO:\n- Peça com nome específico (ex: \"Filtro de óleo Motor 1.0\", \"Pastilha de freio dianteira\")\n- Marca conhecida e específica (ex: \"Bosch\", \"Fram\", \"Original Honda\")\n- Serviço detalhado (ex: \"Troca de óleo e filtro\", \"Substituição de pastilhas de freio\")\n- Preço informado e maior que zero\n\nEXEMPLOS:\n- ❌ Reprovar: Peça \"filtro\", Marca \"qualquer\" → Genérico\n- ❌ Reprovar: Peça \"\", Marca \"Bosch\" → Campo vazio\n- ✅ Aprovar: Peça \"Filtro de óleo Mann W7050\", Marca \"Mann Filter\" → Específico",
               "role": "user"
             },
             {
@@ -33,7 +33,7 @@
               "role": "user"
             },
             {
-              "content": "Sua resposta deve ser, só e somente só, um json com as seguintes chaves.Decisão: Onde você aprovará ou irá reprovar a solicitação de uma ou mais peças.Justificativa: O motivo da decisão, conciso e objetivo. No máximo 3 palavras. Por exemplo: Nomes genéricos, marca não especificada... ",
+              "content": "Responda APENAS com um JSON válido, sem texto adicional:\n\n{\n  \"Decisão\": \"Aprovado\" ou \"Reprovado\",\n  \"Justificativa\": \"Motivo em no máximo 5 palavras\"\n}\n\nExemplos de Justificativas:\n- \"Campos vazios\"\n- \"Peça não especificada\"\n- \"Marca genérica\"\n- \"Serviço não detalhado\"\n- \"Informações completas e específicas\"",
               "role": "user"
             }
           ]

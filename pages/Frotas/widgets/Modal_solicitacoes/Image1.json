@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5ejJ3X5-4YhR7WyCRQPvDmLFWFcyyH2r3C44A_OWAVZu3ywRJdJAaAOERdjcrINy4bA&usqp=CAU",
   "dynamicBindingPathList": [
@@ -33,7 +33,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 21,
-  "topRow": 26,
+  "topRow": 23,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "y05kcqx2mk",
