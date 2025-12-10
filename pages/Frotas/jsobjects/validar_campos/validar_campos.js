@@ -76,7 +76,7 @@ async salvarSolicitacao() {
         await solicitacoes_produtos.run();
 
         // 3️⃣ Insere a solicitação (PRODUÇÃO)
-        await inserir_solicitacao_frota.run();
+        await solicitacoes_frota.run();
 
         showAlert('✅ Registrado com sucesso!', 'success'); 
         lista_produtos.limpar_lista();

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "684accaaccd99e1ff73d47d3_271c58f1-2732-430e-a38a-ae788e7aaccb",
-  "id": "Frotas_inserir_solicitacao_frota",
+  "id": "Frotas_testes_solicitacao_frota",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "inserir_solicitacao_frota",
+    "name": "testes_solicitacao_frota",
     "pageId": "Frotas",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

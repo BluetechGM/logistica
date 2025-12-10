@@ -1,93 +1,50 @@
-export default {
-  validarCampos() {
-    const mensagens = [];
-
-    // ---- Campos do formulário ----
-    if (!Select_placa.selectedOptionLabel) {
-      mensagens.push("⚠️ Placa não informada");
-    }
-		if (!foto_orcamento_pdf_ou_imagem.data.secure_url) {
-      mensagens.push("⚠️ Voce precisa anexar o pdf ou foto do Orçamento");
-    }
-    if (!Input_OdometroAtual.text || isNaN(Number(Input_OdometroAtual.text))) {
-      mensagens.push("⚠️ Odômetro atual inválido ou não informado");
-    }
-    if (!Select_Cidade.selectedOptionLabel) {
-      mensagens.push("⚠️ Cidade não selecionada");
-    }
-    if (!appsmith.store.usuario_nome) {
-      mensagens.push("⚠️ Nome do responsável não informado");
-    }
-    if (!MultiSelect1.selectedOptionLabels) {
-      mensagens.push("⚠️ Serviço não selecionado");
-    }
-
-    // ---- Produtos obrigatórios ----
-    const produtos = appsmith.store?.produtos;
-    if (!Array.isArray(produtos) || produtos.length === 0) {
-      mensagens.push("⚠️ Adicione pelo menos um produto à solicitação");
-    } else {
-      // validação mínima de cada produto
-      const invalidos = produtos
-        .map((p, idx) => ({ p, idx: idx + 1 }))
-        .filter(({ p }) =>
-          !p?.id ||
-          !p?.peca ||
-          p?.preco === undefined ||
-          p?.preco === null ||
-          isNaN(Number(p.preco))
-        );
-
-      if (invalidos.length > 0) {
-        mensagens.push(
-          `⚠️ Existem produtos com dados incompletos/invalidos: itens ${invalidos.map(i => i.idx).join(", ")}`
-        );
-      }
-    }
-
-    if (mensagens.length > 0) {
-      showAlert(mensagens.join("\n"), "error");
-      return false;
-    }
-    return true;
-  },
-
-  // (Opcional) Monta o payload que você pode enviar para sua query
-  getPayload() {
-    return {
-      Placa: Select_placa.selectedOptionLabel,
-      OdometroAtual: Number(Input_OdometroAtual.text),
-      Cidade: Select_Cidade.selectedOptionLabel,
-      CriadoPor: appsmith.store.usuario_nome,
-      Servico: MultiSelect1.selectedOptionLabels,
-      Produtos: appsmith.store?.produtos ?? []
-    };
-  },
-
-  async salvarSolicitacao() {
-    const valido = this.validarCampos();
-    if (!valido) return;
-
-    try {
-      // Se suas actions aceitarem parâmetros, descomente e adeque:
-      // await inserir_produtos.run(this.getPayload());
-      await solicitacoes_produtos.run();
-			
-
-      // Se precisar enviar os produtos especificamente:
-      // await inserir_produtos.run({ produtos: appsmith.store.produtos });
-
-      await solicitacoes_frota.run();
-			showAlert('Registrado com sucesso', 'success'); 
-			lista_produtos.limpar_lista();
-			resetWidget('Modal_solicitacoes');
-			closeModal('Modal_solicitacoes');
-
-    } catch (err) {
-      showAlert("❌ Erro ao salvar: " + (err?.message ?? err), "error");
-    }
-  }
-};
-
-
-
+INSERT INTO compras_so.solicitacoes_frota (
+    placa,
+    odometro_atual,
+    cidade,
+    criado_por,
+    servico,
+    status,
+    observacoes,
+    ativo,
+    filial_id,
+    id_solicitacao,
+    id_solicitante,
+    nome_solicitante,
+    link_orcamento_pdf,
+    link_fotos_orcamento,
+    link_video_orcamento,
+    tipo_incidente,
+    nfe_servico_pdf,
+    nfe_produtos_pdf,
+    foto_comprovante,
+    data_abertura,
+    data_cadastro,
+    data_atualizacao,
+    lancado_winthor
+)
+VALUES (
+    '{{Select_placa.selectedOptionLabel || ""}}',
+    {{Input_OdometroAtual.text ? parseInt(Input_OdometroAtual.text) : 0}},
+    '{{Select_Cidade.selectedOptionLabel || ""}}',
+    '{{appsmith.store.usuario_nome || "usuario_nao_logado"}}',
+    '{{MultiSelect1.selectedOptionLabels ? MultiSelect1.selectedOptionLabels.join(", ") : ""}}',
+    'Pendente',
+    '{{Input_Observacoes.text || ""}}',
+    true,
+    {{Select_Cidade.selectedOptionValue ? parseInt(Select_Cidade.selectedOptionValue) : 0}},
+    '{{gerar_id.gerarIdUnico.data}}',
+    '{{appsmith.store.usuario_id || "00"}}',
+    '{{appsmith.store.usuario_nome || "usuario_nao_logado"}}',
+    '{{foto_orcamento_pdf_ou_imagem.data ? foto_orcamento_pdf_ou_imagem.data.secure_url : ""}}',
+    '{{foto_orcamento_imagem.data ? foto_orcamento_imagem.data.secure_url : ""}}',
+    '{{foto_orcamento_video.data ? foto_orcamento_video.data.secure_url : ""}}',
+    '{{Select_TipoIncidente.selectedOptionLabel || ""}}',
+    '{{nfe_servico_pdf.data ? nfe_servico_pdf.data.secure_url : ""}}',
+    '{{nfe_produtos_pdf.data ? nfe_produtos_pdf.data.secure_url : ""}}',
+    '{{foto_comprovante.data ? foto_comprovante.data.secure_url : ""}}',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    false
+);
