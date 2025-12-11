@@ -53,51 +53,6 @@
       "version": 1,
       "widgetId": "0r1m1eb7eu",
       "widgetName": "Canvas42"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1960,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
-      "detachFromLayout": true,
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "isLoading": false,
-      "isVisible": true,
-      "key": "hn1fkez89q",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 810,
-      "minWidth": 450,
-      "mobileBottomRow": 811,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 1178,
-      "mobileTopRow": 1,
-      "needsErrorInfo": false,
-      "parentColumnSpace": 1,
-      "parentId": "hv92zc4c2i",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 1178,
-      "tabId": "tabt1s1mewxdh",
-      "tabName": "Lançar Winthor",
-      "topRow": 1,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "1ft7gpqj4c",
-      "widgetName": "Canvas43"
     }
   ],
   "defaultTab": "MF Detalhes",
@@ -127,7 +82,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -138,13 +93,6 @@
       "label": "MF Detalhes",
       "positioning": "vertical",
       "widgetId": "0r1m1eb7eu"
-    },
-    "tabt1s1mewxdh": {
-      "id": "tabt1s1mewxdh",
-      "index": 1,
-      "isVisible": true,
-      "label": "Lançar Winthor",
-      "widgetId": "1ft7gpqj4c"
     }
   },
   "topRow": 0,

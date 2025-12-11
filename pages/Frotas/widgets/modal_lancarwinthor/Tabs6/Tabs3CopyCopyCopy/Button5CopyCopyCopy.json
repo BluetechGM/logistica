@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 31,
+  "boxShadow": "none",
+  "buttonColor": "#15803d",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lik24dcjer",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{enviar_comprovante_reparo.enviar()}}",
+  "originalBottomRow": 31,
+  "originalTopRow": 23,
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "g6ccd5yg7q",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 16,
+  "text": "Lançar  Comprovante",
+  "topRow": 23,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qsoq1qy2si",
+  "widgetName": "Button5CopyCopyCopy"
+}

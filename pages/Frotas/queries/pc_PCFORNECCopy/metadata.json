@@ -31,7 +31,7 @@
     ],
     "name": "pc_PCFORNECCopy",
     "pageId": "Frotas",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{\n  (() => {\n    try {\n      const link = appsmith.store.itemSelecionado?.link_imagem_orcamento;\n      if (!link || link === 'null' || link === '[]') return '';\n      const parsed = JSON.parse(link);\n      return Array.isArray(parsed) && parsed.length > 0 ? parsed[0] : link;\n    } catch (e) { return ''; }\n  })()\n}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": "{{\n  (() => {\n    try {\n      const link = appsmith.store.itemSelecionado?.link_imagem_orcamento;\n      if (!link || link === 'null' || link === '[]') return false;\n      const parsed = JSON.parse(link);\n      return Array.isArray(parsed) ? parsed.length >= 1 : true;\n    } catch (e) { return false; }\n  })()\n}}",
+  "key": "sfnq3tpfnd",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onClick": "{{(() => { const link = appsmith.store.itemSelecionado?.link_imagem_orcamento; try { const parsed = JSON.parse(link); storeValue('fotoAmpliada', Array.isArray(parsed) ? parsed[0] : link); } catch(e) { storeValue('fotoAmpliada', link); } showModal('modal_zoom_foto'); })()}}",
+  "parentColumnSpace": 19.96875,
+  "parentId": "cgq1fjsepd",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 12,
+  "topRow": 7,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "52zv7m7a22",
+  "widgetName": "img_reparo_1"
+}

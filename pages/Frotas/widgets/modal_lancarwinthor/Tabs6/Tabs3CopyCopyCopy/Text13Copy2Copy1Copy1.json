@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 7,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,42 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "vm21c21fp3",
-  "leftColumn": 22,
+  "key": "e8uqsis3fu",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 44,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
   "originalBottomRow": 7,
-  "originalTopRow": 2,
+  "originalTopRow": 3,
   "overflow": "NONE",
-  "parentColumnSpace": 18.09375,
-  "parentId": "1ft7gpqj4c",
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "g6ccd5yg7q",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 16,
   "shouldTruncate": false,
-  "text": "Nome:  {{appsmith.store.nome_guerra}}",
-  "textAlign": "LEFT",
-  "textColor": "#ffffff",
-  "topRow": 2,
+  "text": "Comprovante de Reparo ",
+  "textAlign": "CENTER",
+  "textColor": "#231F20",
+  "topRow": 3,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "cfumsmwxgk",
-  "widgetName": "Text20"
+  "widgetId": "bn0lyjshs8",
+  "widgetName": "Text13Copy2Copy1Copy1"
 }

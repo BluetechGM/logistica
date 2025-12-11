@@ -1,6 +1,10 @@
 export default {
 	async processarDecisao() {
-		// Executa a IA
+		// 1️⃣ Validação dos campos PRIMEIRO
+		const valido = validar_campos.validarCampos();
+		if (!valido) return;
+
+		// 2️⃣ Executa a IA
 		await decisao_rapida_ia.run();
 
 		let decisao = "";
@@ -12,20 +16,15 @@ export default {
 			return;
 		}
 
-		// IA apenas alerta
+		// 3️⃣ Se IA reprovou, apenas exibe sugestão (não bloqueia)
 		if (decisao === "Reprovado") {
-			showAlert("⚠️ A IA sugeriu reprovação", "warning");
-			showModal("Modal2_ia");
+			showAlert("⚠️ Sugestão da IA: Reprovação recomendada", "warning");
 		}
 
-		// Validação real dos campos
-		const valido = validar_campos.validarCampos();
-		if (!valido) return;
-
-		// Salva no banco
+		// 4️⃣ Salva no banco
 		await validar_campos.salvarSolicitacao();
 
-		// Atualiza a lista após salvar
+		// 5️⃣ Atualiza a lista
 		await solicitacoes_frota_list.run();
 	}
 }

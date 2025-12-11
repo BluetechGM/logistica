@@ -98,7 +98,7 @@
   "itemSpacing": "0",
   "key": "phah4lld3n",
   "leftColumn": 0,
-  "listData": "{{\n  solicitacoes_frota_list.data.filter(item =>\n    !item.lancado_winthor && // só mostra se for false ou null\n    item.nfe_servico_pdf && \n    item.nfe_produtos_pdf &&\n    (!item.foto_comprovante || item.foto_comprovante.trim() === \"\")\n  )\n}}\n\n\n",
+  "listData": "{{\n  solicitacoes_frota_list.data.filter(item => {\n    // Verifica se tem NFE anexada\n    const temNfeServico = item.nfe_servico_pdf && item.nfe_servico_pdf.trim() !== '' && item.nfe_servico_pdf !== 'null';\n    const temNfeProdutos = item.nfe_produtos_pdf && item.nfe_produtos_pdf.trim() !== '' && item.nfe_produtos_pdf !== 'null';\n    const temNfe = temNfeServico || temNfeProdutos;\n    \n    // Verifica se TEM comprovante de pagamento\n    const temComprovante = item.foto_comprovante && item.foto_comprovante.trim() !== '' && item.foto_comprovante !== 'null';\n    \n    return temNfe && temComprovante;\n  })\n}}",
   "mainCanvasId": "xa6vlujv0n",
   "mainContainerId": "0rhyu4jhco",
   "minWidth": 450,

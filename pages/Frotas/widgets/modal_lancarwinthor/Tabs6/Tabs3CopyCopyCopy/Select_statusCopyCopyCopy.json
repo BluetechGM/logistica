@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_statusCopyCopyCopy.options, Select_statusCopyCopyCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,18 +14,15 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "optionLabel"
-    },
-    {
-      "key": "optionValue"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -34,38 +31,38 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "hz2b4pzr33",
+  "key": "8dlho753v5",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Serviço da Peça",
+  "labelStyle": "BOLD",
+  "labelText": "Status de solicitações",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Selecione a Serviços que ira usar a peça( os serviços que irão aparecer aqui serao somente o selecionados previamente no seletor de (serviços acima !))",
   "labelWidth": 5,
-  "leftColumn": 40,
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 18,
-  "mobileLeftColumn": 41,
-  "mobileRightColumn": 61,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 42,
   "needsErrorInfo": false,
-  "optionLabel": "label",
-  "optionValue": "value",
+  "optionLabel": "status",
+  "optionValue": "status",
   "originalBottomRow": 45,
   "originalTopRow": 38,
-  "parentColumnSpace": 19.228125,
-  "parentId": "xkib8f5ov2",
+  "parentColumnSpace": 16.6875,
+  "parentId": "moy3l33zvf",
   "parentRowSpace": 10,
-  "placeholderText": "Selecione o serviço da Peça",
+  "placeholderText": "Selecione o Status",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 55,
+  "rightColumn": 62,
   "serverSideFiltering": false,
-  "sourceData": "{{MultiSelect1.selectedOptionValues?.map((v, i) => ({ label: MultiSelect1.selectedOptionLabels[i], value: v })) || []}}",
-  "topRow": 38,
+  "sourceData": "{{status_list.data}}",
+  "topRow": 3,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ug48e7laoy",
-  "widgetName": "selecione_servidapeca"
+  "widgetId": "dyu6bjp8j6",
+  "widgetName": "Select_statusCopyCopyCopy"
 }

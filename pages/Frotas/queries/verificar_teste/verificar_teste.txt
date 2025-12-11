@@ -1,12 +1,3 @@
-SELECT 
-    id_solicitacao,
-    status,
-    nfe_servico_pdf,
-    nfe_produtos_pdf,
-    foto_comprovante
+SELECT id_solicitacao, link_imagem_orcamento, link_video_orcamento
 FROM compras_so.solicitacoes_frota
-WHERE ativo = TRUE
-  AND status ILIKE '%aprov%'
-  AND (nfe_servico_pdf IS NOT NULL AND nfe_servico_pdf != '')
-  AND (foto_comprovante IS NOT NULL AND foto_comprovante != '')
-LIMIT 10;
+WHERE id_solicitacao = '1765387368444_6nwzet7';

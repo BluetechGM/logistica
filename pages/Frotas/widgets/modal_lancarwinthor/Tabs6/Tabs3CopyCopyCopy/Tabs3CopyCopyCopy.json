@@ -5,12 +5,12 @@
   "borderColor": "#1d4ed8",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 144,
+  "bottomRow": 161,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1400,
+      "bottomRow": 1570,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -40,7 +40,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "qclapxonwh",
+      "parentId": "2yqnccur4x",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -51,12 +51,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "fzwrutuydc",
-      "widgetName": "Canvas23CopyCopy"
+      "widgetId": "osm4j4fswd",
+      "widgetName": "Canvas23CopyCopyCopy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1400,
+      "bottomRow": 1570,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -86,7 +86,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "qclapxonwh",
+      "parentId": "2yqnccur4x",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -97,12 +97,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "2esdklewhr",
-      "widgetName": "Canvas24CopyCopy"
+      "widgetId": "moy3l33zvf",
+      "widgetName": "Canvas24CopyCopyCopy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1400,
+      "bottomRow": 1570,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -132,7 +132,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "qclapxonwh",
+      "parentId": "2yqnccur4x",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -142,8 +142,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "vdmseukrtr",
-      "widgetName": "Canvas31CopyCopy"
+      "widgetId": "g6ccd5yg7q",
+      "widgetName": "Canvas31CopyCopyCopy"
     }
   ],
   "defaultTab": "MF Detalhes",
@@ -152,7 +152,7 @@
       "key": "tabsObj.tabb9arsx0b6r.isVisible"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "tabsObj.tabb9arsx0b6r.isVisible"
@@ -164,7 +164,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "wm0avp70sc",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -173,14 +173,12 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 82,
   "needsErrorInfo": false,
-  "originalBottomRow": 144,
-  "originalTopRow": 0,
   "parentColumnSpace": 18.56015625,
-  "parentId": "5iktiaiq74",
+  "parentId": "0r1m1eb7eu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -190,7 +188,7 @@
       "isVisible": false,
       "label": "MF Detalhes",
       "positioning": "vertical",
-      "widgetId": "fzwrutuydc"
+      "widgetId": "osm4j4fswd"
     },
     "tab2": {
       "id": "tab2",
@@ -198,19 +196,19 @@
       "isVisible": false,
       "label": "Tratar MF",
       "positioning": "vertical",
-      "widgetId": "2esdklewhr"
+      "widgetId": "moy3l33zvf"
     },
     "tabb9arsx0b6r": {
       "id": "tabb9arsx0b6r",
       "index": 2,
       "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
       "label": "Anexar Comprovantes",
-      "widgetId": "vdmseukrtr"
+      "widgetId": "g6ccd5yg7q"
     }
   },
   "topRow": 0,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "qclapxonwh",
-  "widgetName": "Tabs3CopyCopy"
+  "widgetId": "2yqnccur4x",
+  "widgetName": "Tabs3CopyCopyCopy"
 }

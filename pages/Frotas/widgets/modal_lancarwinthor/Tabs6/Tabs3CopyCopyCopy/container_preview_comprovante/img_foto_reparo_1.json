@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{\n  (() => {\n    try {\n      const link = appsmith.store.itemSelecionado?.link_imagem_orcamento;\n      if (!link || link === 'null' || link === '[]' || String(link).trim() === '') return '';\n      const parsed = JSON.parse(link);\n      return Array.isArray(parsed) && parsed.length > 0 ? parsed[0] : (link || '');\n    } catch (e) {\n      return '';\n    }\n  })()\n}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": "{{\n  (() => {\n    try {\n      const link = appsmith.store.itemSelecionado?.link_imagem_orcamento;\n      if (!link || link === 'null' || link === '[]' || String(link).trim() === '') return false;\n      return true;\n    } catch (e) {\n      return false;\n    }\n  })()\n}}",
+  "key": "sfnq3tpfnd",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onClick": "{{showModal('modal_todas_fotos')}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 10,
+  "parentColumnSpace": 4.41064453125,
+  "parentId": "cc4lywtugl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 10,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "5zmklphx1k",
+  "widgetName": "img_foto_reparo_1"
+}

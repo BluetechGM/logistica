@@ -5,12 +5,12 @@
   "borderColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 142,
+  "bottomRow": 181,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1750,
+      "bottomRow": 1770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1380,
+      "bottomRow": 1770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1380,
+      "bottomRow": 1770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -237,7 +237,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1380,
+      "bottomRow": 1770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -282,7 +282,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1380,
+      "bottomRow": 1770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -370,7 +370,7 @@
   "mobileTopRow": 82,
   "needsErrorInfo": false,
   "onTabSelected": "{{ \n  (async () => {\n\n    console.log(\"🔵 [START] Iniciando rotina de seleção…\");\n    console.log(\"📌 Valor atual de appsmith.store.itemSelecionado:\", appsmith.store.itemSelecionado);\n\n    // 1) Salvando item no store\n    console.log(\"🟠 Salvando itemSelecionado no store…\");\n    await storeValue(\"itemSelecionado\", appsmith.store.itemSelecionado);\n    console.log(\"🟢 itemSelecionado salvo:\", appsmith.store.itemSelecionado);\n\n    // 2) Executando validação\n    console.log(\"🟠 Chamando aprovar_orcamento.podeLiberarTela() com:\", appsmith.store.itemSelecionado);\n    const res = await aprovar_orcamento.podeLiberarTela(appsmith.store.itemSelecionado);\n    console.log(\"🟢 Resultado da validação (liberarTela):\", res);\n\n    // 3) Salvando resposta no store\n    console.log(\"🟠 Salvando liberarTela no store…\");\n    await storeValue(\"liberarTela\", res);\n    console.log(\"🟢 liberarTela salvo no store:\", res);\n\n    console.log(\"🔵 [END] Finalizado fluxo de validação.\");\n    return res;\n\n  })();\n}}\n",
-  "originalBottomRow": 142,
+  "originalBottomRow": 181,
   "originalTopRow": 0,
   "parentColumnSpace": 18.56015625,
   "parentId": "ahfxx5fmfl",
