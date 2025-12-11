@@ -1,0 +1,10 @@
+SELECT 
+    p.peca as nome_produto,
+    AVG(p.preco_unitario) as media_historica,
+    COUNT(*) as total_registros
+FROM compras_so.produtos_solicitacao p
+WHERE p.ativo = true
+    AND p.preco_unitario IS NOT NULL
+    AND p.preco_unitario > 0
+GROUP BY p.peca
+ORDER BY p.peca;

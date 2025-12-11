@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "684accaaccd99e1ff73d47d3_a8c70865-8354-427f-bac7-6c0cef10ec90",
-  "id": "Frotas_verificar_teste",
+  "gitSyncId": "684accaaccd99e1ff73d47d3_ee4eedce-f7ef-403f-99ac-aac57affec75",
+  "id": "Frotas_servicos_frota",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    id_solicitacao,\n    status,\n    nfe_servico_pdf,\n    nfe_produtos_pdf,\n    foto_comprovante\nFROM compras_so.solicitacoes_frota\nWHERE ativo = TRUE\n  AND status ILIKE '%aprov%'\n  AND (nfe_servico_pdf IS NOT NULL AND nfe_servico_pdf != '')\n  AND (foto_comprovante IS NOT NULL AND foto_comprovante != '')\nLIMIT 10;",
+      "body": "SELECT DISTINCT peca\nFROM compras_so.produtos_solicitacao\nWHERE peca IS NOT NULL \n  AND TRIM(peca) <> ''\nORDER BY peca;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "verificar_teste",
+    "name": "servicos_frota",
     "pageId": "Frotas",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

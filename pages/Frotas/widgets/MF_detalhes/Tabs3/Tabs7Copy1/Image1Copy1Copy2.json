@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultImage": "https://cdn-icons-png.flaticon.com/512/1686/1686816.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://cdn-icons-png.flaticon.com/512/1686/1686816.png",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lb401a7kxa",
+  "leftColumn": 19,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 14.999999999999998,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "originalBottomRow": 150,
+  "originalTopRow": 142,
+  "parentColumnSpace": 22.3453125,
+  "parentId": "q6kq7jbvf5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 22,
+  "topRow": 2,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "bb3w12k85u",
+  "widgetName": "Image1Copy1Copy2"
+}

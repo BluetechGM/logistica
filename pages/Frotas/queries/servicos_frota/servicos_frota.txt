@@ -1,0 +1,5 @@
+SELECT DISTINCT peca
+FROM compras_so.produtos_solicitacao
+WHERE peca IS NOT NULL 
+  AND TRIM(peca) <> ''
+ORDER BY peca;

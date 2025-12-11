@@ -1,0 +1,69 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "uh57v54har",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Serviços",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 70,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 63,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{historico_precos_pecas.run()}}",
+  "optionLabel": "servicos",
+  "optionValue": "peca",
+  "originalBottomRow": 150,
+  "originalTopRow": 142,
+  "parentColumnSpace": 23.53125,
+  "parentId": "q6kq7jbvf5",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Serviço",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 37,
+  "serverSideFiltering": false,
+  "sourceData": "{{servicos_frota.data}}",
+  "topRow": 1,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "wtxe6mspwc",
+  "widgetName": "Select_Servico_Filtro"
+}

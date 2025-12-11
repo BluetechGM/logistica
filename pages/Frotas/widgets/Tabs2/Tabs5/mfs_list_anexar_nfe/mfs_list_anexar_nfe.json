@@ -98,7 +98,7 @@
   "itemSpacing": "0",
   "key": "phah4lld3n",
   "leftColumn": 0,
-  "listData": "{{ \n  solicitacoes_frota_list.data.filter(item => \n    item.status === \"Aprovado\" && \n    (!item.nfe_servico_pdf && !item.nfe_produtos_pdf)\n  ) \n}}\n\n",
+  "listData": "{{ \n  solicitacoes_frota_list.data.filter(item => {\n    // Verifica se status contém \"aprov\" (ignora maiúsculas/minúsculas)\n    const isAprovado = String(item.status || '').toLowerCase().includes('aprov');\n    \n    // Verifica se NFE está vazia (null, undefined, string vazia)\n    const semNfeServico = !item.nfe_servico_pdf || item.nfe_servico_pdf === '' || item.nfe_servico_pdf === 'null';\n    const semNfeProdutos = !item.nfe_produtos_pdf || item.nfe_produtos_pdf === '' || item.nfe_produtos_pdf === 'null';\n    \n    return isAprovado && semNfeServico && semNfeProdutos;\n  }) \n}}",
   "mainCanvasId": "3qwfw2vjjw",
   "mainContainerId": "v94tmpem3o",
   "minWidth": 450,

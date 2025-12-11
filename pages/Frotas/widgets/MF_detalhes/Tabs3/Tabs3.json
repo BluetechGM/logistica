@@ -5,12 +5,12 @@
   "borderColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 181,
+  "bottomRow": 142,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1770,
+      "bottomRow": 1750,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1770,
+      "bottomRow": 1380,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1770,
+      "bottomRow": 1380,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -237,7 +237,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1770,
+      "bottomRow": 1380,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -279,6 +279,51 @@
       "version": 1,
       "widgetId": "wazjs8qx8h",
       "widgetName": "Canvas56"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1380,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "ihxtcy4mbl",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1810,
+      "minWidth": 450,
+      "mobileBottomRow": 1811,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1187.85,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "1m3u994thd",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1187.85,
+      "tabId": "tabor5e45jcb0",
+      "tabName": "Histórico de Preço",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "e7dxn33ntx",
+      "widgetName": "Canvas60"
     }
   ],
   "defaultTab": "MF Detalhes",
@@ -325,7 +370,7 @@
   "mobileTopRow": 82,
   "needsErrorInfo": false,
   "onTabSelected": "{{ \n  (async () => {\n\n    console.log(\"🔵 [START] Iniciando rotina de seleção…\");\n    console.log(\"📌 Valor atual de appsmith.store.itemSelecionado:\", appsmith.store.itemSelecionado);\n\n    // 1) Salvando item no store\n    console.log(\"🟠 Salvando itemSelecionado no store…\");\n    await storeValue(\"itemSelecionado\", appsmith.store.itemSelecionado);\n    console.log(\"🟢 itemSelecionado salvo:\", appsmith.store.itemSelecionado);\n\n    // 2) Executando validação\n    console.log(\"🟠 Chamando aprovar_orcamento.podeLiberarTela() com:\", appsmith.store.itemSelecionado);\n    const res = await aprovar_orcamento.podeLiberarTela(appsmith.store.itemSelecionado);\n    console.log(\"🟢 Resultado da validação (liberarTela):\", res);\n\n    // 3) Salvando resposta no store\n    console.log(\"🟠 Salvando liberarTela no store…\");\n    await storeValue(\"liberarTela\", res);\n    console.log(\"🟢 liberarTela salvo no store:\", res);\n\n    console.log(\"🔵 [END] Finalizado fluxo de validação.\");\n    return res;\n\n  })();\n}}\n",
-  "originalBottomRow": 181,
+  "originalBottomRow": 142,
   "originalTopRow": 0,
   "parentColumnSpace": 18.56015625,
   "parentId": "ahfxx5fmfl",
@@ -379,6 +424,13 @@
       "isVisible": false,
       "label": "Teste",
       "widgetId": "oo3i4l360i"
+    },
+    "tabor5e45jcb0": {
+      "id": "tabor5e45jcb0",
+      "index": 6,
+      "isVisible": true,
+      "label": "Histórico de Preço",
+      "widgetId": "e7dxn33ntx"
     }
   },
   "topRow": 0,

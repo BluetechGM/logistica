@@ -1,5 +1,12 @@
-SELECT column_name 
-FROM information_schema.columns 
-WHERE table_schema = 'compras_so' 
-AND table_name = 'solicitacoes_frota'
-AND column_name IN ('link_fotos_orcamento', 'link_video_orcamento');
+SELECT 
+    id_solicitacao,
+    status,
+    nfe_servico_pdf,
+    nfe_produtos_pdf,
+    foto_comprovante
+FROM compras_so.solicitacoes_frota
+WHERE ativo = TRUE
+  AND status ILIKE '%aprov%'
+  AND (nfe_servico_pdf IS NOT NULL AND nfe_servico_pdf != '')
+  AND (foto_comprovante IS NOT NULL AND foto_comprovante != '')
+LIMIT 10;

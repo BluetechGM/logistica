@@ -1,0 +1,16 @@
+SELECT 
+    p.peca,
+    p.preco_unitario,
+    p.marca,
+    p.data_solicitacao,
+    s.cidade,
+    s.filial_id,
+    s.servico,
+    TO_CHAR(p.data_solicitacao, 'DD/MM/YYYY') AS data_formatada
+FROM compras_so.produtos_solicitacao p
+INNER JOIN compras_so.solicitacoes_frota s 
+    ON p.id_solicitacao = s.id_solicitacao
+WHERE p.ativo = true
+    AND p.preco_unitario IS NOT NULL
+    AND p.preco_unitario > 0
+ORDER BY p.data_solicitacao ASC;

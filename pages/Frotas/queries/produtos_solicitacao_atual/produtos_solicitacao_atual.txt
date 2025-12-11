@@ -1,0 +1,10 @@
+SELECT 
+    p.peca as nome_produto,
+    p.preco_unitario,
+    p.quantidade,
+    p.marca,
+    p.id_solicitacao
+FROM compras_so.produtos_solicitacao p
+WHERE p.id_solicitacao = '{{appsmith.store.itemSelecionado?.id_solicitacao || ""}}'
+  AND p.ativo = true
+ORDER BY p.peca ASC;
