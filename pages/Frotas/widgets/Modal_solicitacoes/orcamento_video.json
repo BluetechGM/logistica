@@ -1,5 +1,7 @@
 {
-  "allowedFileTypes": "[\n  \"video/*\"\n]",
+  "allowedFileTypes": [
+    "*"
+  ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 33,
@@ -13,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "allowedFileTypes"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
@@ -42,7 +40,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{foto_orcamento_video.run().then(() => {}).catch(() => {});}}",
+  "onFilesSelected": "{{foto_orcamento_video.run().then(() => {\n  showAlert('✅ Vídeo enviado com sucesso!', 'success');\n}).catch((e) => {\n  showAlert('❌ Erro: ' + (e?.message ?? e), 'error');\n});}}",
   "parentColumnSpace": 19.228125,
   "parentId": "xkib8f5ov2",
   "parentRowSpace": 10,

@@ -19,6 +19,11 @@
           "value": "{{orcamento_video.files[0].data}}"
         },
         {
+          "key": "api_key",
+          "type": "Text",
+          "value": "989549188282837"
+        },
+        {
           "key": "upload_preset",
           "type": "Text",
           "value": "orcamentovideo"
@@ -39,7 +44,7 @@
         }
       ],
       "queryParameters": [],
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {

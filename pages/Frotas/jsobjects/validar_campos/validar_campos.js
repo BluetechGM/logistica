@@ -7,7 +7,15 @@ export default {
     }
 
     if (!foto_orcamento_pdf_ou_imagem?.data?.secure_url) {
-      mensagens.push("⚠️ Você precisa anexar o PDF ou foto do Orçamento");
+      mensagens.push("⚠️ Você precisa anexar o PDF ou imagem do Orçamento");
+    }
+
+    if (!upload_fotos?.urls || upload_fotos.urls.length === 0) {
+      mensagens.push("⚠️ Você precisa anexar pelo menos uma foto");
+    }
+
+    if (!foto_orcamento_video?.data?.secure_url) {
+      mensagens.push("⚠️ Você precisa anexar o vídeo");
     }
 
     if (!Input_OdometroAtual?.text || isNaN(Number(Input_OdometroAtual.text))) {
@@ -59,16 +67,12 @@ export default {
     try {
       await gerar_id.gerarIdUnico();
 
-      if (orcamento_foto?.files && orcamento_foto.files.length > 0) {
-        showAlert(`📤 Enviando ${orcamento_foto.files.length} foto(s)...`, "info");
-        await upload_fotos.uploadMultiplas();
-      }
-
       await solicitacoes_produtos.run();
       await solicitacoes_frota.run();
 
       showAlert("✅ Registrado com sucesso!", "success");
       lista_produtos.limpar_lista();
+      upload_fotos.urls = [];
       resetWidget("orcamento_foto");
       resetWidget("Modal_solicitacoes");
       closeModal("Modal_solicitacoes");

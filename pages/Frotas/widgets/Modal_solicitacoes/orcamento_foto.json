@@ -1,5 +1,7 @@
 {
-  "allowedFileTypes": "[\n  \"image/*\"\n]",
+  "allowedFileTypes": [
+    "*"
+  ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 33,
@@ -13,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "allowedFileTypes"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
@@ -42,7 +40,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onFilesSelected": "",
+  "onFilesSelected": "{{upload_fotos.uploadMultiplas();}}",
   "originalBottomRow": 33,
   "originalTopRow": 29,
   "parentColumnSpace": 19.228125,
