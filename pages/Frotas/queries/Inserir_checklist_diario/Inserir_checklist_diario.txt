@@ -1,0 +1,44 @@
+INSERT INTO compras_so.checklist_diario_motos (
+    filial_id,
+    placa,
+    condutor_id,
+    usuario_lancamento,
+
+    nivel_combustivel,
+    farol,
+    luz_freio,
+    setas,
+    pneu,
+    vazamento_oleo,
+    freio_dianteiro,
+    freio_traseiro,
+    manetes_pedaleiras,
+    espelhos,
+    buzina,
+    documentacao_crlv,
+
+    resultado_final,
+    observacoes
+)
+VALUES (
+    {{ Select_Cidade_abasCopy.selectedOptionValue }},
+    {{ Select_placa_abasCopy.selectedOptionLabel }},
+    {{ Select_condutor_abasCopy.selectedOptionValue }},
+    {{ appsmith.store.usuario_nome }},
+
+    {{ appsmith.store.Combustivel }},
+    {{ appsmith.store.Farol }},
+    {{ appsmith.store.LuzFreio }},
+    {{ appsmith.store.Setas }},
+    {{ appsmith.store.Pneu }},
+    {{ appsmith.store.Vazamento }},
+    {{ appsmith.store.FreioDianteiro }},
+    {{ appsmith.store.FreioTraseiro }},
+    {{ appsmith.store.ManetesPedaleiras }},
+    {{ appsmith.store.Espelhos }},
+    {{ appsmith.store.Buzina }},
+    {{ appsmith.store.Documentacao }},
+
+    {{ Object.values(appsmith.store).includes("NC") ? 'NAO_APTO' : 'APTO' }},
+    {{ observacoes_checklist.text }}
+);

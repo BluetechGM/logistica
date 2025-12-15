@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 17,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "15ihqqiaif",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Condutor",
+  "labelTextColor": "#1d4ed8",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 37,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 70,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 63,
+  "needsErrorInfo": false,
+  "optionLabel": "NOME",
+  "optionValue": "MATRICULA",
+  "originalBottomRow": 17,
+  "originalTopRow": 11,
+  "parentColumnSpace": 12.34375,
+  "parentId": "9z15xsc5dl",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione Condutor",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 58,
+  "serverSideFiltering": false,
+  "sourceData": "{{conduto_absatecimento.data}}",
+  "topRow": 11,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8erp8snxiu",
+  "widgetName": "Select_condutor_abasCopy"
+}

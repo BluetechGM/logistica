@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_81f9a806-ea3d-4762-8992-e3c0abc7938d",
+  "id": "Frotas_validar_checklist_diario",
+  "unpublishedCollection": {
+    "name": "validar_checklist_diario",
+    "pageId": "Frotas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
