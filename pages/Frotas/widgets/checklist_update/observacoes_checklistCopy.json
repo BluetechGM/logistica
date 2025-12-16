@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 72,
+  "bottomRow": 74,
   "boxShadow": "none",
-  "defaultText": "{{ get_checklist_by_id.data[0]?.observacoes }}\n",
+  "defaultText": "{{ appsmith.store.Observacoes }}\n",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -21,7 +21,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
@@ -37,7 +41,7 @@
   "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
   "labelTextSize": "1rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -46,18 +50,19 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 63,
   "needsErrorInfo": false,
-  "originalBottomRow": 72,
-  "originalTopRow": 61,
+  "onTextChanged": "",
+  "originalBottomRow": 74,
+  "originalTopRow": 63,
   "parentColumnSpace": 12.34375,
   "parentId": "2znpbh3q56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 59,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 61,
+  "topRow": 63,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "lmvl7dq5fw",

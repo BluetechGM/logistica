@@ -46,7 +46,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 42,
   "shouldTruncate": false,
-  "text": "{{currentItem.condutor}}",
+  "text": "{{\n  (() => {\n    const nome = String(currentItem.condutor || '').trim();\n\n    if (!nome) return '';\n\n    const partes = nome.split(/\\s+/);\n\n    if (partes.length === 1) {\n      return partes[0];\n    }\n\n    return `${partes[0]} ${partes[partes.length - 1]}`;\n  })()\n}}\n",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "textStyle": "HEADING",

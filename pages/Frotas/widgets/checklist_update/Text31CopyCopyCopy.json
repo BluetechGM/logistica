@@ -1,5 +1,6 @@
 {
   "animateLoading": true,
+  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 45,
   "dynamicBindingPathList": [
@@ -13,7 +14,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "textColor"
+      "key": "text"
+    },
+    {
+      "key": "backgroundColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -23,15 +27,15 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "d169o53bh5",
-  "leftColumn": 31,
+  "key": "ndwsjaf7i7",
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 36,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 32,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
   "originalBottomRow": 45,
   "originalTopRow": 41,
@@ -41,15 +45,15 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
+  "rightColumn": 53,
   "shouldTruncate": false,
-  "text": "Manetes e pedaleiras",
+  "text": "{{ appsmith.store.ManetesPedaleiras }}\n",
   "textAlign": "LEFT",
-  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "textColor": "white",
   "topRow": 41,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "4umuby6dk0",
-  "widgetName": "itens_checklistCopy8Copy"
+  "widgetId": "hwkq52sbqz",
+  "widgetName": "Text31CopyCopyCopy"
 }

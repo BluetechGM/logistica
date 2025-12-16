@@ -46,7 +46,7 @@
   "parentId": "2znpbh3q56",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 52,
   "shouldTruncate": false,
   "text": "{{\n  conduto_absatecimento.data?.find(\n    c => String(c.MATRICULA) === String(get_checklist_by_id.data[0]?.condutor_id)\n  )?.NOME || \"\"\n}}\n",
   "textAlign": "CENTER",

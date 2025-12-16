@@ -4,14 +4,11 @@
   "bottomRow": 35,
   "boxShadow": "none",
   "buttonColor": "#22c55e",
-  "buttonVariant": "{{\n  appsmith.store.Combustivel === \"C\"\n    ? \"PRIMARY\"\n    : \"SECONDARY\"\n}}\n",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "buttonVariant"
     }
   ],
   "dynamicPropertyPathList": [
@@ -29,14 +26,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "jcljzy1evr",
-  "leftColumn": 20,
+  "leftColumn": 22,
   "minWidth": 120,
   "mobileBottomRow": 28,
   "mobileLeftColumn": 32,
   "mobileRightColumn": 48,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onClick": "{{ storeValue(\"modoChecklist\", \"view\") }}",
+  "onClick": "{{storeValue('Combustivel', 'C');}}",
   "originalBottomRow": 35,
   "originalTopRow": 31,
   "parentColumnSpace": 12.34375,
@@ -47,11 +44,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 24,
+  "rightColumn": 26,
   "text": "C",
   "topRow": 31,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "inh8bwlpyz",
-  "widgetName": "conformeCopy11"
+  "widgetId": "u09eer20oo",
+  "widgetName": "conformeCopyCopyCopy"
 }
