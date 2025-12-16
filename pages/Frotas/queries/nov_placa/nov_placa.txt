@@ -5,8 +5,14 @@ INSERT INTO compras_so.veiculos (
     ativo
 )
 VALUES (
-    UPPER('Moto'),                         -- tipo em maiúscula
-    UPPER('{{Input_palca_add.text}}'),     -- placa em maiúscula
+    UPPER('Moto'),
+    UPPER(
+      REPLACE(
+        REPLACE(TRIM('{{Input_placa_add.text}}'), '-', ''),
+        ' ',
+        ''
+      )
+    ),
     NOW(),
     TRUE
 )

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO compras_so.veiculos (\n    tipo_veiculo,\n    placa,\n    data_cadastro,\n    ativo\n)\nVALUES (\n    UPPER('Moto'),                         -- tipo em maiúscula\n    UPPER('{{Input_palca_add.text}}'),     -- placa em maiúscula\n    NOW(),\n    TRUE\n)\nON CONFLICT (placa) DO NOTHING;\n",
+      "body": "INSERT INTO compras_so.veiculos (\n    tipo_veiculo,\n    placa,\n    data_cadastro,\n    ativo\n)\nVALUES (\n    UPPER('Moto'),\n    UPPER(\n      REPLACE(\n        REPLACE(TRIM('{{Input_placa_add.text}}'), '-', ''),\n        ' ',\n        ''\n      )\n    ),\n    NOW(),\n    TRUE\n)\nON CONFLICT (placa) DO NOTHING;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -1,2 +1,7 @@
-INSERT INTO compras_so.manutencao_frotas (pecas)
-VALUES ('ARRUELA');
+INSERT INTO compras_so.manutencao_frotas (
+	pecas
+)
+VALUES (
+	UPPER(TRIM('{{Input_peca_add.text}}'))
+)
+ON CONFLICT (pecas) DO NOTHING;

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO compras_so.manutencao_frotas (pecas)\nVALUES ('ARRUELA');\n",
+      "body": "INSERT INTO compras_so.manutencao_frotas (\n\tpecas\n)\nVALUES (\n\tUPPER(TRIM('{{Input_peca_add.text}}'))\n)\nON CONFLICT (pecas) DO NOTHING;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "CANDIDATOS",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "nova_peca",
     "pageId": "Frotas",
     "runBehaviour": "MANUAL",
