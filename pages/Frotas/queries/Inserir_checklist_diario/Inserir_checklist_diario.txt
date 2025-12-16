@@ -3,12 +3,14 @@ INSERT INTO compras_so.checklist_diario_motos (
     placa,
     condutor_id,
     usuario_lancamento,
+    odometro,
 
     nivel_combustivel,
     farol,
     luz_freio,
     setas,
     pneu,
+    pneu_traseiro,
     vazamento_oleo,
     freio_dianteiro,
     freio_traseiro,
@@ -22,23 +24,41 @@ INSERT INTO compras_so.checklist_diario_motos (
 )
 VALUES (
     {{ Select_Cidade_abasCopy.selectedOptionValue }},
-    {{ Select_placa_abasCopy.selectedOptionLabel }},
+    '{{ Select_placa_abasCopy.selectedOptionLabel }}',
     {{ Select_condutor_abasCopy.selectedOptionValue }},
-    {{ appsmith.store.usuario_nome }},
+    '{{ appsmith.store.usuario_nome }}',
+    {{ Number(Input_odometro.text) }},
 
-    {{ appsmith.store.Combustivel }},
-    {{ appsmith.store.Farol }},
-    {{ appsmith.store.LuzFreio }},
-    {{ appsmith.store.Setas }},
-    {{ appsmith.store.Pneu }},
-    {{ appsmith.store.Vazamento }},
-    {{ appsmith.store.FreioDianteiro }},
-    {{ appsmith.store.FreioTraseiro }},
-    {{ appsmith.store.ManetesPedaleiras }},
-    {{ appsmith.store.Espelhos }},
-    {{ appsmith.store.Buzina }},
-    {{ appsmith.store.Documentacao }},
+    '{{ appsmith.store.Combustivel }}',
+    '{{ appsmith.store.Farol }}',
+    '{{ appsmith.store.LuzFreio }}',
+    '{{ appsmith.store.Setas }}',
+    '{{ appsmith.store.Pneu }}',
+    '{{ appsmith.store.PneuTraseiro }}',
+    '{{ appsmith.store.Vazamento }}',
+    '{{ appsmith.store.FreioDianteiro }}',
+    '{{ appsmith.store.FreioTraseiro }}',
+    '{{ appsmith.store.ManetesPedaleiras }}',
+    '{{ appsmith.store.Espelhos }}',
+    '{{ appsmith.store.Buzina }}',
+    '{{ appsmith.store.Documentacao }}',
 
-    {{ Object.values(appsmith.store).includes("NC") ? 'NAO_APTO' : 'APTO' }},
-    {{ observacoes_checklist.text }}
+    {{
+      Object.values({
+        Combustivel: appsmith.store.Combustivel,
+        Farol: appsmith.store.Farol,
+        LuzFreio: appsmith.store.LuzFreio,
+        Setas: appsmith.store.Setas,
+        Pneu: appsmith.store.Pneu,
+        PneuTraseiro: appsmith.store.PneuTraseiro,
+        Vazamento: appsmith.store.Vazamento,
+        FreioDianteiro: appsmith.store.FreioDianteiro,
+        FreioTraseiro: appsmith.store.FreioTraseiro,
+        ManetesPedaleiras: appsmith.store.ManetesPedaleiras,
+        Espelhos: appsmith.store.Espelhos,
+        Buzina: appsmith.store.Buzina,
+        Documentacao: appsmith.store.Documentacao
+      }).includes('NC') ? 'NAO_APTO' : 'APTO'
+    }},
+    '{{ observacoes_checklist.text || "" }}'
 );

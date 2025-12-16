@@ -1,16 +1,19 @@
 UPDATE compras_so.checklist_diario_motos
 SET
-  nivel_combustivel   = '{{ appsmith.store.Combustivel }}',
-  farol               = '{{ appsmith.store.Farol }}',
+  odometro             = {{ Number(Input_odometro?.text) }},
+
+  nivel_combustivel    = '{{ appsmith.store.Combustivel }}',
+  farol                = '{{ appsmith.store.Farol }}',
   luz_freio            = '{{ appsmith.store.LuzFreio }}',
-  setas               = '{{ appsmith.store.Setas }}',
-  pneu                = '{{ appsmith.store.Pneu }}',
+  setas                = '{{ appsmith.store.Setas }}',
+  pneu                 = '{{ appsmith.store.Pneu }}',
+  pneu_traseiro        = '{{ appsmith.store.PneuTraseiro }}',
   vazamento_oleo       = '{{ appsmith.store.Vazamento }}',
   freio_dianteiro      = '{{ appsmith.store.FreioDianteiro }}',
   freio_traseiro       = '{{ appsmith.store.FreioTraseiro }}',
   manetes_pedaleiras   = '{{ appsmith.store.ManetesPedaleiras }}',
-  espelhos            = '{{ appsmith.store.Espelhos }}',
-  buzina              = '{{ appsmith.store.Buzina }}',
+  espelhos             = '{{ appsmith.store.Espelhos }}',
+  buzina               = '{{ appsmith.store.Buzina }}',
   documentacao_crlv    = '{{ appsmith.store.Documentacao }}',
 
   resultado_final = {{
@@ -20,6 +23,7 @@ SET
       appsmith.store.LuzFreio,
       appsmith.store.Setas,
       appsmith.store.Pneu,
+      appsmith.store.PneuTraseiro,
       appsmith.store.Vazamento,
       appsmith.store.FreioDianteiro,
       appsmith.store.FreioTraseiro,
@@ -28,12 +32,12 @@ SET
       appsmith.store.Buzina,
       appsmith.store.Documentacao
     ].includes("NC")
-      ? "NAO_APTO"
-      : "APTO"
+      ? 'NAO_APTO'
+      : 'APTO'
   }},
 
   observacoes = COALESCE(
-    NULLIF('{{ observacoes_checklistCopy.text }}',''),
+    NULLIF('{{ observacoes_checklistCopy.text }}', ''),
     observacoes
   )
 

@@ -45,14 +45,6 @@
       "label": "Peça",
       "onClick": "{{showModal(adicionar_peca.name);}}",
       "widgetId": ""
-    },
-    "menuItem3": {
-      "id": "menuItem3",
-      "index": 2,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Third Menu Item",
-      "widgetId": ""
     }
   },
   "menuItemsSource": "STATIC",
