@@ -3,9 +3,6 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 38,
   "boxShadow": "none",
-  "buttonColor": "#0d5478",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -13,37 +10,54 @@
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "onClick"
+      "key": "menuItems.menuItem1.onClick"
     }
   ],
-  "isDefaultClickDisabled": true,
+  "isCompact": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "dkphnq61y0",
+  "key": "7ae8cdwuax",
+  "label": "Checklist",
   "leftColumn": 51,
-  "minWidth": 120,
-  "mobileBottomRow": 38,
-  "mobileLeftColumn": 43,
-  "mobileRightColumn": 59,
-  "mobileTopRow": 34,
+  "menuColor": "#0d5478",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Diário",
+      "onClick": "{{showModal(checklist.name);}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Semanal",
+      "widgetId": ""
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 39,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(checklist.name);}}",
   "originalBottomRow": 38,
   "originalTopRow": 34,
-  "parentColumnSpace": 27.671875,
+  "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
-  "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
-  "responsiveBehavior": "hug",
   "rightColumn": 58,
-  "text": "Checklist",
   "topRow": 34,
-  "type": "BUTTON_WIDGET",
+  "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "e440ne4waq",
+  "widgetId": "4rvfbx5z4b",
   "widgetName": "Checklist"
 }

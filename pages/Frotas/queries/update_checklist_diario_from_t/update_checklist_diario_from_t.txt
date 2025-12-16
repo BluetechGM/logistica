@@ -1,0 +1,21 @@
+UPDATE compras_so.checklist_diario_motos
+SET
+  nivel_combustivel   = {{ checklist_NC.updatedRow.nivel_combustivel }},
+  farol              = {{ checklist_NC.updatedRow.farol }},
+  luz_freio           = {{ checklist_NC.updatedRow.luz_freio }},
+  setas              = {{ checklist_NC.updatedRow.setas }},
+  pneu               = {{ checklist_NC.updatedRow.pneu }},
+  vazamento_oleo      = {{ checklist_NC.updatedRow.vazamento_oleo }},
+  freio_dianteiro     = {{ checklist_NC.updatedRow.freio_dianteiro }},
+  freio_traseiro      = {{ checklist_NC.updatedRow.freio_traseiro }},
+  manetes_pedaleiras  = {{ checklist_NC.updatedRow.manetes_pedaleiras }},
+  espelhos           = {{ checklist_NC.updatedRow.espelhos }},
+  buzina             = {{ checklist_NC.updatedRow.buzina }},
+  documentacao_crlv   = {{ checklist_NC.updatedRow.documentacao_crlv }},
+  resultado_final     = {{ 
+    Object.values(checklist_NC.updatedRow).includes("NC")
+      ? 'NAO_APTO'
+      : 'APTO'
+  }},
+  observacoes         = {{ checklist_NC.updatedRow.observacoes }}
+WHERE id_checklist = {{ checklist_NC.updatedRow.id_checklist }};

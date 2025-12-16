@@ -1,0 +1,125 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 400,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dropDisabled": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "7xtxyr7rst",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 400,
+      "minWidth": 450,
+      "mobileBottomRow": 400,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 369.90234375,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "mw3w35gf99",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 369.90234375,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "7viucegd80",
+      "widgetName": "Canvas67"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "listData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enhancements": true,
+  "flexVerticalAlignment": "start",
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": 8,
+  "key": "0v99l5bylu",
+  "leftColumn": 1,
+  "listData": "{{\n  (() => {\n    const checklist = checklist_diario_motos_list.data || [];\n    const filiais = cod_filial.data || [];\n    const condutores = conduto_absatecimento.data || [];\n\n    return checklist\n      .filter(item => String(item.resultado_final || \"\").trim() === \"NAO_APTO\")\n      .map(item => {\n\n        // Mapa dos itens do checklist\n        const mapaItens = {\n          nivel_combustivel: \"Nível de combustível\",\n          farol: \"Farol\",\n          luz_freio: \"Luz de freio\",\n          setas: \"Setas\",\n          pneu: \"Pneu\",\n          vazamento_oleo: \"Vazamento de óleo\",\n          freio_dianteiro: \"Freio dianteiro\",\n          freio_traseiro: \"Freio traseiro\",\n          manetes_pedaleiras: \"Manetes e pedaleiras\",\n          espelhos: \"Espelhos\",\n          buzina: \"Buzina\",\n          documentacao_crlv: \"Documentação (CRLV)\"\n        };\n\n        const itensNC = Object.keys(mapaItens)\n          .filter(campo => String(item[campo] || \"\").trim() === \"NC\");\n\n        // Lookup filial (Oracle)\n        const filial = filiais.find(\n          f => String(f.CODIGO) === String(item.filial_id)\n        );\n\n        // Lookup condutor (Oracle)\n        const condutor = condutores.find(\n          c => String(c.MATRICULA) === String(item.condutor_id)\n        );\n\n        // Data formatada\n        const dataHora = (() => {\n          const normalizado = String(item.data_hora || \"\").replace(/\\.\\d+$/, \"\");\n          const m = moment(\n            normalizado,\n            [\"YYYY-MM-DD HH:mm:ss\", moment.ISO_8601],\n            true\n          );\n          return m.isValid()\n            ? m.format(\"DD/MM/YYYY HH:mm\")\n            : normalizado;\n        })();\n\n        return {\n          id_checklist: item.id_checklist,\n          placa: item.placa,\n          data_hora: dataHora,\n          filial: filial?.CIDADE_CODIGO || \"—\",\n          condutor: condutor?.NOME || \"—\",\n          qtd_nc: itensNC.length,\n          observacoes: item.observacoes || \"\"\n        };\n      });\n  })()\n}}\n",
+  "mainCanvasId": "7viucegd80",
+  "mainContainerId": "hu5zains17",
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "pageSize": 3,
+  "parentColumnSpace": 15.41259765625,
+  "parentId": "g7w8py56vy",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{list_checklist.listData.map((currentItem, currentIndex) => currentItem[\"id_checklist\"] )}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "selectedItemView": "{{{}}}",
+  "templateHeight": 160,
+  "topRow": 2,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "mw3w35gf99",
+  "widgetName": "list_checklist"
+}

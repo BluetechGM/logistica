@@ -4,14 +4,21 @@
   "bottomRow": 35,
   "boxShadow": "none",
   "buttonColor": "#22c55e",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "{{\n  appsmith.store.Combustivel === \"C\"\n    ? \"PRIMARY\"\n    : \"SECONDARY\"\n}}\n",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonVariant"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonVariant"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -29,11 +36,11 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('Combustivel', 'C').then(() => {\n  showAlert('registrado', 'success');\n}).catch(() => {\n  showAlert('Erro ao registrar.', 'error');\n});}}",
+  "onClick": "{{ storeValue(\"modoChecklist\", \"view\") }}",
   "originalBottomRow": 35,
   "originalTopRow": 31,
   "parentColumnSpace": 12.34375,
-  "parentId": "9z15xsc5dl",
+  "parentId": "2znpbh3q56",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -45,6 +52,6 @@
   "topRow": 31,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rtlembi7oj",
-  "widgetName": "conforme"
+  "widgetId": "inh8bwlpyz",
+  "widgetName": "conformeCopy11"
 }

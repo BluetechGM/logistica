@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 124,
+  "bottomRow": 120,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -324,6 +324,51 @@
       "version": 1,
       "widgetId": "pkep4t5r2d",
       "widgetName": "Canvas59"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 950,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "wy0w8rk8y4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 990,
+      "minWidth": 450,
+      "mobileBottomRow": 991,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1006.40625,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hb9i9gbrug",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1006.40625,
+      "tabId": "tabxiktx9g35k",
+      "tabName": "Checklist",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "g7w8py56vy",
+      "widgetName": "Canvas66"
     }
   ],
   "defaultTab": "Em aberto",
@@ -368,8 +413,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 124,
-  "originalTopRow": 25,
+  "originalBottomRow": 120,
+  "originalTopRow": 21,
   "parentColumnSpace": 16.7734375,
   "parentId": "5w67zcvffh",
   "parentRowSpace": 10,
@@ -436,9 +481,16 @@
       "isVisible": true,
       "label": "Aprovação Gestor",
       "widgetId": "ezazng6447"
+    },
+    "tabxiktx9g35k": {
+      "id": "tabxiktx9g35k",
+      "index": 7,
+      "isVisible": true,
+      "label": "Checklist",
+      "widgetId": "g7w8py56vy"
     }
   },
-  "topRow": 25,
+  "topRow": 21,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "hb9i9gbrug",

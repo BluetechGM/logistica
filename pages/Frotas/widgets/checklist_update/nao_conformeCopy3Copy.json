@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 55,
   "boxShadow": "none",
-  "buttonColor": "#22c55e",
+  "buttonColor": "#ef4444",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
@@ -11,7 +11,6 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -22,29 +21,29 @@
   "isLoading": false,
   "isVisible": true,
   "key": "jcljzy1evr",
-  "leftColumn": 20,
+  "leftColumn": 24,
   "minWidth": 120,
   "mobileBottomRow": 28,
   "mobileLeftColumn": 32,
   "mobileRightColumn": 48,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('Combustivel', 'C').then(() => {\n  showAlert('registrado', 'success');\n}).catch(() => {\n  showAlert('Erro ao registrar.', 'error');\n});}}",
-  "originalBottomRow": 35,
-  "originalTopRow": 31,
+  "onClick": "{{storeValue('Pneu', 'NC');}}",
+  "originalBottomRow": 55,
+  "originalTopRow": 51,
   "parentColumnSpace": 12.34375,
-  "parentId": "9z15xsc5dl",
+  "parentId": "2znpbh3q56",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 24,
-  "text": "C",
-  "topRow": 31,
+  "rightColumn": 28,
+  "text": "NC",
+  "topRow": 51,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rtlembi7oj",
-  "widgetName": "conforme"
+  "widgetId": "u0turd66y7",
+  "widgetName": "nao_conformeCopy3Copy"
 }

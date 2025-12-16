@@ -1,0 +1,25 @@
+SELECT
+    id_checklist,
+    data_hora,
+    filial_id,
+    placa,
+    condutor_id,
+    usuario_lancamento,
+
+    nivel_combustivel,
+    farol,
+    luz_freio,
+    setas,
+    pneu,
+    vazamento_oleo,
+    freio_dianteiro,
+    freio_traseiro,
+    manetes_pedaleiras,
+    espelhos,
+    buzina,
+    documentacao_crlv,
+
+    resultado_final,
+    observacoes
+FROM compras_so.checklist_diario_motos
+ORDER BY data_hora DESC;

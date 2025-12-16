@@ -24,6 +24,8 @@ SELECT
     s.tipo_incidente,
     s.foto_comprovante,
     s.lancado_winthor,
+		s.cnpj,
+    s.chave_pix,
     s.recnum,
     COUNT(p.id) as quantidade_produtos,
     COALESCE(SUM(p.preco), 0) as valor_total_produtos,
@@ -42,9 +44,9 @@ LEFT JOIN logistica_ai.resultados_produtos_solicitacao rps
 WHERE 
     s.ativo = TRUE
     AND (
-        {{appsmith.store.permissao_query}} = TRUE
-        OR s.id_solicitante = '{{appsmith.store.matricula}}'
-    )
+			{{appsmith.store.permissao_query}} = TRUE
+			OR s.id_solicitante = '{{appsmith.store.matricula}}'
+		)
 GROUP BY 
     s.id, s.placa, s.odometro_atual, s.odometro_prox_troca, 
     s.data_prox_manutencao, s.cidade, s.criado_por, s.servico, 
@@ -54,5 +56,5 @@ GROUP BY
     s.link_video_orcamento, s.link_imagem_orcamento,
     s.nfe_servico_pdf, s.nfe_produtos_pdf,
     s.observacoes, s.tipo_incidente, s.foto_comprovante,
-    s.lancado_winthor, s.recnum
+    s.lancado_winthor, s.cnpj, s.chave_pix, s.recnum
 ORDER BY s.data_abertura DESC;

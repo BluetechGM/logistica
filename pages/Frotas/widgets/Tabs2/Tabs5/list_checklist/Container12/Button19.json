@@ -1,16 +1,20 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "buttonColor": "#22c55e",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
     {
       "key": "borderRadius"
     }
   ],
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
@@ -21,30 +25,28 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "jcljzy1evr",
-  "leftColumn": 20,
+  "key": "xk15cyiqcc",
+  "leftColumn": 54,
   "minWidth": 120,
-  "mobileBottomRow": 28,
-  "mobileLeftColumn": 32,
-  "mobileRightColumn": 48,
-  "mobileTopRow": 24,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('Combustivel', 'C').then(() => {\n  showAlert('registrado', 'success');\n}).catch(() => {\n  showAlert('Erro ao registrar.', 'error');\n});}}",
-  "originalBottomRow": 35,
-  "originalTopRow": 31,
-  "parentColumnSpace": 12.34375,
-  "parentId": "9z15xsc5dl",
+  "onClick": "{{storeValue(\"checklist_edit_id\", currentItem.id_checklist).then(() => {\n  showModal(\"checklist_update\");\n  get_checklist_by_id.run();\n});}}",
+  "parentColumnSpace": 14.493453979492188,
+  "parentId": "uaytl0xcbn",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 24,
-  "text": "C",
-  "topRow": 31,
+  "rightColumn": 61,
+  "text": "Detalhes",
+  "topRow": 3,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rtlembi7oj",
-  "widgetName": "conforme"
+  "widgetId": "woe785ei08",
+  "widgetName": "Button19"
 }

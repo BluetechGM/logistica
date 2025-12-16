@@ -1,0 +1,3 @@
+SELECT *
+FROM compras_so.checklist_diario_motos
+WHERE id_checklist = {{ appsmith.store.checklist_edit_id }};
