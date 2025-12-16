@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT \n    MATRICULA, \n    NOME, \n    NOME_GUERRA, \n    SITUACAO, \n    CODUSUR, \n    FUNCAO, \n    CPF, \n    EMAIL, \n    TIPO, \n    CODFILIAL, \n    CELULAR\nFROM PCEMPR \nWHERE FUNCAO LIKE '%MOTOBOY%' \n  AND SITUACAO LIKE '%A%';\n"
+          "data": "SELECT \n    MATRICULA, \n    NOME, \n    NOME_GUERRA, \n    SITUACAO, \n    CODUSUR, \n    FUNCAO, \n    CPF, \n    EMAIL, \n    TIPO, \n    CODFILIAL, \n    CELULAR\nFROM PCEMPR \nWHERE FUNCAO LIKE '%MOTOBOY%' OR FUNCAO LIKE '%VENDEDOR EXTERNO%' \n  AND SITUACAO LIKE '%A%';\n"
         },
         "preparedStatement": {
           "data": true
