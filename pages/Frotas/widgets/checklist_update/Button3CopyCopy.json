@@ -14,6 +14,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -31,7 +36,7 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 63,
   "needsErrorInfo": false,
-  "onClick": "{{update_checklist_diario_from_t.run()}}",
+  "onClick": "{{\n  (async () => {\n    try {\n      console.log(\"🛠️ Iniciando atualização do checklist...\");\n\n      const res = await update_checklist_diario_from_t.run();\n\n      console.log(\"✅ Checklist atualizado com sucesso:\", res);\n\n      showAlert(\n        \"✅ Checklist atualizado com sucesso!\",\n        \"success\"\n      );\n\n      // Opcional: limpar store de novas fotos após salvar\n      removeValue(\"novas_fotos_urls\");\n\n      // Opcional: fechar modal\n      closeModal(checklist_update.name);\n\n    } catch (error) {\n      console.error(\"❌ Erro ao atualizar checklist:\", error);\n\n      showAlert(\n        error?.message\n          ? `❌ Erro ao atualizar o checklist: ${error.message}`\n          : \"❌ Não foi possível atualizar o checklist. Tente novamente.\",\n        \"error\"\n      );\n    }\n  })()\n}}",
   "originalBottomRow": 79,
   "originalTopRow": 75,
   "parentColumnSpace": 12.34375,

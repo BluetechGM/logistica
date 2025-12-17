@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 79,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rfy9narofd",
+  "leftColumn": 51,
+  "minWidth": 120,
+  "mobileBottomRow": 79,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 75,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(checklist_fotos_atuais.name);}}",
+  "originalBottomRow": 79,
+  "originalTopRow": 75,
+  "parentColumnSpace": 12.34375,
+  "parentId": "2znpbh3q56",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 59,
+  "text": "Fotos",
+  "topRow": 75,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "eg9c0cwzno",
+  "widgetName": "fotos"
+}

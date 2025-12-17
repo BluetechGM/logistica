@@ -1,0 +1,58 @@
+{
+  "allowedFileTypes": [
+    "*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 78,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "w50a5mo3te",
+  "label": "Anexar Fotos",
+  "leftColumn": 51,
+  "maxFileSize": "15",
+  "maxNumFiles": "20",
+  "minWidth": 120,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{inserir_checklist_fotos.uploadChecklistFotos();}}",
+  "originalBottomRow": 78,
+  "originalTopRow": 74,
+  "parentColumnSpace": 19.228125,
+  "parentId": "9z15xsc5dl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "selectedFiles": [],
+  "topRow": 74,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "john70e6rz",
+  "widgetName": "checklist_fotos"
+}

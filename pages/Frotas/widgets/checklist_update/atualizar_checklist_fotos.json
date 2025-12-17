@@ -1,0 +1,62 @@
+{
+  "allowedFileTypes": [
+    "*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 79,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "w50a5mo3te",
+  "label": "Atualizar Fotos",
+  "leftColumn": 2,
+  "maxFileSize": "15",
+  "maxNumFiles": "20",
+  "minWidth": 120,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{\n  (async () => {\n    // 1️⃣ Faz upload das novas fotos\n    const novasFotos = await inserir_checklist_fotos.uploadNovasFotos();\n\n    // 2️⃣ Validação\n    if (!Array.isArray(novasFotos) || novasFotos.length === 0) {\n      showAlert(\"Nenhuma nova foto para salvar\", \"warning\");\n      return;\n    }\n\n    // 3️⃣ Salva no store (ESSENCIAL)\n    await storeValue(\"novas_fotos_urls\", novasFotos);\n\n    console.log(\"🧪 novas_fotos_urls (store):\", appsmith.store.novas_fotos_urls);\n\n    // 4️⃣ Atualiza no banco (concatena no JSONB)\n    await update_checklist_diario_from_t.run();\n\n    showAlert(\"📸 Fotos adicionadas ao checklist com sucesso!\", \"success\");\n\n    // 5️⃣ Limpa o filepicker\n    resetWidget(\"atualizar_checklist_fotos\", true);\n\n  })().catch(err => {\n    console.error(\"❌ ERRO AO INSERIR NOVAS FOTOS:\", err);\n    showAlert(\"Erro ao salvar fotos no checklist\", \"error\");\n  })\n}}",
+  "originalBottomRow": 79,
+  "originalTopRow": 75,
+  "parentColumnSpace": 19.228125,
+  "parentId": "2znpbh3q56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 13,
+  "selectedFiles": [],
+  "topRow": 75,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "knpqunf35x",
+  "widgetName": "atualizar_checklist_fotos"
+}

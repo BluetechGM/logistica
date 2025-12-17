@@ -8,12 +8,16 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "menuItems.menuItem1.onClick"
     },
     {
       "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItemc9ofsvamm5.onClick"
     }
   ],
   "isCompact": false,
@@ -45,6 +49,15 @@
       "label": "Peça",
       "onClick": "{{showModal(adicionar_peca.name);}}",
       "widgetId": ""
+    },
+    "menuItemc9ofsvamm5": {
+      "id": "menuItemc9ofsvamm5",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Marca",
+      "onClick": "{{showModal(adicionar_marca.name);}}",
+      "widgetId": "emaxlbluoy"
     }
   },
   "menuItemsSource": "STATIC",

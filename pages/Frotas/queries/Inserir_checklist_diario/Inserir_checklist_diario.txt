@@ -20,7 +20,8 @@ INSERT INTO compras_so.checklist_diario_motos (
     documentacao_crlv,
 
     resultado_final,
-    observacoes
+    observacoes,
+    fotos_checklist
 )
 VALUES (
     {{ Select_Cidade_abasCopy.selectedOptionValue }},
@@ -58,7 +59,15 @@ VALUES (
         Espelhos: appsmith.store.Espelhos,
         Buzina: appsmith.store.Buzina,
         Documentacao: appsmith.store.Documentacao
-      }).includes('NC') ? 'NAO_APTO' : 'APTO'
+      }).includes('NC')
+        ? 'NAO_APTO'
+        : 'APTO'
     }},
-    '{{ observacoes_checklist.text || "" }}'
+    '{{ observacoes_checklist.text || "" }}',
+
+    {{
+      Array.isArray(appsmith.store.checklist_fotos_urls)
+        ? JSON.stringify(appsmith.store.checklist_fotos_urls)
+        : "[]"
+    }}::jsonb
 );

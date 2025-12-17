@@ -1,6 +1,10 @@
 UPDATE compras_so.checklist_diario_motos
 SET
-  odometro             = {{ Number(Input_odometro?.text) }},
+  -- ✅ ODÔMETRO (corrigido, ver problema 2 abaixo)
+  odometro = COALESCE(
+    NULLIF({{ Number(Input_odometro.text) }}, 0),
+    odometro
+  ),
 
   nivel_combustivel    = '{{ appsmith.store.Combustivel }}',
   farol                = '{{ appsmith.store.Farol }}',
@@ -39,6 +43,10 @@ SET
   observacoes = COALESCE(
     NULLIF('{{ observacoes_checklistCopy.text }}', ''),
     observacoes
-  )
+  ),
+
+  -- 🔥🔥🔥 AQUI ESTÁ O PONTO CRÍTICO
+  fotos_checklist = COALESCE(fotos_checklist, '[]'::jsonb)
+                    || {{ JSON.stringify(appsmith.store.novas_fotos_urls || []) }}::jsonb
 
 WHERE id_checklist = {{ appsmith.store.checklist_edit_id }};

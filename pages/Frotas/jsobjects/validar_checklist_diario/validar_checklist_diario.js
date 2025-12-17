@@ -1,6 +1,26 @@
 export default {
   validarEInserirChecklist: async () => {
 
+    console.log("🧪 DEBUG INÍCIO validarEInserirChecklist");
+
+    console.log("📸 checklist_fotos_urls (store):",
+      appsmith.store.checklist_fotos_urls,
+      " | tipo:",
+      typeof appsmith.store.checklist_fotos_urls
+    );
+
+    console.log(
+      "📸 checklist_fotos_urls é array?",
+      Array.isArray(appsmith.store.checklist_fotos_urls)
+    );
+
+    if (Array.isArray(appsmith.store.checklist_fotos_urls)) {
+      console.log(
+        "📸 Quantidade de fotos:",
+        appsmith.store.checklist_fotos_urls.length
+      );
+    }
+
     if (!Select_Cidade_abasCopy.selectedOptionValue) {
       showAlert("Selecione a Cidade/Filial", "warning");
       return;
@@ -21,14 +41,13 @@ export default {
       return;
     }
 
-    // 🔹 NOVO: validação do odômetro
     const odometro = Number(Input_odometro?.text);
     if (!odometro || isNaN(odometro) || odometro <= 0) {
       showAlert("Informe um odômetro válido", "warning");
       return;
     }
 
-    // 🔹 Checklist (incluindo pneu traseiro)
+    // 🔹 CHECKLIST
     const itensChecklist = {
       Combustivel: "Nível de combustível",
       Farol: "Farol",
@@ -57,28 +76,34 @@ export default {
       return;
     }
 
+    // 🔥 DEBUG ANTES DA QUERY
+    console.log("🚨 DEBUG ANTES DA QUERY Inserir_checklist_diario");
+    console.log("📦 Payload fotos (string):",
+      JSON.stringify(appsmith.store.checklist_fotos_urls || [])
+    );
+
     try {
-      await Inserir_checklist_diario.run();
+      const result = await Inserir_checklist_diario.run();
+
+      console.log("✅ QUERY EXECUTADA COM SUCESSO:", result);
 
       showAlert("Checklist diário lançado com sucesso!", "success");
 
-      // 🔹 Limpa checklist (C / NC)
       Object.keys(itensChecklist).forEach(item => removeValue(item));
 
-      // 🔹 Limpa odômetro
+      removeValue("checklist_fotos_urls");
+      resetWidget("checklist_fotos", true);
       resetWidget("Input_odometro", true);
-
-      // 🔹 Limpa selects e observações
       resetWidget("Select_Cidade_abasCopy", true);
       resetWidget("Select_condutor_abasCopy", true);
       resetWidget("Select_placa_abasCopy", true);
       resetWidget("observacoes_checklist", true);
 
-      // 🔹 Fecha modal
       closeModal("checklist");
 
     } catch (error) {
-      console.error("ERRO AO INSERIR CHECKLIST:", error);
+      console.error("❌ ERRO AO INSERIR CHECKLIST:", error);
+
       showAlert(
         error?.message || "Erro ao lançar checklist",
         "error"
