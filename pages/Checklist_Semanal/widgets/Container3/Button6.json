@@ -1,20 +1,19 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 78,
+  "bottomRow": 25,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -24,30 +23,30 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "y4by0teezn",
-  "leftColumn": 23,
+  "key": "x9xzm2lw4r",
+  "leftColumn": 26,
   "minWidth": 120,
-  "mobileBottomRow": 67,
-  "mobileLeftColumn": 38,
-  "mobileRightColumn": 54,
-  "mobileTopRow": 63,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onClick": "{{validar_checklist_diario.validarEInserirChecklist();}}",
-  "originalBottomRow": 78,
-  "originalTopRow": 74,
-  "parentColumnSpace": 12.34375,
-  "parentId": "9z15xsc5dl",
+  "onClick": "{{finalizarChecklistSemanal.finalizarChecklistSemanal();}}",
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
+  "parentColumnSpace": 20.25,
+  "parentId": "6306oie1ov",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 39,
-  "text": "Lançar Checklist",
-  "topRow": 74,
+  "rightColumn": 40,
+  "text": "Finalizar Checklist",
+  "topRow": 21,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "8d3r419ag4",
-  "widgetName": "Button3Copy"
+  "widgetId": "2kvmqowf97",
+  "widgetName": "Button6"
 }

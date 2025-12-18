@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_634c5877-bc04-4c25-905f-6f1f54ce0d03",
+  "id": "Checklist_Semanal_uploadChecklistSemanal",
+  "unpublishedCollection": {
+    "name": "uploadChecklistSemanal",
+    "pageId": "Checklist_Semanal",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

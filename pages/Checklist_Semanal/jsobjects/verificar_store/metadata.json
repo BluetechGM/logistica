@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_a349ee04-1097-45ae-a9f4-e26847c07cde",
+  "id": "Checklist_Semanal_verificar_store",
+  "unpublishedCollection": {
+    "name": "verificar_store",
+    "pageId": "Checklist_Semanal",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

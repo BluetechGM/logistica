@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "684accaaccd99e1ff73d47d3_e2e70c3a-ff0a-4936-b1f4-57515db50655",
-  "id": "Checklist_Semanal_catalogo_itens",
+  "gitSyncId": "684accaaccd99e1ff73d47d3_1c89d395-0d61-4d30-9e21-3c7204c1c3c4",
+  "id": "Checklist_Semanal_informacoes_veiculos",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM compras_so.catalogo_itens_checklist\nWHERE ativo = TRUE\n  AND tipo_checklist = 'SEMANAL'\nORDER BY label;",
+      "body": "SELECT \n    id,\n    tipo_veiculo,\n    placa,\n    unidade_fichado,\n    unidade_cadastrado,\n    cnpj_cadastro,\n    data_cadastro\nFROM compras_so.veiculos \nWHERE ativo = TRUE\nORDER BY tipo_veiculo, placa;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "catalogo_itens",
+    "name": "informacoes_veiculos",
     "pageId": "Checklist_Semanal",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false

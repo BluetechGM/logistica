@@ -1,8 +1,5 @@
-SELECT
-  codigo,
-  label
+SELECT *
 FROM compras_so.catalogo_itens_checklist
-WHERE
-  ativo = TRUE
+WHERE ativo = TRUE
   AND tipo_checklist = 'SEMANAL'
 ORDER BY label;

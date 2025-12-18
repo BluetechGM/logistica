@@ -1,0 +1,55 @@
+{
+  "allowedFileTypes": [],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "75a51mcfs0",
+  "label": "Foto/Video",
+  "leftColumn": 53,
+  "maxFileSize": 5,
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{ \n  uploadChecklistSemanal.uploadFotoItemSemanal(\n    currentItem.codigo,\n    FilePicker_item\n  )\n}}\n",
+  "parentColumnSpace": 15.28759765625,
+  "parentId": "3znxbq2br7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "selectedFiles": [],
+  "topRow": 4,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "yl6ekzcskb",
+  "widgetName": "FilePicker_item"
+}

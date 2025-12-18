@@ -1,0 +1,22 @@
+INSERT INTO compras_so.checklist_semanal_motos (
+	usuario_execucao,
+	filial_id,
+	placa,
+	odometro,
+	resultado_final,
+	observacoes
+)
+VALUES (
+	{{ appsmith.store.usuario_nome }},
+	{{ Select_Cidade_abasCopy.selectedOptionValue }},
+	{{ Select_placa_abasCopy.selectedOptionLabel }},
+	{{ Input_odometro.text }},
+	{{
+		Object.values(appsmith.store.checklist_semanal || {})
+			.some(i => i.status === 'NAO_CONFORME')
+			? 'NAO_APTO'
+			: 'APTO'
+	}},
+	{{ observacoes_checklist.text || "" }}
+)
+RETURNING id_checklist;
