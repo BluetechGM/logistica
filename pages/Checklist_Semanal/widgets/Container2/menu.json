@@ -1,0 +1,313 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButtonh4p7h6owuf.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.iconName"
+    },
+    {
+      "key": "groupButtons.groupButton3.iconName"
+    },
+    {
+      "key": "groupButtons.groupButtonc791jvy005.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonh4p7h6owuf.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonnyx2fiq0wp.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonc791jvy005.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonrt27uxakaa.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonh4p7h6owuf.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonr7wr13a7k5.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonhsglp1ucq7.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconAlign": "left",
+      "iconName": "dollar",
+      "id": "groupButton1",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "Pedidos",
+      "menuItems": {},
+      "onClick": "",
+      "placement": "START",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "shopping-cart",
+      "id": "groupButton2",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "Meus Pedidos",
+      "menuItems": {},
+      "placement": "START",
+      "widgetId": ""
+    },
+    "groupButton28kvj1zu0q": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "document",
+      "id": "groupButton28kvj1zu0q",
+      "index": 10,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Multas",
+      "menuItems": {},
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "9yl9woeelq"
+    },
+    "groupButton3": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "briefcase",
+      "id": "groupButton3",
+      "index": 7,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Suporte",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "disabledWhenInvalid": false,
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "placement": "START",
+      "widgetId": ""
+    },
+    "groupButton6dhm6f5olv": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "drive-time",
+      "id": "groupButton6dhm6f5olv",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Resumo Veículo",
+      "menuItems": {},
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "d46s0ikmbk"
+    },
+    "groupButtona2xpwfil7m": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "truck",
+      "id": "groupButtona2xpwfil7m",
+      "index": 8,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Caminhão",
+      "menuItems": {},
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "p0owe6bbe4"
+    },
+    "groupButtonc791jvy005": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "modal",
+      "id": "groupButtonc791jvy005",
+      "index": 0,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Módulos",
+      "menuItems": {},
+      "onClick": "{{navigateTo('home', {}, 'SAME_WINDOW');}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "gzkr5mqq5n"
+    },
+    "groupButtonh4p7h6owuf": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "dollar",
+      "id": "groupButtonh4p7h6owuf",
+      "index": 6,
+      "isDisabled": "{{appsmith.store.lançar_abastecimento}}",
+      "isSeparator": false,
+      "isVisible": false,
+      "itemType": "BUTTON",
+      "label": "Abastecimento",
+      "menuItems": {},
+      "onClick": "{{showModal(add_att_item.name);}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "geo4e4j9mz"
+    },
+    "groupButtonhsglp1ucq7": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "build",
+      "id": "groupButtonhsglp1ucq7",
+      "index": 11,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Intercorrências",
+      "menuItems": {},
+      "onClick": "{{showModal(intercorr_ncias.name);}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "nk3mlbvtq5"
+    },
+    "groupButtonnyx2fiq0wp": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButtonnyx2fiq0wp",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": false,
+      "itemType": "BUTTON",
+      "label": "Abrir Solicitação",
+      "menuItems": {},
+      "onClick": "{{showModal(abrir_solicitacao.name);}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "chh6p65uiz"
+    },
+    "groupButtonr7wr13a7k5": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "vertical-bar-chart-asc",
+      "id": "groupButtonr7wr13a7k5",
+      "index": 9,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Financeiro",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Finaceiro', {}, 'SAME_WINDOW');}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "pqw1d8teba"
+    },
+    "groupButtonrt27uxakaa": {
+      "buttonColor": "transparent",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButtonrt27uxakaa",
+      "index": 5,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Lançar Orçamento",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Frotas', {}, 'SAME_WINDOW').then(() => {\n  gerar_id.gerarIdUnico();\n});}}",
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "5yo0u6hn0r"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5dgm4fzk24",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "orientation": "vertical",
+  "originalBottomRow": 51,
+  "originalTopRow": 37,
+  "parentColumnSpace": 20.25,
+  "parentId": "540ds87fwv",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 14,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "nollev5vs2",
+  "widgetName": "menu"
+}

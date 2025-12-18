@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "684accaaccd99e1ff73d47d3_5525b2b5-8e52-4c98-990b-5255329951d3",
+  "id": "Checklist_Semanal_enviar_cloudinary",
+  "unpublishedCollection": {
+    "name": "enviar_cloudinary",
+    "pageId": "Checklist_Semanal",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

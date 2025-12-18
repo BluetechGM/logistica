@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6bgmiqmhsc",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  add_item_checklist.run()\n    .then(() => {\n\n      showAlert(\n        \"✅ Item do checklist salvo com sucesso!\",\n        \"success\"\n      );\n\n      // 🔹 Limpa campo\n      resetWidget(\"Input_item_label\", true);\n\n      // 🔹 Fecha modal\n      closeModal(adicionar_item_checklist.name);\n\n    })\n    .catch((err) => {\n\n      const msg =\n        err?.message ||\n        err?.error ||\n        \"Erro inesperado ao salvar o item do checklist.\";\n\n      showAlert(`❌ ${msg}`, \"error\");\n\n    });\n}}\n",
+  "originalBottomRow": 24,
+  "originalTopRow": 20,
+  "parentId": "rdy8p34jya",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Confirmar",
+  "topRow": 17,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "msbmzqjzc0",
+  "widgetName": "Button2"
+}

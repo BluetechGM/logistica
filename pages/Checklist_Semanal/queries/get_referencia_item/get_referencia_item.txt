@@ -1,0 +1,8 @@
+SELECT
+  imagem_exemplo,
+  descricao
+FROM compras_so.checklist_semanal_referencias
+WHERE
+  item_codigo = '{{ Select_item.selectedOptionValue }}'
+  AND ativo = TRUE
+LIMIT 1;

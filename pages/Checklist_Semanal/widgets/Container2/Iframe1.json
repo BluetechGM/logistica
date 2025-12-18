@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rotgivml5a",
+  "leftColumn": 4,
+  "mobileBottomRow": 72,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 27.671875,
+  "parentId": "540ds87fwv",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "source": "https://www.example.com",
+  "srcDoc": "<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body {\n      margin: 0;\n      background: transparent;\n      color: #FFFFFF;\n      font-family: system-ui, sans-serif;\n      text-align: center;\n      padding: 10px 0;\n    }\n\n    .saudacao {\n      font-size: 25px;\n      font-weight: bold;\n      margin: 0;\n    }\n\n    .nome {\n      font-size: 15px;\n      color: #FFFFFF;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n  <p class=\"saudacao\" id=\"saudacao\">Olá</p>\n  <p class=\"nome\" id=\"nome\">Usuário</p>\n\n  <script>\n    // Saudação com base no horário\n    const hora = new Date().getHours();\n    const saudacao =\n      hora < 12 ? \"Bom dia\" :\n      hora < 18 ? \"Boa tarde\" :\n      \"Boa noite\";\n\n    document.getElementById(\"saudacao\").textContent = saudacao;\n\n    // Nome vindo do Appsmith (inserido diretamente)\n    const nomeCompleto = \"{{appsmith.store.usuario_nome}}\" || \"Usuário\";\n    const primeiroNome = nomeCompleto.trim().split(\" \")[0];\n    document.getElementById(\"nome\").textContent = primeiroNome;\n  </script>\n</body>\n</html>\n",
+  "topRow": 2,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "l04vqx291v",
+  "widgetName": "Iframe1"
+}

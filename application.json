@@ -48,6 +48,10 @@
     {
       "id": "permissao",
       "isDefault": false
+    },
+    {
+      "id": "Checklist_Semanal",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

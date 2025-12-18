@@ -1,0 +1,29 @@
+INSERT INTO compras_so.catalogo_itens_checklist (
+    codigo,
+    label,
+    tipo_checklist,
+    exige_foto,
+    ativo
+)
+VALUES (
+    UPPER(
+        REGEXP_REPLACE(
+            TRANSLATE(
+                TRIM('{{ Input_item_label.text }}'),
+                'ÁÀÂÃÄáàâãäÉÈÊËéèêëÍÌÎÏíìîïÓÒÔÕÖóòôõöÚÙÛÜúùûüÇç',
+                'AAAAAaaaaaEEEEeeeeIIIIiiiiOOOOOoooooUUUUuuuuCc'
+            ),
+            '[^A-Za-z0-9]+',
+            '_',
+            'g'
+        )
+    ),
+    '{{ Input_item_label.text }}',
+    'SEMANAL',
+    TRUE,
+    TRUE
+)
+ON CONFLICT (codigo)
+DO UPDATE SET
+    label = EXCLUDED.label,
+    ativo = TRUE;
