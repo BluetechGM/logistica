@@ -103,7 +103,7 @@
   "itemSpacing": "0",
   "key": "phah4lld3n",
   "leftColumn": 0,
-  "listData": "{{solicitacoes_frota_list.data.filter(item => {\n    const status = String(item.status || '').toLowerCase();\n    return !status.includes('aprov') && !status.includes('reprov');\n})}}",
+  "listData": "{{\n  solicitacoes_frota_list.data.filter(item => {\n    const status = String(item.status || \"\").toLowerCase();\n    const valorTotal =\n      Number(item.valor_total_produtos || 0) +\n      Number(item.valor_total_servicos || 0);\n\n    return (\n      !status.includes(\"aprov\") &&\n      !status.includes(\"reprov\") &&\n      valorTotal < 500\n    );\n  })\n}}\n",
   "mainCanvasId": "47q0ttwsoq",
   "mainContainerId": "86t95l7qbm",
   "minWidth": 450,
