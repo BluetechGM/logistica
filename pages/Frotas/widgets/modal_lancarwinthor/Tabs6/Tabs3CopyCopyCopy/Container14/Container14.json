@@ -1,0 +1,91 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 96,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 350,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "zol2tll04v",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 100,
+      "minWidth": 450,
+      "mobileBottomRow": 100,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 337.84375,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "sh9l7kjyuq",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 337.84375,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "vaaneljy5r",
+      "widgetName": "Canvas71"
+    }
+  ],
+  "containerStyle": "card",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "flexVerticalAlignment": "stretch",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "081fmcww08",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 61,
+  "needsErrorInfo": false,
+  "originalBottomRow": 96,
+  "originalTopRow": 61,
+  "parentColumnSpace": 17.78125,
+  "parentId": "g6ccd5yg7q",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 17,
+  "shouldScrollContents": true,
+  "topRow": 61,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "sh9l7kjyuq",
+  "widgetName": "Container14"
+}

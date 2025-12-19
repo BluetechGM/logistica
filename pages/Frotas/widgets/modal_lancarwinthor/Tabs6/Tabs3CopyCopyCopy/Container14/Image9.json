@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{ list_comprovante_reparo.triggeredItem.foto_comprovante\n }}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4kom0m13fc",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 30,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onClick": "{{navigateTo(list_comprovante_reparo.triggeredItem.foto_comprovante, {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 4.41064453125,
+  "parentId": "vaaneljy5r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "r0uezg9mpn",
+  "widgetName": "Image9"
+}
