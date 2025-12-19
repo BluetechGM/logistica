@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "bottomRow": 40,
+  "docUrl": "{{\n  typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"comprovante não anexado\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"null\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf.trim() !== \"\"\n    ? mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n    : mfs_list_comprovante.triggeredItem.nfe_produtos_pdf\n}}\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": "{{\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"comprovante não anexado\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"null\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf.trim() !== \"\" &&\n    /\\.pdf(\\?|$)/i.test(mfs_list_comprovante.triggeredItem.nfe_servico_pdf)\n  )\n  ||\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_produtos_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf !== \"comprovante não anexado\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf !== \"null\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf.trim() !== \"\" &&\n    /\\.pdf(\\?|$)/i.test(mfs_list_comprovante.triggeredItem.nfe_produtos_pdf)\n  )\n}}\n\n",
+  "key": "lmw0b21eys",
+  "leftColumn": 1,
+  "mobileBottomRow": 80,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 4.552354431152343,
+  "parentId": "7oxsm6i4t0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "qadj06zmrb",
+  "widgetName": "DocumentViewer1"
+}

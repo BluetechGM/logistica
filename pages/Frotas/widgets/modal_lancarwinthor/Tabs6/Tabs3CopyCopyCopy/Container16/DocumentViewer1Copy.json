@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "bottomRow": 41,
+  "docUrl": "{{ mfs_list_comprovante.triggeredItem.foto_comprovante\n }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": "{{\n  typeof list_comprovante_reparo.triggeredItem.foto_comprovante === \"string\" &&\n  list_comprovante_reparo.triggeredItem.foto_comprovante.toLowerCase().includes(\".pdf\")\n}}",
+  "key": "lmw0b21eys",
+  "leftColumn": 1,
+  "mobileBottomRow": 80,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 4.552354431152343,
+  "parentId": "cls9aawkm3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 1,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "3s64urwcfl",
+  "widgetName": "DocumentViewer1Copy"
+}

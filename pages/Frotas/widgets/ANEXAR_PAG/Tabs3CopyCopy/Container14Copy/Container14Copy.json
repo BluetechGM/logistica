@@ -4,12 +4,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 96,
+  "bottomRow": 103,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 350,
+      "bottomRow": 420,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "sh9l7kjyuq",
+      "parentId": "j05oxqb4j0",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,8 +46,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "vaaneljy5r",
-      "widgetName": "Canvas71"
+      "widgetId": "7oxsm6i4t0",
+      "widgetName": "Canvas71Copy"
     }
   ],
   "containerStyle": "card",
@@ -72,7 +72,7 @@
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{\n  typeof list_comprovante_reparo.triggeredItem.foto_comprovante === \"string\" &&\n  list_comprovante_reparo.triggeredItem.foto_comprovante.toLowerCase().includes(\".jpg\")\n}}",
+  "isVisible": "{{\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"comprovante não anexado\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"null\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf.trim() !== \"\" &&\n    /\\.pdf(\\?|$)/i.test(mfs_list_comprovante.triggeredItem.nfe_servico_pdf)\n  )\n  ||\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_produtos_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf !== \"comprovante não anexado\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf !== \"null\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf.trim() !== \"\" &&\n    /\\.pdf(\\?|$)/i.test(mfs_list_comprovante.triggeredItem.nfe_produtos_pdf)\n  )\n}}\n\n",
   "key": "081fmcww08",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -83,10 +83,10 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 61,
   "needsErrorInfo": false,
-  "originalBottomRow": 96,
+  "originalBottomRow": 103,
   "originalTopRow": 61,
   "parentColumnSpace": 17.78125,
-  "parentId": "g6ccd5yg7q",
+  "parentId": "vdmseukrtr",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -95,6 +95,6 @@
   "topRow": 61,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "sh9l7kjyuq",
-  "widgetName": "Container14"
+  "widgetId": "j05oxqb4j0",
+  "widgetName": "Container14Copy"
 }
