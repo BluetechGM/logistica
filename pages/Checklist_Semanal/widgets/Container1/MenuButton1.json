@@ -15,6 +15,9 @@
     },
     {
       "key": "menuItems.menuItemjgregysxm3.onClick"
+    },
+    {
+      "key": "menuItems.menuItem06l9ex4rd0.onClick"
     }
   ],
   "isCompact": false,
@@ -26,6 +29,15 @@
   "leftColumn": 51,
   "menuColor": "#0d5478",
   "menuItems": {
+    "menuItem06l9ex4rd0": {
+      "id": "menuItem06l9ex4rd0",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Del item",
+      "onClick": "{{showModal(del_att_item.name);}}",
+      "widgetId": "k1565dsyja"
+    },
     "menuItem1": {
       "backgroundColor": "#ffffff",
       "iconColor": "transparent",

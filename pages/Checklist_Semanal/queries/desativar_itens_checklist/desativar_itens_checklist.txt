@@ -1,0 +1,4 @@
+UPDATE compras_so.catalogo_itens_checklist
+SET 
+  ativo = FALSE
+WHERE codigo = ANY ({{ MultiSelectItens.selectedOptionValues }});
