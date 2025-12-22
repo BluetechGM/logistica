@@ -5,12 +5,12 @@
   "borderColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 182,
+  "bottomRow": 67,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1780,
+      "bottomRow": 1760,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1780,
+      "bottomRow": 630,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1780,
+      "bottomRow": 630,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -237,7 +237,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1780,
+      "bottomRow": 630,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -282,7 +282,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1780,
+      "bottomRow": 1360,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -324,6 +324,51 @@
       "version": 1,
       "widgetId": "e7dxn33ntx",
       "widgetName": "Canvas60"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1050,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "ekdj3lwnyp",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1820,
+      "minWidth": 450,
+      "mobileBottomRow": 1821,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1187.85,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "1m3u994thd",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1187.85,
+      "tabId": "tab4dq2txcvf9",
+      "tabName": "Anexar Pagamento",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "sjongt0nnx",
+      "widgetName": "Canvas75"
     }
   ],
   "defaultTab": "MF Detalhes",
@@ -384,6 +429,7 @@
     "tab1": {
       "id": "tab1",
       "index": 0,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "MF Detalhes",
       "positioning": "vertical",
@@ -392,42 +438,56 @@
     "tab2": {
       "id": "tab2",
       "index": 1,
+      "isDuplicateLabel": false,
       "isVisible": "{{ appsmith.store.liberarTela }}\n\n",
       "label": "Tratar MF",
       "positioning": "vertical",
       "widgetId": "itmx8kpc92"
     },
+    "tab4dq2txcvf9": {
+      "id": "tab4dq2txcvf9",
+      "index": 3,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Anexar Pagamento",
+      "widgetId": "sjongt0nnx"
+    },
     "tabb9arsx0b6r": {
       "id": "tabb9arsx0b6r",
       "index": 2,
+      "isDuplicateLabel": false,
       "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
       "label": "Anexar Notas Fiscais",
       "widgetId": "k6pst07gh5"
     },
     "tabczsf95ewzc": {
       "id": "tabczsf95ewzc",
-      "index": 5,
+      "index": 6,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Decisão rápida",
       "widgetId": "wazjs8qx8h"
     },
     "tablmd4940v82": {
       "id": "tablmd4940v82",
-      "index": 4,
+      "index": 5,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "IA",
       "widgetId": "qqqw0khaep"
     },
     "tabn1lfuuj75i": {
       "id": "tabn1lfuuj75i",
-      "index": 3,
+      "index": 4,
+      "isDuplicateLabel": false,
       "isVisible": false,
       "label": "Teste",
       "widgetId": "oo3i4l360i"
     },
     "tabor5e45jcb0": {
       "id": "tabor5e45jcb0",
-      "index": 6,
+      "index": 7,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Histórico de Preço",
       "widgetId": "e7dxn33ntx"

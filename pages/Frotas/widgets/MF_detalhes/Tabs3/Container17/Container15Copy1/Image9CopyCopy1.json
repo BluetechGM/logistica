@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 34,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "image"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "{{ mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n }}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": "{{ arquivoJpg.visivel() }}\n",
+  "key": "4kom0m13fc",
+  "leftColumn": 6,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 30,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onClick": "{{navigateTo(list_comprovante_reparo.triggeredItem.nfe_servico_pdf, {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 4.41064453125,
+  "parentId": "gekt0pkpwl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 1,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "pt02slmw3b",
+  "widgetName": "Image9CopyCopy1"
+}

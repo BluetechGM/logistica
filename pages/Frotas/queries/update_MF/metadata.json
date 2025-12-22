@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE compras_so.solicitacoes_frota\nSET \n    status = '{{Select_status.selectedOptionValue}}',\n    motivo_reprovacao = {{Input_motivoreprovacao.text ? `'${Input_motivoreprovacao.text}'` : 'NULL'}},\n    data_atualizacao = CURRENT_TIMESTAMP\n\t\tid_decisao = '{{appsmith.store.matricula}}',\n  \tnome_decisao = '{{appsmith.store.usuario_nome}}',\nWHERE id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}';\n\n",
+      "body": "UPDATE compras_so.solicitacoes_frota\nSET \n    status = '{{Select_status.selectedOptionValue}}',\n    motivo_reprovacao = {{Input_motivoreprovacao.text ? `'${Input_motivoreprovacao.text}'` : 'NULL'}},\n    data_atualizacao = CURRENT_TIMESTAMP,\n\t\tid_decisao = '{{appsmith.store.matricula}}',\n  \tnome_decisao = '{{appsmith.store.usuario_nome}}'\nWHERE id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}';\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

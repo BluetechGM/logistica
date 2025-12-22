@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_statusCopyCopyCopy1.options, Select_statusCopyCopyCopy1.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "8dlho753v5",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Status de solicitações",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 50,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 42,
+  "needsErrorInfo": false,
+  "optionLabel": "status",
+  "optionValue": "status",
+  "originalBottomRow": 45,
+  "originalTopRow": 38,
+  "parentColumnSpace": 16.6875,
+  "parentId": "sfjy45e5zz",
+  "parentRowSpace": 10,
+  "placeholderText": "Selecione o Status",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "{{status_list.data}}",
+  "topRow": 3,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "2c5k5vnqjc",
+  "widgetName": "Select_statusCopyCopyCopy1"
+}

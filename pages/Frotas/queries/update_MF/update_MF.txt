@@ -2,8 +2,8 @@ UPDATE compras_so.solicitacoes_frota
 SET 
     status = '{{Select_status.selectedOptionValue}}',
     motivo_reprovacao = {{Input_motivoreprovacao.text ? `'${Input_motivoreprovacao.text}'` : 'NULL'}},
-    data_atualizacao = CURRENT_TIMESTAMP
+    data_atualizacao = CURRENT_TIMESTAMP,
 		id_decisao = '{{appsmith.store.matricula}}',
-  	nome_decisao = '{{appsmith.store.usuario_nome}}',
+  	nome_decisao = '{{appsmith.store.usuario_nome}}'
 WHERE id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}';
 

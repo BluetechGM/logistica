@@ -1,0 +1,100 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 61,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 360,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "ci4a3onmyy",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 100,
+      "minWidth": 450,
+      "mobileBottomRow": 100,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 274.72119140625,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "1cu8kaxsbz",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 274.72119140625,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "sex9so00pw",
+      "widgetName": "Canvas72Copy"
+    }
+  ],
+  "containerStyle": "card",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": "{{ (typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\") &&\n  (mfs_list_comprovante.triggeredItem.nfe_servico_pdf.toLowerCase().includes(\".jpg\")) }}",
+  "key": "741ezzbchf",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 27,
+  "needsErrorInfo": false,
+  "originalBottomRow": 61,
+  "originalTopRow": 25,
+  "parentColumnSpace": 18.31474609375,
+  "parentId": "dvosz7xhhy",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 17,
+  "shouldScrollContents": true,
+  "topRow": 25,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "1cu8kaxsbz",
+  "widgetName": "Container15Copy"
+}
