@@ -119,7 +119,7 @@
   "parentColumnSpace": 18.43896484375,
   "parentId": "ng35wcszug",
   "parentRowSpace": 10,
-  "primaryKeys": "{{mfs_listCopy2.listData.map((currentItem, currentIndex) => currentItem[\"solicitacao_id\"] )}}",
+  "primaryKeys": "{{mfs_todos.listData.map((currentItem, currentIndex) => currentItem[\"solicitacao_id\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
@@ -130,5 +130,5 @@
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "rq2zd9ykrm",
-  "widgetName": "mfs_listCopy2"
+  "widgetName": "mfs_todos"
 }
