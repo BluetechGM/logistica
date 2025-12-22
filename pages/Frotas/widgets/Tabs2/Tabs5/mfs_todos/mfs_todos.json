@@ -115,7 +115,7 @@
   "onItemClick": "{{\n  (async () => {\n    await storeValue(\"itemSelecionado\", currentItem);\n    await showModal(MF_detalhes.name);\n    await analise_ia.run();\n\n    // Salva no storage o retorno da função de aprovação\n    const podeLiberar = await aprovar_orcamento.podeLiberarTela();\n    await storeValue(\"liberarTela\", podeLiberar);\n  })();\n}}",
   "originalBottomRow": 100,
   "originalTopRow": 31,
-  "pageSize": 7,
+  "pageSize": 10,
   "parentColumnSpace": 18.43896484375,
   "parentId": "ng35wcszug",
   "parentRowSpace": 10,

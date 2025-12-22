@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 41,
-  "docUrl": "{{ mfs_list_comprovante.triggeredItem.foto_comprovante\n }}",
+  "docUrl": "{{ list_comprovante_reparo.triggeredItem.foto_comprovante\n }}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"

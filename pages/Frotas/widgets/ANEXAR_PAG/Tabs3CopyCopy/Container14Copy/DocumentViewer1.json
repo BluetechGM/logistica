@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 40,
-  "docUrl": "{{\n  typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"comprovante não anexado\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"null\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf.trim() !== \"\"\n    ? mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n    : mfs_list_comprovante.triggeredItem.nfe_produtos_pdf\n}}\n",
+  "docUrl": "{{\n  typeof mfs_list_comprovante.triggeredItem.foto_comprovante === \"string\" &&\n  mfs_list_comprovante.triggeredItem.foto_comprovante !== \"comprovante não anexado\" &&\n  mfs_list_comprovante.triggeredItem.foto_comprovante !== \"null\" &&\n  mfs_list_comprovante.triggeredItem.foto_comprovante.trim() !== \"\"\n    ? mfs_list_comprovante.triggeredItem.foto_comprovante\n    : mfs_list_comprovante.triggeredItem.foto_comprovante\n}}\n",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"
