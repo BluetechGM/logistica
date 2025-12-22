@@ -110,7 +110,7 @@
   "onItemClick": "{{showModal(ANEXAR_PAG.name).then(() => {\n  produtos_mf_nf_comp.run();\n});}}",
   "originalBottomRow": 100,
   "originalTopRow": 31,
-  "pageSize": 7,
+  "pageSize": 11,
   "parentColumnSpace": 18.43896484375,
   "parentId": "sip4hi5bt1",
   "parentRowSpace": 10,

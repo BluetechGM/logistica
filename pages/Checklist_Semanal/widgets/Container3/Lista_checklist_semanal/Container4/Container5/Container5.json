@@ -1,17 +1,18 @@
 {
   "animateLoading": true,
-  "backgroundColor": "transparent",
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 1874,
-  "boxShadow": "none",
-  "canEscapeKeyClose": true,
-  "canOutsideClickClose": true,
+  "borderWidth": "1",
+  "bottomRow": 9,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1840,
+      "bottomRow": 170,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": true,
+      "canExtend": false,
+      "containerStyle": "none",
       "detachFromLayout": true,
       "dynamicBindingPathList": [
         {
@@ -23,69 +24,75 @@
       ],
       "dynamicHeight": "AUTO_HEIGHT",
       "flexLayers": [],
-      "isDisabled": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "e03xo8rd5e",
+      "key": "dvj7tiecpf",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 1770,
+      "minHeight": 100,
       "minWidth": 450,
-      "mobileBottomRow": 240,
+      "mobileBottomRow": 100,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 469.125,
+      "mobileRightColumn": 214.0263671875,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "q3n5mvdcnm",
+      "parentId": "fvadq3lgxt",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 469.125,
-      "shouldScrollContents": false,
+      "rightColumn": 214.0263671875,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "5iktiaiq74",
-      "widgetName": "Canvas22CopyCopy"
+      "widgetId": "34735u0otg",
+      "widgetName": "Canvas9"
     }
   ],
-  "detachFromLayout": true,
+  "containerStyle": "card",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [
+  "dynamicPropertyPathList": [
     {
-      "key": "onClose"
+      "key": "isVisible"
     }
   ],
-  "height": 1770,
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "key": "ide6n2hhet",
-  "leftColumn": 27,
+  "isVisible": "{{\n  typeof currentItem.imagem_exemplo === \"string\" &&\n  /\\.(jpg|jpeg|png|webp)$/i.test(currentItem.imagem_exemplo)\n}}",
+  "key": "wlwtyw9oqw",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
-  "mobileBottomRow": 57,
-  "mobileLeftColumn": 27,
-  "mobileRightColumn": 51,
-  "mobileTopRow": 33,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClose": "{{resetWidget(\"mfs_list_anexar_nfe\", true);}}",
-  "parentColumnSpace": 19.546875,
-  "parentId": "0",
+  "parentColumnSpace": 15.28759765625,
+  "parentId": "3znxbq2br7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 51,
+  "responsiveBehavior": "fill",
+  "rightColumn": 14,
   "shouldScrollContents": true,
-  "topRow": 104,
-  "type": "MODAL_WIDGET",
-  "version": 2,
-  "widgetId": "q3n5mvdcnm",
-  "widgetName": "ANEXAR_PAG",
-  "width": 1242.6
+  "topRow": 0,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "fvadq3lgxt",
+  "widgetName": "Container5"
 }

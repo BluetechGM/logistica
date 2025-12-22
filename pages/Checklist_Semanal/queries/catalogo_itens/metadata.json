@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM compras_so.catalogo_itens_checklist\nWHERE ativo = TRUE\n  AND tipo_checklist = 'SEMANAL'\nORDER BY label;",
+      "body": "SELECT \n    c.*,\n    r.imagem_exemplo\nFROM compras_so.catalogo_itens_checklist c\nLEFT JOIN compras_so.checklist_semanal_referencias r\n       ON r.item_codigo = c.codigo\nWHERE c.ativo = TRUE\n  AND c.tipo_checklist = 'SEMANAL'\nORDER BY c.label;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -110,7 +110,7 @@
   "parentColumnSpace": 16.7734375,
   "parentId": "6306oie1ov",
   "parentRowSpace": 10,
-  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"codigo\"] )}}",
+  "primaryKeys": "{{Lista_checklist_semanal.listData.map((currentItem, currentIndex) => currentItem[\"codigo\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
@@ -121,5 +121,5 @@
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "7zjwg4bqzc",
-  "widgetName": "List1"
+  "widgetName": "Lista_checklist_semanal"
 }
