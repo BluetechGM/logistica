@@ -29,7 +29,7 @@
     ],
     "name": "produtos_mf_todos",
     "pageId": "Frotas",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
