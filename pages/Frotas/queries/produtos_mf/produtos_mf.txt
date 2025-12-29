@@ -7,7 +7,7 @@ SELECT
     p.preco_unitario,
     p.preco as preco_total,
     p.observacoes as observacoes_produto,
-    
+
     -- Informações da solicitação
     p.id_solicitacao,
     s.placa,
@@ -20,20 +20,24 @@ SELECT
     s.odometro_atual,
     s.odometro_prox_troca,
     s.data_prox_manutencao,
-    
+
+    -- NOVOS CAMPOS (da solicitacoes_frota)
+    s.cnpj,
+    s.chave_pix,
+
     -- Informações do solicitante (se disponível)
     p.id_solicitante,
     p.nome_solicitante,
     p.data_solicitacao,
-		p.servico_peca,
-		p.valor_servico,
-    
+    p.servico_peca,
+    p.valor_servico,
+
     -- Datas de controle
     p.data_cadastro,
     p.data_atualizacao,
     p.ativo as produto_ativo,
     s.ativo as solicitacao_ativa,
-    
+
     -- Cálculos adicionais
     (p.quantidade * p.preco_unitario) as valor_calculado,
     CASE 
@@ -42,8 +46,9 @@ SELECT
     END as status_calculo
 
 FROM compras_so.produtos_solicitacao p
-LEFT JOIN compras_so.solicitacoes_frota s ON p.id_solicitacao = s.id_solicitacao
-WHERE p.id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}'  -- Substitua pelo ID desejado
+LEFT JOIN compras_so.solicitacoes_frota s 
+    ON p.id_solicitacao = s.id_solicitacao
+WHERE p.id_solicitacao = '{{mfs_list.selectedItem.id_solicitacao}}'
   AND p.ativo = true
   AND s.ativo = true
 ORDER BY p.data_cadastro ASC, p.peca ASC;

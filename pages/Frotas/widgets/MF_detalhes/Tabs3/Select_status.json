@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 10,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_status.options, Select_status.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_todos.selectedItem.status))(Select_status.options, Select_status.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
