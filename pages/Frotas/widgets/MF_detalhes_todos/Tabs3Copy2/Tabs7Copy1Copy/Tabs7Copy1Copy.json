@@ -1,18 +1,18 @@
 {
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 61,
+  "borderWidth": 1,
+  "bottomRow": 136,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 360,
+      "bottomRow": 1320,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
+      "canExtend": true,
       "detachFromLayout": true,
       "dynamicBindingPathList": [
         {
@@ -23,78 +23,87 @@
         }
       ],
       "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
       "flexLayers": [],
+      "isDisabled": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "ci4a3onmyy",
+      "key": "gqeyaro6ls",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 100,
+      "minHeight": 150,
       "minWidth": 450,
-      "mobileBottomRow": 100,
+      "mobileBottomRow": 150,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 274.72119140625,
+      "mobileRightColumn": 604.4148437499999,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "47vdlj05aj",
+      "parentId": "okdx1253bt",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 274.72119140625,
+      "rightColumn": 604.4148437499999,
+      "shouldScrollContents": false,
+      "tabId": "tab1",
+      "tabName": "Histórico de Preço",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "1zzqjo5io5",
-      "widgetName": "Canvas72"
+      "widgetId": "w9dpmrsp96",
+      "widgetName": "Canvas54Copy1Copy"
     }
   ],
-  "containerStyle": "card",
+  "defaultTab": "Detalhes",
   "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
     {
       "key": "borderRadius"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "isVisible"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n      .toLowerCase()\n      .includes(\".jpg\")\n  ) ||\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_produtos_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf\n      .toLowerCase()\n      .includes(\".jpg\")\n  )\n}}\n",
-  "key": "741ezzbchf",
+  "isVisible": true,
+  "key": "t4gx5qh7l3",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
-  "minDynamicHeight": 10,
+  "minDynamicHeight": 15,
   "minWidth": 450,
-  "mobileBottomRow": 37,
+  "mobileBottomRow": 36,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 27,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "originalBottomRow": 61,
-  "originalTopRow": 25,
-  "parentColumnSpace": 18.31474609375,
-  "parentId": "vdmseukrtr",
+  "parentColumnSpace": 26.27890625,
+  "parentId": "bapy0we21c",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 17,
+  "rightColumn": 64,
   "shouldScrollContents": true,
-  "topRow": 25,
-  "type": "CONTAINER_WIDGET",
-  "version": 1,
-  "widgetId": "47vdlj05aj",
-  "widgetName": "Container15"
+  "shouldShowTabs": true,
+  "tabsObj": {
+    "tab1": {
+      "id": "tab1",
+      "index": 0,
+      "isVisible": true,
+      "label": "Histórico de Preço",
+      "positioning": "vertical",
+      "widgetId": "w9dpmrsp96"
+    }
+  },
+  "topRow": 0,
+  "type": "TABS_WIDGET",
+  "version": 3,
+  "widgetId": "okdx1253bt",
+  "widgetName": "Tabs7Copy1Copy"
 }

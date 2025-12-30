@@ -40,7 +40,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -51,8 +51,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "kytv2aa0d3",
-      "widgetName": "Canvas23"
+      "widgetId": "xsng0xmw7d",
+      "widgetName": "Canvas23Copy2"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -86,7 +86,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -97,8 +97,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "itmx8kpc92",
-      "widgetName": "Canvas24"
+      "widgetId": "fhf9flm0em",
+      "widgetName": "Canvas24Copy2"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -132,7 +132,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -142,8 +142,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "k6pst07gh5",
-      "widgetName": "Canvas31"
+      "widgetId": "8an8xsfvav",
+      "widgetName": "Canvas31Copy2"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -177,7 +177,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -187,8 +187,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "oo3i4l360i",
-      "widgetName": "Canvas40"
+      "widgetId": "5qernni40c",
+      "widgetName": "Canvas40Copy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -222,7 +222,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -232,8 +232,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "qqqw0khaep",
-      "widgetName": "Canvas45"
+      "widgetId": "4qrm2tvws7",
+      "widgetName": "Canvas45Copy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -267,7 +267,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -277,8 +277,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "wazjs8qx8h",
-      "widgetName": "Canvas56"
+      "widgetId": "2atz8j4hyr",
+      "widgetName": "Canvas56Copy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -312,7 +312,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -322,8 +322,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "e7dxn33ntx",
-      "widgetName": "Canvas60"
+      "widgetId": "bapy0we21c",
+      "widgetName": "Canvas60Copy"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -357,7 +357,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "1m3u994thd",
+      "parentId": "emj0faw2s6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -367,8 +367,8 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "sjongt0nnx",
-      "widgetName": "Canvas75"
+      "widgetId": "o261rgu95m",
+      "widgetName": "Canvas75Copy"
     }
   ],
   "defaultTab": "MF Detalhes",
@@ -418,7 +418,7 @@
   "originalBottomRow": 176,
   "originalTopRow": 0,
   "parentColumnSpace": 18.56015625,
-  "parentId": "ahfxx5fmfl",
+  "parentId": "zpbq3qvnnx",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -433,7 +433,7 @@
       "isVisible": true,
       "label": "MF Detalhes",
       "positioning": "vertical",
-      "widgetId": "kytv2aa0d3"
+      "widgetId": "xsng0xmw7d"
     },
     "tab2": {
       "id": "tab2",
@@ -442,7 +442,7 @@
       "isVisible": "{{ appsmith.store.liberarTela }}\n\n",
       "label": "Tratar MF",
       "positioning": "vertical",
-      "widgetId": "itmx8kpc92"
+      "widgetId": "fhf9flm0em"
     },
     "tab4dq2txcvf9": {
       "id": "tab4dq2txcvf9",
@@ -450,7 +450,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Anexar Pagamento",
-      "widgetId": "sjongt0nnx"
+      "widgetId": "o261rgu95m"
     },
     "tabb9arsx0b6r": {
       "id": "tabb9arsx0b6r",
@@ -458,7 +458,7 @@
       "isDuplicateLabel": false,
       "isVisible": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
       "label": "Anexar Notas Fiscais",
-      "widgetId": "k6pst07gh5"
+      "widgetId": "8an8xsfvav"
     },
     "tabczsf95ewzc": {
       "id": "tabczsf95ewzc",
@@ -466,7 +466,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Decisão rápida",
-      "widgetId": "wazjs8qx8h"
+      "widgetId": "2atz8j4hyr"
     },
     "tablmd4940v82": {
       "id": "tablmd4940v82",
@@ -474,7 +474,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "IA",
-      "widgetId": "qqqw0khaep"
+      "widgetId": "4qrm2tvws7"
     },
     "tabn1lfuuj75i": {
       "id": "tabn1lfuuj75i",
@@ -482,7 +482,7 @@
       "isDuplicateLabel": false,
       "isVisible": false,
       "label": "Teste",
-      "widgetId": "oo3i4l360i"
+      "widgetId": "5qernni40c"
     },
     "tabor5e45jcb0": {
       "id": "tabor5e45jcb0",
@@ -490,12 +490,12 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Histórico de Preço",
-      "widgetId": "e7dxn33ntx"
+      "widgetId": "bapy0we21c"
     }
   },
   "topRow": 0,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "1m3u994thd",
-  "widgetName": "Tabs3"
+  "widgetId": "emj0faw2s6",
+  "widgetName": "Tabs3Copy2"
 }

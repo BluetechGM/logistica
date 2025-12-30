@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "h286hf9a7d",
+      "parentId": "7525c6g4ob",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -47,8 +47,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ahfxx5fmfl",
-      "widgetName": "Canvas22"
+      "widgetId": "zpbq3qvnnx",
+      "widgetName": "Canvas22Copy2"
     }
   ],
   "detachFromLayout": true,
@@ -85,10 +85,10 @@
   "renderMode": "CANVAS",
   "rightColumn": 51,
   "shouldScrollContents": true,
-  "topRow": 33,
+  "topRow": 177,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "h286hf9a7d",
-  "widgetName": "MF_detalhes",
+  "widgetId": "7525c6g4ob",
+  "widgetName": "MF_detalhes_todos",
   "width": 1224.6
 }

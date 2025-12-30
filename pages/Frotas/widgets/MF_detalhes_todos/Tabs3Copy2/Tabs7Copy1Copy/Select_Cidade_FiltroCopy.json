@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_status.options, Select_status.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -25,45 +22,48 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "8dlho753v5",
+  "key": "6q1x58923x",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "BOLD",
-  "labelText": "Status de solicitações",
-  "labelTextColor": "white",
+  "labelText": "Cidade/Filial",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 50,
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 49,
-  "mobileLeftColumn": 44,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 42,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 55,
   "needsErrorInfo": false,
-  "optionLabel": "status",
-  "optionValue": "status",
-  "originalBottomRow": 45,
-  "originalTopRow": 38,
-  "parentColumnSpace": 16.6875,
-  "parentId": "itmx8kpc92",
+  "onOptionChange": "{{historico_precos_pecas.run()}}",
+  "optionLabel": "CIDADE_CODIGO",
+  "optionValue": "CIDADE",
+  "originalBottomRow": 150,
+  "originalTopRow": 142,
+  "parentColumnSpace": 17.3330078125,
+  "parentId": "w9dpmrsp96",
   "parentRowSpace": 10,
-  "placeholderText": "Selecione o Status",
+  "placeholderText": "Selecione a Cidade/Filial",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 18,
   "serverSideFiltering": false,
-  "sourceData": "{{status_list.data}}",
-  "topRow": 3,
+  "sourceData": "{{cod_filial.data}}",
+  "topRow": 1,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "luv5bx1c1y",
-  "widgetName": "Select_status"
+  "widgetId": "pc0bfuaod7",
+  "widgetName": "Select_Cidade_FiltroCopy"
 }

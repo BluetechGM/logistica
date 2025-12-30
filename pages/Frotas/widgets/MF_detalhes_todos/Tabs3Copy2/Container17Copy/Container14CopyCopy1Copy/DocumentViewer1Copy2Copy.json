@@ -1,13 +1,13 @@
 {
   "animateLoading": true,
   "bottomRow": 40,
-  "docUrl": "{{\n  (() => {\n    const { nfe_produtos_pdf, nfe_servico_pdf } =\n      mfs_list_comprovante.triggeredItem ?? {};\n\n    const isValidLink = (value) =>\n      typeof value === \"string\" &&\n      !!value.trim() &&\n      value.trim().toLowerCase() !== \"comprovante não anexado\";\n\n    if (isValidLink(nfe_produtos_pdf)) {\n      return nfe_produtos_pdf;\n    }\n\n    if (isValidLink(nfe_servico_pdf)) {\n      return nfe_servico_pdf;\n    }\n\n    return \"\";\n  })()\n}}\n",
+  "docUrl": "{{\n  typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"comprovante não anexado\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf !== \"null\" &&\n  mfs_list_comprovante.triggeredItem.nfe_servico_pdf.trim() !== \"\"\n    ? mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n    : mfs_list_comprovante.triggeredItem.nfe_produtos_pdf\n}}\n",
   "dynamicBindingPathList": [
     {
-      "key": "isVisible"
+      "key": "docUrl"
     },
     {
-      "key": "docUrl"
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -28,7 +28,7 @@
   "mobileTopRow": 40,
   "needsErrorInfo": false,
   "parentColumnSpace": 4.552354431152343,
-  "parentId": "7oxsm6i4t0",
+  "parentId": "rnn05lv404",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -36,6 +36,6 @@
   "topRow": 0,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
-  "widgetId": "qadj06zmrb",
-  "widgetName": "DocumentViewer1"
+  "widgetId": "0k9z0t8vci",
+  "widgetName": "DocumentViewer1Copy2Copy"
 }

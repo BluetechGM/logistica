@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 10,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_status.options, Select_status.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_todos.selectedItem.status))(Select_statusCopy2.options, Select_statusCopy2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -53,7 +53,7 @@
   "originalBottomRow": 45,
   "originalTopRow": 38,
   "parentColumnSpace": 16.6875,
-  "parentId": "itmx8kpc92",
+  "parentId": "fhf9flm0em",
   "parentRowSpace": 10,
   "placeholderText": "Selecione o Status",
   "renderMode": "CANVAS",
@@ -64,6 +64,6 @@
   "topRow": 3,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "luv5bx1c1y",
-  "widgetName": "Select_status"
+  "widgetId": "3jf2v2foaw",
+  "widgetName": "Select_statusCopy2"
 }

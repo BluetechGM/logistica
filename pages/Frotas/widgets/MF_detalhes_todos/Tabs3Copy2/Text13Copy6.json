@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 149,
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -24,32 +21,30 @@
   "isLoading": false,
   "isVisible": true,
   "key": "e8uqsis3fu",
-  "leftColumn": 9,
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 159,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 155,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 149,
-  "originalTopRow": 145,
   "overflow": "NONE",
-  "parentColumnSpace": 18.56015625,
-  "parentId": "5iktiaiq74",
+  "parentColumnSpace": 17.6676513671875,
+  "parentId": "8an8xsfvav",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 21,
   "shouldTruncate": false,
-  "text": "{{ mfs_list.selectedItem.status === \"Em aberto\" ? false : true }}\n",
-  "textAlign": "LEFT",
+  "text": "Nota Fiscal de Serviço",
+  "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 145,
+  "topRow": 6,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5xhtby9c4v",
-  "widgetName": "Text15CopyCopy"
+  "widgetId": "4452aqjtdq",
+  "widgetName": "Text13Copy6"
 }

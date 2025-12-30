@@ -1,5 +1,26 @@
+WITH produtos AS (
+    SELECT 
+        p.id_solicitacao,
+        COUNT(*) AS quantidade_produtos,
+        COALESCE(SUM(p.preco), 0) AS valor_total_produtos,
+        COALESCE(AVG(p.preco), 0) AS valor_medio_produtos,
+        COALESCE(MIN(p.preco), 0) AS menor_preco_produto,
+        COALESCE(MAX(p.preco), 0) AS maior_preco_produto,
+        STRING_AGG(DISTINCT p.peca, ', ') AS lista_produtos,
+        STRING_AGG(DISTINCT p.marca, ', ') AS lista_marcas
+    FROM compras_so.produtos_solicitacao p
+    WHERE p.ativo = TRUE
+    GROUP BY p.id_solicitacao
+),
+rps_aggregado AS (
+    SELECT 
+        rps.id_solicitacao,
+        MAX(rps.decisao) AS decisao
+    FROM logistica_ai.resultados_produtos_solicitacao rps
+    GROUP BY rps.id_solicitacao
+)
 SELECT 
-    s.id as solicitacao_id,
+    s.id AS solicitacao_id,
     s.placa,
     s.odometro_atual,
     s.odometro_prox_troca,
@@ -24,37 +45,26 @@ SELECT
     s.tipo_incidente,
     s.foto_comprovante,
     s.lancado_winthor,
-		s.cnpj,
+    s.cnpj,
     s.chave_pix,
     s.recnum,
-    COUNT(p.id) as quantidade_produtos,
-    COALESCE(SUM(p.preco), 0) as valor_total_produtos,
-    COALESCE(AVG(p.preco), 0) as valor_medio_produtos,
-    COALESCE(MIN(p.preco), 0) as menor_preco_produto,
-    COALESCE(MAX(p.preco), 0) as maior_preco_produto,
-    STRING_AGG(DISTINCT p.peca, ', ') as lista_produtos,
-    STRING_AGG(DISTINCT p.marca, ', ') as lista_marcas,
-    MAX(rps.decisao) AS decisao
+    COALESCE(p.quantidade_produtos, 0) AS quantidade_produtos,
+    COALESCE(p.valor_total_produtos, 0) AS valor_total_produtos,
+    COALESCE(p.valor_medio_produtos, 0) AS valor_medio_produtos,
+    COALESCE(p.menor_preco_produto, 0) AS menor_preco_produto,
+    COALESCE(p.maior_preco_produto, 0) AS maior_preco_produto,
+    COALESCE(p.lista_produtos, '') AS lista_produtos,
+    COALESCE(p.lista_marcas, '') AS lista_marcas,
+    rps.decisao
 FROM compras_so.solicitacoes_frota s
-LEFT JOIN compras_so.produtos_solicitacao p 
-       ON s.id_solicitacao = p.id_solicitacao 
-      AND p.ativo = TRUE
-LEFT JOIN logistica_ai.resultados_produtos_solicitacao rps
-       ON s.id_solicitacao = rps.id_solicitacao
+LEFT JOIN produtos p
+       ON p.id_solicitacao = s.id_solicitacao
+LEFT JOIN rps_aggregado rps
+       ON rps.id_solicitacao = s.id_solicitacao
 WHERE 
     s.ativo = TRUE
     AND (
-			{{appsmith.store.permissao_query}} = TRUE
-			OR s.id_solicitante = '{{appsmith.store.matricula}}'
-		)
-GROUP BY 
-    s.id, s.placa, s.odometro_atual, s.odometro_prox_troca, 
-    s.data_prox_manutencao, s.cidade, s.criado_por, s.servico, 
-    s.status, s.motivo_reprovacao, s.data_abertura, s.id_solicitacao,
-    s.filial_id, s.id_solicitante, s.nome_solicitante, 
-    s.link_orcamento_pdf, s.link_fotos_orcamento,
-    s.link_video_orcamento, s.link_imagem_orcamento,
-    s.nfe_servico_pdf, s.nfe_produtos_pdf,
-    s.observacoes, s.tipo_incidente, s.foto_comprovante,
-    s.lancado_winthor, s.cnpj, s.chave_pix, s.recnum
+        {{appsmith.store.permissao_query}} = TRUE
+        OR s.id_solicitante = '{{appsmith.store.matricula}}'
+    )
 ORDER BY s.data_abertura DESC;

@@ -28,7 +28,7 @@
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
-  "image": "{{\n  (() => {\n    const { nfe_produtos_pdf, nfe_servico_pdf } =\n      mfs_list_comprovante.triggeredItem ?? {};\n\n    const isValidLink = (value) =>\n      typeof value === \"string\" &&\n      !!value.trim() &&\n      value.trim().toLowerCase() !== \"comprovante não anexado\";\n\n    if (isValidLink(nfe_produtos_pdf)) {\n      return nfe_produtos_pdf;\n    }\n\n    if (isValidLink(nfe_servico_pdf)) {\n      return nfe_servico_pdf;\n    }\n\n    return \"\";\n  })()\n}}\n",
+  "image": "{{ mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n }}",
   "imageShape": "RECTANGLE",
   "isLoading": false,
   "isVisible": "{{ arquivoJpg.visivel() }}\n",
@@ -43,13 +43,13 @@
   "objectFit": "cover",
   "onClick": "{{navigateTo(list_comprovante_reparo.triggeredItem.nfe_servico_pdf, {}, 'NEW_WINDOW');}}",
   "parentColumnSpace": 4.41064453125,
-  "parentId": "1zzqjo5io5",
+  "parentId": "g821jkefy2",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
   "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "xc3l4y8ch2",
-  "widgetName": "Image9Copy"
+  "widgetId": "0i9ssucudu",
+  "widgetName": "Image9CopyCopy1Copy"
 }

@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( mfs_list.selectedItem.status))(Select_status.options, Select_status.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -25,45 +22,48 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "8dlho753v5",
+  "key": "uh57v54har",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "BOLD",
-  "labelText": "Status de solicitações",
-  "labelTextColor": "white",
+  "labelText": "Serviços",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 50,
+  "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 49,
-  "mobileLeftColumn": 44,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 42,
+  "mobileBottomRow": 70,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 63,
   "needsErrorInfo": false,
-  "optionLabel": "status",
-  "optionValue": "status",
-  "originalBottomRow": 45,
-  "originalTopRow": 38,
-  "parentColumnSpace": 16.6875,
-  "parentId": "itmx8kpc92",
+  "onOptionChange": "{{historico_precos_pecas.run()}}",
+  "optionLabel": "servicos",
+  "optionValue": "peca",
+  "originalBottomRow": 150,
+  "originalTopRow": 142,
+  "parentColumnSpace": 23.53125,
+  "parentId": "w9dpmrsp96",
   "parentRowSpace": 10,
-  "placeholderText": "Selecione o Status",
+  "placeholderText": "Selecione o Serviço",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 37,
   "serverSideFiltering": false,
-  "sourceData": "{{status_list.data}}",
-  "topRow": 3,
-  "type": "SELECT_WIDGET",
+  "sourceData": "{{servicos_frota.data}}",
+  "topRow": 1,
+  "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "luv5bx1c1y",
-  "widgetName": "Select_status"
+  "widgetId": "a8j05y2epb",
+  "widgetName": "Select_Servico_FiltroCopy"
 }

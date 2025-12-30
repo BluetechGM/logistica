@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 61,
+  "bottomRow": 59,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "47vdlj05aj",
+      "parentId": "nzu6ajlz4w",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,8 +46,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "1zzqjo5io5",
-      "widgetName": "Canvas72"
+      "widgetId": "g821jkefy2",
+      "widgetName": "Canvas72Copy1Copy"
     }
   ],
   "containerStyle": "card",
@@ -72,7 +72,7 @@
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_servico_pdf\n      .toLowerCase()\n      .includes(\".jpg\")\n  ) ||\n  (\n    typeof mfs_list_comprovante.triggeredItem.nfe_produtos_pdf === \"string\" &&\n    mfs_list_comprovante.triggeredItem.nfe_produtos_pdf\n      .toLowerCase()\n      .includes(\".jpg\")\n  )\n}}\n",
+  "isVisible": "{{ (typeof mfs_list_comprovante.triggeredItem.nfe_servico_pdf === \"string\") &&\n  (mfs_list_comprovante.triggeredItem.nfe_servico_pdf.toLowerCase().includes(\".jpg\")) }}",
   "key": "741ezzbchf",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -83,18 +83,18 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "originalBottomRow": 61,
-  "originalTopRow": 25,
+  "originalBottomRow": 59,
+  "originalTopRow": 23,
   "parentColumnSpace": 18.31474609375,
-  "parentId": "vdmseukrtr",
+  "parentId": "cgxd8oritc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 17,
   "shouldScrollContents": true,
-  "topRow": 25,
+  "topRow": 23,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "47vdlj05aj",
-  "widgetName": "Container15"
+  "widgetId": "nzu6ajlz4w",
+  "widgetName": "Container15Copy1Copy"
 }
