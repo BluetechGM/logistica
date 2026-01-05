@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 119,
+  "bottomRow": 101,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 930,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -192,7 +192,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -237,7 +237,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 830,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -282,7 +282,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -461,7 +461,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 101,
+  "originalBottomRow": 147,
   "originalTopRow": 20,
   "parentColumnSpace": 16.7734375,
   "parentId": "5w67zcvffh",
@@ -492,7 +492,7 @@
     },
     "taba2xhv5p0qf": {
       "id": "taba2xhv5p0qf",
-      "index": 3,
+      "index": 2,
       "isDuplicateLabel": false,
       "isVisible": "{{appsmith.store.permissao_query}}",
       "label": "Anexar Pagamento",
@@ -500,7 +500,7 @@
     },
     "tabci6fwrg24w": {
       "id": "tabci6fwrg24w",
-      "index": 7,
+      "index": 6,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Reprovados",
@@ -508,7 +508,7 @@
     },
     "tabjlvfo590ww": {
       "id": "tabjlvfo590ww",
-      "index": 4,
+      "index": 3,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Comprovante de Reparo",
@@ -516,7 +516,7 @@
     },
     "tabog9273haeh": {
       "id": "tabog9273haeh",
-      "index": 2,
+      "index": 7,
       "isDuplicateLabel": false,
       "isVisible": "{{appsmith.store.permissao_query}}",
       "label": "Lançar  no Winthor",
@@ -524,7 +524,7 @@
     },
     "tabs74lhubuci": {
       "id": "tabs74lhubuci",
-      "index": 6,
+      "index": 5,
       "isDuplicateLabel": false,
       "isVisible": "true",
       "label": "Aprovação Gestor",
@@ -540,7 +540,7 @@
     },
     "taby6fpfyhhal": {
       "id": "taby6fpfyhhal",
-      "index": 5,
+      "index": 4,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Todos",

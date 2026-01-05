@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "buttonColor": "#b91c1c",
+  "buttonColor": "green",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
@@ -12,7 +12,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -23,14 +27,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "x9xzm2lw4r",
-  "leftColumn": 42,
+  "leftColumn": 25,
   "minWidth": 120,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 33,
   "mobileRightColumn": 49,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{ checklistSemanalItens.setStatus(currentItem.codigo, \"NAO_CONFORME\") }}\n",
+  "onClick": "{{storeValue(\n  \"checklist_semanal_itens\",\n  {\n    ...appsmith.store.checklist_semanal_itens,\n    [currentItem.codigo]: {\n      ...(appsmith.store.checklist_semanal_itens?.[currentItem.codigo] || {}),\n      status: \"CONFORME\",\n      fotos:\n        appsmith.store.checklist_semanal_itens?.[currentItem.codigo]?.fotos || []\n    }\n  }\n)\n  .then(() => showAlert(\"Marcação salva.\", \"success\"))\n  .catch(() => showAlert(\"Erro na marcação.\", \"error\"))}}",
   "parentColumnSpace": 15.28759765625,
   "parentId": "3znxbq2br7",
   "parentRowSpace": 10,
@@ -39,11 +43,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 51,
-  "text": "Não Conforme",
+  "rightColumn": 33,
+  "text": "Conforme",
   "topRow": 4,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "glmgroy4ce",
-  "widgetName": "Button5Copy"
+  "widgetId": "f3venzoj7v",
+  "widgetName": "button_conforme"
 }

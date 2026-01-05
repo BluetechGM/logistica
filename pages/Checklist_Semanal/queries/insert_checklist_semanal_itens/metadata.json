@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO compras_so.checklist_semanal_itens\n(\n  id_checklist,\n  item_codigo,\n  status,\n  fotos\n)\nVALUES (\n  {{ id_checklist }},\n  {{ item_codigo }},\n  {{ status }},\n  {{ fotos }}::jsonb\n);\n",
+      "body": "INSERT INTO compras_so.checklist_semanal_itens\n(\n\tid_checklist,\n\titem_codigo,\n\tstatus,\n\tfotos\n)\nVALUES (\n\t{{ this.params.id_checklist }},\n\t{{ this.params.item_codigo }},\n\t{{ this.params.status }},\n\t{{ this.params.fotos }}::jsonb\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

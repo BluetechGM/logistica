@@ -1,13 +1,13 @@
 INSERT INTO compras_so.checklist_semanal_itens
 (
-  id_checklist,
-  item_codigo,
-  status,
-  fotos
+	id_checklist,
+	item_codigo,
+	status,
+	fotos
 )
 VALUES (
-  {{ id_checklist }},
-  {{ item_codigo }},
-  {{ status }},
-  {{ fotos }}::jsonb
+	{{ this.params.id_checklist }},
+	{{ this.params.item_codigo }},
+	{{ this.params.status }},
+	{{ this.params.fotos }}::jsonb
 );

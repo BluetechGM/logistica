@@ -12,10 +12,10 @@ VALUES (
 	{{ Select_placa_abasCopy.selectedOptionLabel }},
 	{{ Input_odometro.text }},
 	{{
-		Object.values(appsmith.store.checklist_semanal || {})
-			.some(i => i.status === 'NAO_CONFORME')
-			? 'NAO_APTO'
-			: 'APTO'
+	Object.values(appsmith.store.checklist_semanal || {})
+	.some(i => i.status === 'NAO_CONFORME')
+	? 'NAO_APTO'
+	: 'APTO'
 	}},
 	{{ observacoes_checklist.text || "" }}
 )

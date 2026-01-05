@@ -98,7 +98,7 @@
   "itemSpacing": "0",
   "key": "phah4lld3n",
   "leftColumn": 0,
-  "listData": "{{\n  solicitacoes_frota_list.data.filter(item => {\n    // Verifica se tem NFE anexada (serviço OU produtos)\n    const temNfeServico = item.nfe_servico_pdf && item.nfe_servico_pdf.trim() !== '' && item.nfe_servico_pdf !== 'null';\n    const temNfeProdutos = item.nfe_produtos_pdf && item.nfe_produtos_pdf.trim() !== '' && item.nfe_produtos_pdf !== 'null';\n    const temNfe = temNfeServico || temNfeProdutos;\n    \n    // Verifica se NÃO tem comprovante de pagamento\n    const semComprovante = !item.foto_comprovante || item.foto_comprovante.trim() === '' || item.foto_comprovante === 'null';\n    \n    return temNfe && semComprovante;\n  })\n}}",
+  "listData": "{{\nsolicitacoes_frota_list.data.filter(item => {\n\t// Verifica se tem NFE anexada (serviço OU produtos)\n\tconst temNfeServico = item.nfe_servico_pdf && item.nfe_servico_pdf.trim() !== '' && item.nfe_servico_pdf !== 'null';\n\tconst temNfeProdutos = item.nfe_produtos_pdf && item.nfe_produtos_pdf.trim() !== '' && item.nfe_produtos_pdf !== 'null';\n\tconst temNfe = temNfeServico || temNfeProdutos;\n\n\t// Verifica se NÃO tem comprovante de pagamento\n\tconst semComprovante = !item.foto_comprovante || item.foto_comprovante.trim() === '' || item.foto_comprovante === 'null';\n\n\treturn temNfe && semComprovante;\n})\n}}",
   "mainCanvasId": "m13gs6hcf0",
   "mainContainerId": "grn9ixyuqc",
   "minWidth": 450,

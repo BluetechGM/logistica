@@ -2,22 +2,29 @@ export default {
 	finalizarChecklistSemanal: async () => {
 		try {
 			/* =====================================================
-			 * 1️⃣ CONTEXTO DO CHECKLIST
+			 * 1️⃣ CONTEXTO DO CHECKLIST - VALIDAÇÃO DOS WIDGETS
 			 * ===================================================== */
-			const ctx = appsmith.store.checklist_semanal_contexto;
-			if (
-				!ctx ||
-				!ctx.filial_id ||
-				!ctx.placa ||
-				!ctx.usuario_execucao ||
-				!Number.isInteger(ctx.odometro)
-			) {
-				showAlert(
-					"Preencha Cidade, Placa, Usuário e Odômetro antes de finalizar.",
-					"warning"
-				);
-				return;
-			}
+		
+		// A query SQL usa os widgets diretamente, então validamos eles
+		if (!Select_Cidade_abasCopy.selectedOptionValue) {
+			showAlert("⚠️ Selecione a Cidade antes de finalizar.", "warning");
+			return;
+		}
+		
+		if (!Select_placa_abasCopy.selectedOptionLabel) {
+			showAlert("⚠️ Selecione a Placa antes de finalizar.", "warning");
+			return;
+		}
+		
+		if (!Input_odometro.text || isNaN(Number(Input_odometro.text))) {
+			showAlert("⚠️ Informe um Odômetro válido antes de finalizar.", "warning");
+			return;
+		}
+		
+		if (!appsmith.store.usuario_nome) {
+			showAlert("⚠️ Usuário não identificado. Faça login novamente.", "warning");
+			return;
+		}
 
 			/* =====================================================
 			 * 2️⃣ CATÁLOGO DE ITENS (SEMANAL)
@@ -38,14 +45,22 @@ export default {
 			 * 3️⃣ ITENS AVALIADOS (SANITIZAÇÃO DO STORE)
 			 * ===================================================== */
 			const itensStoreRaw = appsmith.store.checklist_semanal_itens || {};
+			console.log("🔍 Store RAW antes da sanitização:", itensStoreRaw);
+			console.log("🔍 Chaves do store RAW:", Object.keys(itensStoreRaw));
 			const itensStore = Object.fromEntries(
 				Object.entries(itensStoreRaw).filter(
-					([key, value]) =>
-						key !== "checklist_semanal_itens" &&
-						typeof value === "object" &&
-						["CONFORME", "REGULAR", "NAO_CONFORME"].includes(value?.status)
+					([key, value]) => {
+						const isValid =
+							key !== "checklist_semanal_itens" &&
+							typeof value === "object" &&
+							["CONFORME", "REGULAR", "NAO_CONFORME"].includes(value?.status);
+						console.log(`🔍 Item "${key}": ${isValid ? "✅ VÁLIDO" : "❌ FILTRADO"}`);
+						return isValid;
+					}
 				)
 			);
+			console.log("✅ Store SANITIZADO:", itensStore);
+			console.log("✅ Itens válidos encontrados:", Object.keys(itensStore));
 
 			/* =====================================================
 			 * 4️⃣ VALIDAÇÃO DE ITENS NÃO AVALIADOS
@@ -77,18 +92,14 @@ export default {
 			/* =====================================================
 			 * 6️⃣ INSERÇÃO DO CHECKLIST (HEADER)
 			 * ===================================================== */
-			const headerResult = await insert_checklist_semanal_motos.run({
-				filial_id: ctx.filial_id,
-				placa: ctx.placa,
-				usuario_execucao: ctx.usuario_execucao,
-				odometro: ctx.odometro,
-				resultado_final: resultadoFinal,
-				observacoes: observacoes_checklist?.text || ""
-			});
+			const headerResult = await insert_checklist_semanal_motos.run();
+			console.log("🔍 DEBUG - Resultado da inserção:", headerResult);
 			const idChecklist = headerResult?.[0]?.id_checklist;
 			if (!idChecklist) {
-				throw new Error("Falha ao obter o ID do checklist semanal.");
+				console.error("❌ Estrutura do resultado:", headerResult);
+				throw new Error(`Falha ao obter o ID do checklist. Verifique o console.`);
 			}
+			console.log("✅ ID do checklist obtido:", idChecklist);
 
 			/* =====================================================
 			 * 7️⃣ INSERÇÃO DOS ITENS DO CHECKLIST

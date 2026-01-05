@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO compras_so.checklist_semanal_motos (\n\tusuario_execucao,\n\tfilial_id,\n\tplaca,\n\todometro,\n\tresultado_final,\n\tobservacoes\n)\nVALUES (\n\t{{ appsmith.store.usuario_nome }},\n\t{{ Select_Cidade_abasCopy.selectedOptionValue }},\n\t{{ Select_placa_abasCopy.selectedOptionLabel }},\n\t{{ Input_odometro.text }},\n\t{{\n\t\tObject.values(appsmith.store.checklist_semanal || {})\n\t\t\t.some(i => i.status === 'NAO_CONFORME')\n\t\t\t? 'NAO_APTO'\n\t\t\t: 'APTO'\n\t}},\n\t{{ observacoes_checklist.text || \"\" }}\n)\nRETURNING id_checklist;\n",
+      "body": "INSERT INTO compras_so.checklist_semanal_motos (\n\tusuario_execucao,\n\tfilial_id,\n\tplaca,\n\todometro,\n\tresultado_final,\n\tobservacoes\n)\nVALUES (\n\t{{ appsmith.store.usuario_nome }},\n\t{{ Select_Cidade_abasCopy.selectedOptionValue }},\n\t{{ Select_placa_abasCopy.selectedOptionLabel }},\n\t{{ Input_odometro.text }},\n\t{{\n\tObject.values(appsmith.store.checklist_semanal || {})\n\t.some(i => i.status === 'NAO_CONFORME')\n\t? 'NAO_APTO'\n\t: 'APTO'\n\t}},\n\t{{ observacoes_checklist.text || \"\" }}\n)\nRETURNING id_checklist;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

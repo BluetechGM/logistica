@@ -14,7 +14,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
