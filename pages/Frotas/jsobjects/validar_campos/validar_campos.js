@@ -31,15 +31,14 @@ export default {
 		}
 
 		if (!input_CNPJ?.text) {
-			mensagens.push("⚠️ CNPJ não informado");
-		} else if (!/^\d{14}$/.test(input_CNPJ.text)) {
-			mensagens.push("⚠️ CNPJ inválido (use apenas números, 14 dígitos)");
+			mensagens.push("⚠️ CPF/CNPJ não informado");
+		} else if (!/^\d{11}$/.test(input_CNPJ.text) && !/^\d{14}$/.test(input_CNPJ.text)) {
+			mensagens.push("⚠️ CPF/CNPJ inválido (CPF: 11 dígitos ou CNPJ: 14 dígitos, apenas números)");
 		}
 
 		if (!input_PIX?.text) {
 			mensagens.push("⚠️ Chave PIX não informada");
 		}
-
 
 		if (!MultiSelect1?.selectedOptionLabels || MultiSelect1.selectedOptionLabels.length === 0) {
 			mensagens.push("⚠️ Serviço não selecionado");

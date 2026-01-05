@@ -20,7 +20,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "vt7w0sm0ul",
-  "label": "CNPJ",
+  "label": "CNPJ/CPF",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
