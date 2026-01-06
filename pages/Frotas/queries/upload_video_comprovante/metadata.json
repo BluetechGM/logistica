@@ -22,6 +22,11 @@
           "key": "upload_preset",
           "type": "Text",
           "value": "orcamentovideo"
+        },
+        {
+          "key": "api_key",
+          "type": "Text",
+          "value": "989549188282837"
         }
       ],
       "encodeParamsToggle": true,

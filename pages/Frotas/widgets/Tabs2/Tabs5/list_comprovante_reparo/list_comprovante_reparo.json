@@ -82,6 +82,7 @@
       "key": "listData"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onItemClick"
@@ -107,7 +108,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onItemClick": "{{showModal(modal_lancarwinthor.name);}}",
+  "onItemClick": "{{\n  resetWidget('orcamento_fotoCopy');\n  resetWidget('orcamento_videoCopy');\n  showModal(modal_lancarwinthor.name);\n}}",
   "originalBottomRow": 100,
   "originalTopRow": 31,
   "pageSize": 4,

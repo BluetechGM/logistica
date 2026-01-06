@@ -1,6 +1,12 @@
 UPDATE compras_so.solicitacoes_frota
 SET 
-    link_imagem_orcamento = '{{upload_fotos_comprovante.urls.length > 0 ? JSON.stringify(upload_fotos_comprovante.urls) : ""}}',
-    link_video_orcamento = '{{upload_video_comprovante.data?.secure_url || ""}}',
+    foto_reparo  = {{ upload_fotos_comprovante.urls.length > 0 
+        ? "'" + JSON.stringify(upload_fotos_comprovante.urls) + "'" 
+        : "NULL" }},
+        
+    video_reparo = {{ upload_video_comprovante.data?.secure_url 
+        ? "'" + upload_video_comprovante.data.secure_url + "'" 
+        : "NULL" }},
+        
     data_atualizacao = CURRENT_TIMESTAMP
-WHERE id_solicitacao = '{{appsmith.store.itemSelecionado.id_solicitacao}}';
+WHERE id_solicitacao = {{ "'" + appsmith.store.itemSelecionado.id_solicitacao + "'" }};

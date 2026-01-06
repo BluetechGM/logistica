@@ -42,7 +42,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{foto_orcamento_video.run().then(() => {}).catch(() => {});}}",
+  "onFilesSelected": "{{upload_video_comprovante.run().then(() => {\n  showAlert('Video salvo', 'success');\n}).catch(() => {\n  showAlert('Erro ao salvar video', 'error');\n});}}",
   "originalBottomRow": 17,
   "originalTopRow": 13,
   "parentColumnSpace": 19.228125,

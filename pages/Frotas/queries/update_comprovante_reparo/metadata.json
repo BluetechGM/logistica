@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE compras_so.solicitacoes_frota\nSET \n    link_imagem_orcamento = '{{upload_fotos_comprovante.urls.length > 0 ? JSON.stringify(upload_fotos_comprovante.urls) : \"\"}}',\n    link_video_orcamento = '{{upload_video_comprovante.data?.secure_url || \"\"}}',\n    data_atualizacao = CURRENT_TIMESTAMP\nWHERE id_solicitacao = '{{appsmith.store.itemSelecionado.id_solicitacao}}';",
+      "body": "UPDATE compras_so.solicitacoes_frota\nSET \n    foto_reparo  = {{ upload_fotos_comprovante.urls.length > 0 \n        ? \"'\" + JSON.stringify(upload_fotos_comprovante.urls) + \"'\" \n        : \"NULL\" }},\n        \n    video_reparo = {{ upload_video_comprovante.data?.secure_url \n        ? \"'\" + upload_video_comprovante.data.secure_url + \"'\" \n        : \"NULL\" }},\n        \n    data_atualizacao = CURRENT_TIMESTAMP\nWHERE id_solicitacao = {{ \"'\" + appsmith.store.itemSelecionado.id_solicitacao + \"'\" }};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
