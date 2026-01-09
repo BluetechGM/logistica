@@ -48,6 +48,8 @@ SELECT
     s.cnpj,
     s.chave_pix,
     s.recnum,
+    s.foto_reparo,
+    s.video_reparo,
     COALESCE(p.quantidade_produtos, 0) AS quantidade_produtos,
     COALESCE(p.valor_total_produtos, 0) AS valor_total_produtos,
     COALESCE(p.valor_medio_produtos, 0) AS valor_medio_produtos,

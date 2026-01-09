@@ -15,11 +15,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -37,9 +33,9 @@
   "mobileRightColumn": 61,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue(\"checklist_edit_id\", currentItem.id_checklist).then(() => {});\nget_checklist_by_id.run().then(() => {\n  checklist_store.popularStore();\n});\nshowModal(checklist_update.name);}}",
+  "onClick": "{{\n  storeValue('checklist_semanal_id', currentItem.id_checklist).then(() => {\n    showModal(detalhes_checklist_semanal.name);\n    get_checklist_semanal_by_id.run();\n    get_itens_checklist_semanal_by_id.run();\n  });\n}}\n",
   "parentColumnSpace": 14.493453979492188,
-  "parentId": "uaytl0xcbn",
+  "parentId": "qxadbtpjoy",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -51,6 +47,6 @@
   "topRow": 3,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "woe785ei08",
+  "widgetId": "hhjbb0itqn",
   "widgetName": "Button19"
 }

@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 75,
-  "boxShadow": "none",
+  "bottomRow": 48,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 690,
+      "bottomRow": 400,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -32,7 +32,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "jpbtb4wcnc",
+      "key": "jipudbvqv4",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -40,22 +40,22 @@
       "minWidth": 450,
       "mobileBottomRow": 400,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 442.53515625,
+      "mobileRightColumn": 318.75,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "noPad": true,
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "4p47x08h8t",
+      "parentId": "brldyzhpvw",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 442.53515625,
+      "rightColumn": 318.75,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "xa6vlujv0n",
-      "widgetName": "Canvas19Copy1Copy1Copy"
+      "widgetId": "hazg82femf",
+      "widgetName": "Canvas79"
     }
   ],
   "currentItemsView": "{{[]}}",
@@ -70,24 +70,20 @@
       "key": "triggeredItemView"
     },
     {
-      "key": "primaryKeys"
-    },
-    {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
     },
     {
+      "key": "boxShadow"
+    },
+    {
       "key": "listData"
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onItemClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -96,35 +92,31 @@
   "isLoading": false,
   "isVisible": true,
   "itemBackgroundColor": "#FFFFFF",
-  "itemSpacing": "0",
-  "key": "phah4lld3n",
-  "leftColumn": 0,
-  "listData": "{{\n  solicitacoes_frota_list.data.filter(item => {\n    // Verifica se tem NFE anexada\n    const temNfeServico = item.nfe_servico_pdf && item.nfe_servico_pdf.trim() !== '' && item.nfe_servico_pdf !== 'null';\n    const temNfeProdutos = item.nfe_produtos_pdf && item.nfe_produtos_pdf.trim() !== '' && item.nfe_produtos_pdf !== 'null';\n    const temNfe = temNfeServico || temNfeProdutos;\n    \n    // Verifica se TEM comprovante de pagamento\n    const temComprovante = item.foto_comprovante && item.foto_comprovante.trim() !== '' && item.foto_comprovante !== 'null';\n    \n    // Verifica se NÃO tem comprovante de reparo (foto ou vídeo)\n    const temFotoReparo = item.foto_reparo && item.foto_reparo.trim() !== '' && item.foto_reparo !== 'null';\n    const temVideoReparo = item.video_reparo && item.video_reparo.trim() !== '' && item.video_reparo !== 'null';\n    const jaTemComprovanteReparo = temFotoReparo || temVideoReparo;\n    \n    return temNfe && temComprovante && !jaTemComprovanteReparo;\n  })\n}}",
-  "mainCanvasId": "xa6vlujv0n",
-  "mainContainerId": "0rhyu4jhco",
+  "itemSpacing": 8,
+  "key": "cfw1u5fpad",
+  "leftColumn": 7,
+  "listData": "{{\n  (() => {\n    const raw = appsmith.store.fotos_selecionadas;\n    if (!raw) return [];\n\n    if (Array.isArray(raw)) return raw;\n\n    if (typeof raw === \"string\" && raw.startsWith(\"http\")) return [raw];\n\n    try {\n      const parsed = JSON.parse(raw || \"[]\");\n      return Array.isArray(parsed) ? parsed : [];\n    } catch (e) {\n      return [];\n    }\n  })()\n}}\n",
+  "mainCanvasId": "hazg82femf",
+  "mainContainerId": "zddsqyakyu",
   "minWidth": 450,
-  "mobileBottomRow": 53,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 48,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onItemClick": "{{\n  resetWidget('orcamento_fotoCopy');\n  resetWidget('orcamento_videoCopy');\n  showModal(modal_lancarwinthor.name);\n}}",
-  "originalBottomRow": 100,
-  "originalTopRow": 31,
-  "pageSize": 4,
-  "parentColumnSpace": 18.43896484375,
-  "parentId": "pkep4t5r2d",
+  "pageSize": 1,
+  "parentColumnSpace": 13.28125,
+  "parentId": "u35oe0tyws",
   "parentRowSpace": 10,
-  "primaryKeys": "{{list_comprovante_reparo.listData.map((currentItem, currentIndex) => currentItem[\"solicitacao_id\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 57,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 6,
+  "topRow": 8,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "4p47x08h8t",
-  "widgetName": "list_comprovante_reparo"
+  "widgetId": "brldyzhpvw",
+  "widgetName": "List1"
 }
