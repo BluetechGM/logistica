@@ -32,14 +32,14 @@
     }
   },
   "columnOrder": [
-    "id_item_execucao",
     "id_checklist",
+    "data_cadastro",
+    "id_item_execucao",
     "item_codigo",
     "status",
-    "fotos",
-    "data_cadastro"
+    "fotos"
   ],
-  "columnUpdatedAt": 1767974630055,
+  "columnUpdatedAt": 1767981386141,
   "columnWidthMap": {
     "fotos": 84
   },
@@ -65,10 +65,13 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.id_item_execucao.computedValue"
+      "key": "primaryColumns.id_checklist.computedValue"
     },
     {
-      "key": "primaryColumns.id_checklist.computedValue"
+      "key": "primaryColumns.data_cadastro.computedValue"
+    },
+    {
+      "key": "primaryColumns.id_item_execucao.computedValue"
     },
     {
       "key": "primaryColumns.item_codigo.computedValue"
@@ -78,17 +81,11 @@
     },
     {
       "key": "primaryColumns.fotos.computedValue"
-    },
-    {
-      "key": "primaryColumns.data_cadastro.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.fotos.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -156,12 +153,14 @@
       "alias": "fotos",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "image",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    const raw = currentRow.fotos;\n    if (!raw) return \"\";\n\n    // Se já vier como array\n    if (Array.isArray(raw)) return raw[0] || \"\";\n\n    // Se vier como string JSON\n    try {\n      const arr = JSON.parse(raw);\n      return arr?.[0] || \"\";\n    } catch (e) {\n      return \"\";\n    }\n  })()\n)) : \n  (() => {\n    const raw = currentRow.fotos;\n    if (!raw) return \"\";\n\n    // Se já vier como array\n    if (Array.isArray(raw)) return raw[0] || \"\";\n\n    // Se vier como string JSON\n    try {\n      const arr = JSON.parse(raw);\n      return arr?.[0] || \"\";\n    } catch (e) {\n      return \"\";\n    }\n  })()\n })()}}",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    const raw = currentRow[\"fotos\"];\n    if (!raw) return \"\";\n\n    let urls = [];\n\n    if (Array.isArray(raw)) {\n      urls = Array.isArray(raw[0]) ? raw.flat() : raw;\n    } else {\n      try { urls = JSON.parse(raw || \"[]\"); } catch(e) { urls = []; }\n      urls = Array.isArray(urls[0]) ? urls.flat() : urls;\n    }\n\n    return urls[0] || \"\";\n  })()\n)) : \n  (() => {\n    const raw = currentRow[\"fotos\"];\n    if (!raw) return \"\";\n\n    let urls = [];\n\n    if (Array.isArray(raw)) {\n      urls = Array.isArray(raw[0]) ? raw.flat() : raw;\n    } else {\n      try { urls = JSON.parse(raw || \"[]\"); } catch(e) { urls = []; }\n      urls = Array.isArray(urls[0]) ? urls.flat() : urls;\n    }\n\n    return urls[0] || \"\";\n  })()\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "fotos",
       "index": 4,
@@ -175,9 +174,10 @@
       "isVisible": true,
       "label": "fotos",
       "notation": "standard",
-      "onClick": "{{\n  storeValue(\n    \"fotos_selecionadas\",\n    (get_checklist_semanal_by_id.data || []).find(\n      r => String(r.id_item_execucao) === String(Table1.triggeredRow.id_item_execucao)\n    )?.fotos || \"[]\"\n  ).then(() => {\n    showModal(\"modal_fotos_semanal\");\n  })\n}}\n",
+      "onClick": "{{showModal(modal_fotos_semanal.name);}}",
       "originalId": "fotos",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -219,12 +219,14 @@
       "alias": "id_item_execucao",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id_item_execucao\"])) : id_item_execucao })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "id_item_execucao",
       "index": 0,
@@ -240,6 +242,7 @@
       "notation": "standard",
       "originalId": "id_item_execucao",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -250,12 +253,14 @@
       "alias": "item_codigo",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"item_codigo\"])) : item_codigo })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "item_codigo",
       "index": 2,
@@ -271,6 +276,7 @@
       "notation": "standard",
       "originalId": "item_codigo",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -281,12 +287,14 @@
       "alias": "status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"])) : status })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "status",
       "index": 3,
@@ -302,6 +310,7 @@
       "notation": "standard",
       "originalId": "status",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -313,7 +322,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 58,
   "searchKey": "",
-  "tableData": "{{ get_checklist_semanal_by_id.data || [] }}\n",
+  "tableData": "{{ get_itens_checklist_semanal_by.data || [] }}\n",
   "textSize": "0.875rem",
   "topRow": 8,
   "totalRecordsCount": 0,

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "684accaaccd99e1ff73d47d3_b1f8c0b6-f521-4d22-a014-11c7126b1819",
-  "id": "Checklist_Semanal_get_itens_checklist_semanal_by",
+  "gitSyncId": "684accaaccd99e1ff73d47d3_12bdb4f2-3e16-4b4a-9355-f4e503acae33",
+  "id": "Checklist_Semanal_update_decisao_analista_semana",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  id_item_execucao,\n  id_checklist,\n  item_codigo,\n  status,\n  fotos,\n  data_cadastro\nFROM compras_so.checklist_semanal_itens\nWHERE id_checklist = {{ Number(appsmith.store.checklist_semanal_id) }}\nORDER BY data_cadastro DESC\n",
+      "body": "UPDATE compras_so.checklist_semanal_motos\nSET \n  decisao_analista = {{ SelectDecisaoAnalista.selectedOptionValue }},\n  analista_decisao = {{ appsmith.store.usuario_nome }},\n  data_decisao = CURRENT_TIMESTAMP,\n  obs_decisao = ''\nWHERE id_checklist = {{ Number(appsmith.store.checklist_semanal_id) }};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "get_itens_checklist_semanal_by",
+    "name": "update_decisao_analista_semana",
     "pageId": "Checklist_Semanal",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

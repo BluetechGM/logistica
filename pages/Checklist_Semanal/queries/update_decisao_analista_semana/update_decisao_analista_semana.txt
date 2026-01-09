@@ -1,0 +1,7 @@
+UPDATE compras_so.checklist_semanal_motos
+SET 
+  decisao_analista = {{ SelectDecisaoAnalista.selectedOptionValue }},
+  analista_decisao = {{ appsmith.store.usuario_nome }},
+  data_decisao = CURRENT_TIMESTAMP,
+  obs_decisao = ''
+WHERE id_checklist = {{ Number(appsmith.store.checklist_semanal_id) }};

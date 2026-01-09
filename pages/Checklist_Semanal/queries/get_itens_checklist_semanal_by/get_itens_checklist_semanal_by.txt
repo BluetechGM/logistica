@@ -6,5 +6,5 @@ SELECT
   fotos,
   data_cadastro
 FROM compras_so.checklist_semanal_itens
-WHERE id_checklist = {{ appsmith.store.checklist_semanal_id }}
+WHERE id_checklist = {{ Number(appsmith.store.checklist_semanal_id) }}
 ORDER BY data_cadastro DESC

@@ -42,7 +42,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
+  "rightColumn": 61,
   "text": "Detalhes",
   "topRow": 3,
   "type": "BUTTON_WIDGET",

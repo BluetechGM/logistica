@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "autoPlay": false,
+  "backgroundColor": "#000",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 28,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "url"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPlay"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wyahk8cmxy",
+  "leftColumn": 33,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onPlay": "{{navigateTo(currentItem, {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 9.9384765625,
+  "parentId": "v1p0bgkim8",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "topRow": 0,
+  "type": "VIDEO_WIDGET",
+  "url": "{{currentItem}}",
+  "version": 1,
+  "widgetId": "gtba4x7jjf",
+  "widgetName": "Video3"
+}

@@ -12,7 +12,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -29,9 +33,10 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "objectFit": "cover",
+  "onClick": "{{navigateTo(currentItem, {}, 'NEW_WINDOW');}}",
   "parentId": "v1p0bgkim8",
   "renderMode": "CANVAS",
-  "rightColumn": 63,
+  "rightColumn": 32,
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,

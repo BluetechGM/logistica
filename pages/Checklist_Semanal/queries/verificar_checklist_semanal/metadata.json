@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  c.id_checklist,\n  c.data_checklist,\n  c.usuario_execucao,\n  c.filial_id,\n  c.placa,\n  c.resultado_final,\n  c.observacoes,\n  COUNT(CASE WHEN i.status = 'NC' THEN 1 END) AS qtd_nc\nFROM compras_so.checklist_semanal_motos c\nLEFT JOIN compras_so.checklist_semanal_itens i\n  ON i.id_checklist = c.id_checklist\nGROUP BY \n  c.id_checklist, c.data_checklist, c.usuario_execucao, c.filial_id,\n  c.placa, c.resultado_final, c.observacoes\nORDER BY c.data_checklist DESC;",
+      "body": "SELECT \n  c.id_checklist,\n  c.data_checklist,\n  c.usuario_execucao,\n  c.filial_id,\n  c.placa,\n  c.resultado_final,\n  c.observacoes,\n  c.decisao_analista,\n  c.analista_decisao,\n  c.data_decisao,\n  COUNT(CASE WHEN i.status IN ('NC','NAO_CONFORME') THEN 1 END) AS qtd_nc\nFROM compras_so.checklist_semanal_motos c\nLEFT JOIN compras_so.checklist_semanal_itens i\n  ON i.id_checklist = c.id_checklist\nGROUP BY \n  c.id_checklist, c.data_checklist, c.usuario_execucao, c.filial_id,\n  c.placa, c.resultado_final, c.observacoes,\n  c.decisao_analista, c.analista_decisao, c.data_decisao\nORDER BY c.data_checklist DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -15,6 +15,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -25,25 +26,25 @@
   "isLoading": false,
   "isVisible": true,
   "key": "g0jxv30x8l",
-  "leftColumn": 24,
+  "leftColumn": 42,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 31,
   "mobileRightColumn": 47,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(detalhes_checklist_semanal.name);}}",
+  "onClick": "{{\n  update_decisao_analista_semana.run()\n    .then(() => {\n      showAlert(\"Decisão salva com sucesso.\", \"success\");\n      get_checklist_semanal_by_id.run();\n      verificar_checklist_semanal.run();\n      closeModal(detalhes_checklist_semanal.name);\n    })\n    .catch(() => {\n      showAlert(\"Erro ao salvar decisão.\", \"error\");\n    })\n}}\n",
   "parentId": "3pxx2j6id3",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 40,
-  "text": "Close",
+  "rightColumn": 58,
+  "text": "Salvar",
   "topRow": 61,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "a7nan8ky7h",
-  "widgetName": "Button21"
+  "widgetId": "pnm5x3xbmx",
+  "widgetName": "Button21Copy"
 }

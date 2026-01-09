@@ -47,7 +47,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 51,
   "shouldTruncate": false,
-  "text": "{{currentItem.filial_id}}",
+  "text": "{{ currentItem.decisao_analista }}\n",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "textStyle": "HEADING",
